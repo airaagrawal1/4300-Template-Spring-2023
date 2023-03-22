@@ -10,10 +10,11 @@
     justify-content: start;
     align-items: center;
     flex-direction: column;
+    background-color: #8A9A5B;
 }
 
 #matcha-color{
-    color:#0d8947;
+    color:#ffffff;
 }
 
 .matcha-title{
