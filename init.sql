@@ -1,3 +1,8 @@
+CREATE DATABASE IF NOT EXISTS teadb;
+
+USE teadb;
+DROP TABLE IF EXISTS mytable;
+
 CREATE TABLE mytable(
    tea_type          VARCHAR(28) NOT NULL PRIMARY KEY
   ,tea_category      VARCHAR(32) NOT NULL
