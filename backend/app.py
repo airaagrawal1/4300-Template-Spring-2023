@@ -4,9 +4,9 @@ from flask import Flask, render_template, request
 from flask_cors import CORS
 from helpers.MySQLDatabaseHandler import MySQLDatabaseHandler
 
-# ROOT_PATH for linking with all your files. 
+# ROOT_PATH for linking with all your files.
 # Feel free to use a config.py or settings.py with a global export variable
-os.environ['ROOT_PATH'] = os.path.abspath(os.path.join("..",os.curdir))
+os.environ['ROOT_PATH'] = os.path.abspath(os.path.join("..", os.curdir))
 
 # These are the DB credentials for your OWN MySQL
 # Don't worry about the deployment credentials, those are fixed
@@ -16,7 +16,8 @@ MYSQL_USER_PASSWORD = ""
 MYSQL_PORT = 3306
 MYSQL_DATABASE = "teadb"
 
-mysql_engine = MySQLDatabaseHandler(MYSQL_USER,MYSQL_USER_PASSWORD,MYSQL_PORT,MYSQL_DATABASE)
+mysql_engine = MySQLDatabaseHandler(
+    MYSQL_USER, MYSQL_USER_PASSWORD, MYSQL_PORT, MYSQL_DATABASE)
 
 # Path to init.sql file. This file can be replaced with your own file for testing on localhost, but do NOT move the init.sql file
 mysql_engine.load_file_into_db()
@@ -24,18 +25,22 @@ mysql_engine.load_file_into_db()
 app = Flask(__name__)
 CORS(app)
 
-# Sample search, the LIKE operator in this case is hard-coded, 
-# but if you decide to use SQLAlchemy ORM framework, 
+# Sample search, the LIKE operator in this case is hard-coded,
+# but if you decide to use SQLAlchemy ORM framework,
 # there's a much better and cleaner way to do this
+
+
 def sql_search(tea):
     query_sql = f"""SELECT * FROM mytable WHERE LOWER( tea_category ) LIKE '%%{tea.lower()}%%' limit 10"""
     keys = ["tea_category", "tea_type", "about"]
     data = mysql_engine.query_selector(query_sql)
-    return json.dumps([dict(zip(keys,i)) for i in data])
+    return json.dumps([dict(zip(keys, i)) for i in data])
+
 
 @app.route("/")
 def home():
-    return render_template('base.html',title="sample html")
+    return render_template('base.html', title="sample html")
+
 
 @app.route("/episodes")
 def episodes_search():
