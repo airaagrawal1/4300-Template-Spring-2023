@@ -1,5 +1,3 @@
-from collections import defaultdict
-from collections import Counter
 import json
 import os
 import math
@@ -7,7 +5,6 @@ import string
 import time
 import numpy as np
 from nltk.tokenize import TreebankWordTokenizer
-from IPython.core.display import HTML
 from flask import Flask, render_template, request
 from flask_cors import CORS
 from helpers.MySQLDatabaseHandler import MySQLDatabaseHandler
