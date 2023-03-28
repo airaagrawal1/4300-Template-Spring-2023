@@ -3,6 +3,7 @@ import os
 import math
 import string
 import time
+import re
 import numpy as np
 from flask import Flask, render_template, request
 from flask_cors import CORS
@@ -16,7 +17,7 @@ os.environ['ROOT_PATH'] = os.path.abspath(os.path.join("..", os.curdir))
 # Don't worry about the deployment credentials, those are fixed
 # You can use a different DB name if you want to
 MYSQL_USER = "root"
-MYSQL_USER_PASSWORD = ""
+MYSQL_USER_PASSWORD = "koyabears777"
 MYSQL_PORT = 3306
 MYSQL_DATABASE = "teadb"
 
@@ -33,11 +34,15 @@ CORS(app)
 with open("tea_data.json", "r") as f: 
     tea_data = json.load(f)["data"]
 
+# tokenizer 
+def tokenize(text): 
+    return [x for x in re.findall(r"[a-z]+", text.lower())]
+
 # tokenize the data
 for tea in tea_data:
-    tea['about_toks'] = [x for x in re.findall(r"[a-z]+", tea['about'].lower())]
+    tea['about_toks'] = tokenize(tea['about'])
     reviews_acc = "".join(tea['reviews'])
-    tea['review_toks'] = [x for x in re.findall(r"[a-z]+", reviews_acc.lower())]
+    tea['review_toks'] = tokenize(reviews_acc)
 
 # constants
 tea_categories = [tea["tea_category"] for tea in tea_data]
@@ -180,12 +185,12 @@ def accumulate_dot_scores(query_word_counts, index, idf):
     return doc_scores
 
 # index search
-def index_search(query, index, idf, doc_norms, score_func=accumulate_dot_scores, tokenizer=tokenizer):
+def index_search(query, index, idf, doc_norms, score_func=accumulate_dot_scores, tokenizer=tokenize):
     """returns a list of tuples (score, doc_id), a sorted list of results such that the first element has the 
     highest score, and `doc_id` points to the document with the highest score."""
     result = []
     query_about = [t for t in tea_data if t["tea_category"].lower() == query.lower()][0]["about"]
-    tokens = tokenizer.tokenize(query_about)
+    tokens = tokenize(query_about)
     query_dict = {}
     
     for word in tokens: 
