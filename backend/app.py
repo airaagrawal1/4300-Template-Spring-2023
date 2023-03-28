@@ -4,7 +4,6 @@ import math
 import string
 import time
 import numpy as np
-from nltk.tokenize import TreebankWordTokenizer
 from flask import Flask, render_template, request
 from flask_cors import CORS
 from helpers.MySQLDatabaseHandler import MySQLDatabaseHandler
@@ -35,16 +34,10 @@ with open("tea_data.json", "r") as f:
     tea_data = json.load(f)["data"]
 
 # tokenize the data
-tokenizer = TreebankWordTokenizer()
 for tea in tea_data:
-    tea['about_toks'] = return [x for x in re.findall(r"[a-z]+", tea['about'].lower())]
-    
-    # tokenizer.tokenize(tea['about'])
-    # tea['about_toks'] = [t.lower() for t in tea['about_toks']]
+    tea['about_toks'] = [x for x in re.findall(r"[a-z]+", tea['about'].lower())]
     reviews_acc = "".join(tea['reviews'])
-    tea['review_toks'] = return [x for x in re.findall(r"[a-z]+", reviews_acc.lower())]
-    # tokenizer.tokenize(reviews_acc)
-    # tea['review_toks'] = [t.lower() for t in tea['review_toks']]
+    tea['review_toks'] = [x for x in re.findall(r"[a-z]+", reviews_acc.lower())]
 
 # constants
 tea_categories = [tea["tea_category"] for tea in tea_data]
