@@ -20,7 +20,7 @@ os.environ['ROOT_PATH'] = os.path.abspath(os.path.join("..", os.curdir))
 # Don't worry about the deployment credentials, those are fixed
 # You can use a different DB name if you want to
 MYSQL_USER = "root"
-MYSQL_USER_PASSWORD = ""
+MYSQL_USER_PASSWORD = "koyabears777"
 MYSQL_PORT = 3306
 MYSQL_DATABASE = "teadb"
 
@@ -41,8 +41,10 @@ with open("tea_data.json", "r") as f:
 tokenizer = TreebankWordTokenizer()
 for tea in tea_data:
     tea['about_toks'] = tokenizer.tokenize(tea['about'])
+    tea['about_toks'] = [t.lower() for t in tea['about_toks']]
     reviews_acc = "".join(tea['reviews'])
     tea['review_toks'] = tokenizer.tokenize(reviews_acc)
+    tea['review_toks'] = [t.lower() for t in tea['review_toks']]
 
 # constants
 tea_categories = [tea["tea_category"] for tea in tea_data]
@@ -159,32 +161,38 @@ def compute_doc_norms(index, idf, n_docs=num_teas):
     """
     index must be a dict, idf must be a dict.
     """
-    result = np.zeros(n_docs)
-    for word in idf:
-        for doc, occur in index[word]:
-            result[doc] += (occur * idf[word])**2 
-    return np.sqrt(result)
+    norms = np.zeros(n_docs)
+    for term, postings in index.items(): 
+        for (doc_id, count) in postings: 
+            idf_val = idf[term] if term in idf else 0
+            norms[doc_id] += (count * idf_val) ** 2
+    return np.sqrt(norms)
 
 # accumulate dot scores
 def accumulate_dot_scores(query_word_counts, index, idf):
     """ computer numerator term for cosin similarity
     query_word_counts must be a dict (in the demo it will only be one word)"""
-    result = {}
-    for word in query_word_counts: 
-        if word in index:
-            for doc,count in index[word]: 
-                if doc in result: 
-                    result[doc]+= query_word_counts[word] * idf[word] * idf[word] * count 
-                else: 
-                    result[doc] = query_word_counts[word] * idf[word] * idf[word] * count 
-    return result
+    doc_scores = {}
+    
+    for term, postings in index.items(): 
+        for (doc_id, doc_count) in postings: 
+            idf_val = idf[term] if term in idf else 0
+            q_word_count = query_word_counts[term] if term in query_word_counts else 0
+            d_tf_idf = doc_count * idf_val
+            q_tf_idf = q_word_count * idf_val
+            if doc_id in doc_scores: 
+                doc_scores[doc_id] += d_tf_idf * q_tf_idf
+            else: 
+                doc_scores[doc_id] = d_tf_idf * q_tf_idf
+    return doc_scores
 
 # index search
 def index_search(query, index, idf, doc_norms, score_func=accumulate_dot_scores, tokenizer=tokenizer):
     """returns a list of tuples (score, doc_id), a sorted list of results such that the first element has the 
     highest score, and `doc_id` points to the document with the highest score."""
     result = []
-    tokens = tokenizer.tokenize(query.lower())
+    query_about = [t for t in tea_data if t["tea_category"].lower() == query.lower()][0]["about"]
+    tokens = tokenizer.tokenize(query_about)
     query_dict = {}
     
     for word in tokens: 
@@ -210,13 +218,19 @@ def sql_search(tea):
     # query_sql = f"""SELECT * FROM mytable WHERE LOWER( tea_category ) LIKE '%%{tea.lower()}%%' limit 10"""
     # keys = ["tea_category", "tea_type", "about"]
     # data = mysql_engine.query_selector(query_sql)
+    # search_term = edit_distance_search(tea, tea_data, insertion_cost, deletion_cost, substitution_cost_adj)
+
     inv_idx = build_inverted_index(tea_data)
     idf = compute_idf(inv_idx, num_teas, min_df=10, max_df_ratio=0.1)
     doc_norms = compute_doc_norms(inv_idx, idf, num_teas)
-
+    print("search term", tea)
     data = []
-    for _, tea_id in index_search(tea, inv_idx, idf, doc_norms)[:5]:
-        data.append(tea_data[tea_id])
+    for _, tea_id in index_search(tea, inv_idx, idf, doc_norms)[:4]:
+        data.append({
+            "tea_category": tea_data[tea_id]["tea_category"], 
+            "tea_type": tea_data[tea_id]["tea_type"], 
+            "about": tea_data[tea_id]["about"]
+        })
     return json.dumps(data)
 
 @app.route("/")
