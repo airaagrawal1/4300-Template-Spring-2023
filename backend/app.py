@@ -48,4 +48,13 @@ def get_teas():
     search_tea = request.args.get("tea")
     return get_recommendations(search_tea, 5)
 
+@app.route("/app/reviews/<tea_id:int>/")
+def create_review():
+    ## TODO create a review for a tea
+    pass
+
+def create_relevant(): 
+    ## TODO allow users to mark relevant teas and then re-generate query results based on rocchio
+    pass
+
 # app.run(debug=True)
