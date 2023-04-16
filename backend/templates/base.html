@@ -14,38 +14,38 @@
             </div>
             <div class="input-box" onclick="sendFocus()">
                 <img src="{{ url_for('static', filename='images/mag.png') }}" />
-                <input placeholder="Search for a tea or flavor profile that you enjoy!" id="filter-text-val"
-                    onkeyup="filterText()">
+                <input placeholder="Search for a tea or flavor profile that you enjoy!" id="search-tea-text-val"
+                    onkeyup="searchText()">
             </div>
         </div>
+        <p id="searching-for"></p>
         <div id="answer-box"></div>
     </div>
 
     <script>
-
-        function answerBoxTemplate(title, titleDesc) {
+        function answerBoxTemplate(name, description) {
             return `<div class=''>
-                <h3 class='episode-title'>${title}</h3>
-                <p class='episode-desc'>${titleDesc}</p>
+                <h3 class='tea-name'>${name}</h3>
+                <p class='tea-desc'>${description}</p>
             </div>`
         }
 
         function sendFocus() {
-            document.getElementById('filter-text-val').focus()
+            document.getElementById('search-tea-text-val').focus()
         }
 
-        function filterText() {
+        function searchText() {
             document.getElementById("answer-box").innerHTML = ""
-            console.log(document.getElementById("filter-text-val").value)
-            fetch("/episodes?" + new URLSearchParams({ title: document.getElementById("filter-text-val").value }).toString())
-                .then((response) => response.json())
+            fetch("/api/teas?" + new URLSearchParams({ tea: document.getElementById("search-tea-text-val").value }).toString())
+                .then((response) => {
+                    document.getElementById("searching-for").innerText = `Searching for: ${response.statusText}`
+                    return response.json()
+                })
                 .then((data) => data.forEach(row => {
-
                     let tempDiv = document.createElement("div")
                     tempDiv.innerHTML = answerBoxTemplate(row.tea_category, row.about)
                     document.getElementById("answer-box").appendChild(tempDiv)
                 }));
-
         }
 
     </script>

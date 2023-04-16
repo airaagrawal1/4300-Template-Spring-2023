@@ -68,14 +68,10 @@ html, body {
     margin-top: 40px;
 }
 
-.episode-title {
+.tea-title {
     font-family: 'Kanit', sans-serif;
 }
 
-.episode-desc {
+.tea-desc {
     font-family: 'Montserrat', sans-serif;
-    overflow: hidden;
-    display: -webkit-box;
-    -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical;
 }
