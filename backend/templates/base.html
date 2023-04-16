@@ -37,15 +37,16 @@
         function searchText() {
             document.getElementById("answer-box").innerHTML = ""
             fetch("/api/teas?" + new URLSearchParams({ tea: document.getElementById("search-tea-text-val").value }).toString())
-                .then((response) => {
-                    document.getElementById("searching-for").innerText = `Searching for: ${response.statusText}`
-                    return response.json()
-                })
-                .then((data) => data.forEach(row => {
-                    let tempDiv = document.createElement("div")
-                    tempDiv.innerHTML = answerBoxTemplate(row.tea_category, row.about)
-                    document.getElementById("answer-box").appendChild(tempDiv)
-                }));
+                .then((response) => response.json())
+                .then((data) => {
+                    document.getElementById("searching-for").innerText = `Searching for: ${data.search_tea}.`
+                    console.log(data.top_k_teas) // TODO - create a dropdown with these teas and allow the user to select which one is most similar instead of automatically searching for the most similar by edit distance
+                    data.data.forEach(row => {
+                        let tempDiv = document.createElement("div")
+                        tempDiv.innerHTML = answerBoxTemplate(row.tea_category, row.about)
+                        document.getElementById("answer-box").appendChild(tempDiv)
+                    });
+                });
         }
 
     </script>

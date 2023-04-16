@@ -48,4 +48,4 @@ def get_teas():
     search_tea = request.args.get("tea")
     return get_recommendations(search_tea, 5)
 
-app.run(debug=True)
+# app.run(debug=True)
