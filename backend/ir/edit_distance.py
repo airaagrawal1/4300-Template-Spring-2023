@@ -15,4 +15,5 @@ def top_k_edit_distance(search_tea, k):
     tea_names = [t["tea_category"] for t in tea_data]
     edit_distances = [edit_distance(search_tea, tea_name) for tea_name in tea_names]
     ranked_ids = np.argsort(edit_distances)
-    return [index_to_tea[i] for i in ranked_ids][:k]
+    sorted_distances = np.sort(edit_distances)
+    return [index_to_tea[i] for i in ranked_ids][:k], sorted_distances[:k]

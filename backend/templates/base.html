@@ -18,7 +18,6 @@
                     onkeyup="searchText()">
             </div>
         </div>
-        <p id="searching-for"></p>
         <div id="answer-box"></div>
     </div>
 
@@ -39,7 +38,6 @@
             fetch("/api/teas?" + new URLSearchParams({ tea: document.getElementById("search-tea-text-val").value }).toString())
                 .then((response) => response.json())
                 .then((data) => {
-                    document.getElementById("searching-for").innerText = `Searching for: ${data.search_tea}.`
                     console.log(data.top_k_teas) // TODO - create a dropdown with these teas and allow the user to select which one is most similar instead of automatically searching for the most similar by edit distance
                     data.data.forEach(row => {
                         let tempDiv = document.createElement("div")

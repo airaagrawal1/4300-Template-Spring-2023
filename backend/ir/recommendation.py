@@ -18,20 +18,30 @@ n_feats = 5000
 tea_to_index = { tea:index for index, tea in enumerate(d["tea_category"] for d in tea_data) }
 index_to_tea = { v:k for k, v in tea_to_index.items() }
 
+# get the query vector (determine if there is a close match or it is a free-form query)
+def get_query(search_tea, about_vec, review_vec): 
+    top_k_teas, top_k_dists = top_k_edit_distance(search_tea=search_tea, k=5)
+
+    percent_edit = top_k_dists[0] / len(search_tea)
+    threshold = 0.5 # half of the original query had to be edited
+    if percent_edit > threshold: # the query likely does not match any tea 
+        about_query_tfidf = about_vec.transform([search_tea])
+        review_query_tfidf = review_vec.transform([search_tea])
+    else: 
+        tea_index = tea_to_index[top_k_teas[0]]
+        search_data = tea_data[tea_index]
+        about_query_tfidf = about_vec.transform([search_data["about"]])
+        review_query_tfidf = review_vec.transform([" ".join(search_data["reviews"])])
+
+    return about_query_tfidf, review_query_tfidf, top_k_teas 
+
 def get_recommendations(search_tea, k):
     about_tfidf_vec = build_tfidf(n_feats, "english") 
     review_tfidf_vec = build_tfidf(n_feats, "english") 
     about_tfidf = about_tfidf_vec.fit_transform([d["about"] for d in tea_data]).toarray()
     review_tfidf = review_tfidf_vec.fit_transform([" ".join(d["reviews"]) for d in tea_data]).toarray()
 
-    if not search_tea.title() in tea_to_index:
-        top_k_teas = top_k_edit_distance(search_tea=search_tea, k=5)
-        search_tea = top_k_teas[0]
-
-    tea_index = tea_to_index[search_tea.title()] 
-    search_data = tea_data[tea_index]
-    about_query_tfidf = about_tfidf_vec.transform([search_data["about"]])
-    review_query_tfidf = review_tfidf_vec.transform([" ".join(search_data["reviews"])])
+    about_query_tfidf, review_query_tfidf, top_k_teas = get_query(search_tea.title(), about_tfidf_vec, review_tfidf_vec)
 
     about_sims = cosine_similarity(about_query_tfidf, about_tfidf).flatten()
     review_sims = cosine_similarity(review_query_tfidf, review_tfidf).flatten()
@@ -51,7 +61,6 @@ def get_recommendations(search_tea, k):
 
     result = {
         "data": data, 
-        "search_tea": search_tea, 
         "top_k_teas": top_k_teas
     }
 
