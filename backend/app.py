@@ -32,29 +32,34 @@ app = Flask(__name__)
 CORS(app)
 
 # load the data
-with open("tea_data.json", "r") as f: 
+with open("tea_data.json", "r") as f:
     tea_data = json.load(f)["data"]
 
 # constants
 tea_categories = [tea["tea_category"] for tea in tea_data]
 num_teas = len(tea_data)
 
+
 @app.route("/")
 def home():
     return render_template('base.html', title="sample html")
+
 
 @app.route("/api/teas")
 def get_teas():
     search_tea = request.args.get("tea")
     return get_recommendations(search_tea, 5)
 
-@app.route("/app/reviews/<tea_id:int>/")
+# @app.route("/app/reviews/<tea_id:int>/")
+
+
 def create_review():
-    ## TODO create a review for a tea
+    # TODO create a review for a tea
     pass
 
-def create_relevant(): 
-    ## TODO allow users to mark relevant teas and then re-generate query results based on rocchio
+
+def create_relevant():
+    # TODO allow users to mark relevant teas and then re-generate query results based on rocchio
     pass
 
 # app.run(debug=True)
