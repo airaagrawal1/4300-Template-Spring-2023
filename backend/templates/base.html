@@ -12,15 +12,14 @@
             <div class="matcha-title">
                 <h1 id="matcha-color">Match-A Tea</h1>
             </div>
-            <div class="input-box" onclick="sendFocus()">
-                <img src="{{ url_for('static', filename='images/mag.png') }}" />
-                <input 
-                    placeholder="Search for a tea or flavor profile that you enjoy!" 
-                    id="search-tea-text-val"
-                />
-            </div>
+            <form autocomplete="off">
+                <div class="input-box" onclick="sendFocus()">
+                    <img src="{{ url_for('static', filename='images/mag.png') }}" />
+                    <input placeholder="Search for a tea or flavor profile that you enjoy!" id="search-tea-text-val" />
+                </div>
+            </form>
         </div>
-    </br>
+        </br>
         <button id="find-teas-button" onClick="searchText()">Find Teas!</button>
         <div id="answer-box"></div>
     </div>
@@ -37,12 +36,88 @@
             document.getElementById('search-tea-text-val').focus()
         }
 
+        function autocomplete(inp, arr) {
+            var currentFocus;
+
+            inp.addEventListener("input", function (e) {
+                var a, v, i, val = this.value;
+                closeAllLists();
+                if (!val) { return false; }
+                currentFocus = -1;
+                a = document.createElement("DIV");
+                a.setAttribute("id", this.id + "autocomplete-list");
+                a.setAttribute("class", "autocomplete-items");
+                this.parentNode.appendChild(a);
+                for (i = 0; i < arr.length; i++) {
+                    if (arr[i].substr(0, val.length).toUpperCase() == val.toUpperCase()) {
+                        b = document.createElement("DIV");
+                        b.innerHTML = "<strong>" + arr[i].substr(0, val.length) + "</strong>";
+                        b.innerHTML += arr[i].substr(val.length);
+                        b.innerHTML += "<input type='hidden' value='" + arr[i] + "'>";
+                        b.addEventListener("click", function (e) {
+                            inp.value = this.getElementsByTagName("input")[0].value;
+                            closeAllLists();
+                        });
+                        a.appendChild(b);
+                    }
+                }
+            });
+            // using arrow keys to move up and down dropdown menu
+            inp.addEventListener("keydown", function (e) {
+                var x = document.getElementById(this.id + "autocomplete-list");
+                if (x) x = x.getElementsByTagName("div");
+                if (e.keyCode == 40) { // down arrow pressed
+                    currentFocus++;
+                    addActive(x);
+                } else if (e.keyCode == 38) { // up arrow pressed
+                    currentFocus--;
+                    addActive(x);
+                } else if (e.keyCode == 13) { // enter key pressed
+                    e.preventDefault();
+                    if (currentFocus > -1) {
+                        if (x) x[currentFocus].click();
+                    }
+                }
+            });
+
+            // classify an item as active
+            function addActive(x) {
+                if (!x) return false;
+                removeActive(x);
+                if (currentFocus >= x.length) currentFocus = 0;
+                if (currentFocus < 0) currentFocus = (x.length - 1);
+                x[currentFocus].classList.add("autocomplete-active");
+            }
+
+            // declassify all items as active
+            function removeActive(x) {
+                for (var i = 0; i < x.length; i++) {
+                    x[i].classList.remove("autocomplete-active");
+                }
+            }
+
+            // close all autocomplete lists except elt
+            function closeAllLists(elmnt) {
+                var x = document.getElementsByClassName("autocomplete-items");
+                for (var i = 0; i < x.length; i++) {
+                    if (elmnt != x[i] && elmnt != inp) {
+                        x[i].parentNode.removeChild(x[i]);
+                    }
+                }
+            }
+            // execute a function when someone clicks in
+            document.addEventListener("click", function (e) {
+                closeAllLists(e.target);
+            });
+        };
+
         function searchText() {
             document.getElementById("answer-box").innerHTML = ""
             fetch("/api/teas?" + new URLSearchParams({ tea: document.getElementById("search-tea-text-val").value }).toString())
                 .then((response) => response.json())
                 .then((data) => {
                     console.log(data.top_k_teas) // TODO - create a dropdown with these teas and allow the user to select which one is most similar instead of automatically searching for the most similar by edit distance
+                    // autocomplete(document.getElementById("search-tea-text-val"), data.top_k_teas)
                     data.data.forEach(row => {
                         let tempDiv = document.createElement("div")
                         tempDiv.innerHTML = answerBoxTemplate(row.tea_category, row.about)
@@ -50,6 +125,8 @@
                     });
                 });
         }
-
+        fetch("/api/tea_names/")
+            .then((response) => response.json())
+            .then((data) => autocomplete(document.getElementById("search-tea-text-val"), data));
     </script>
 </body>
