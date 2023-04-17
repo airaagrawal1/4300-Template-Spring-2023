@@ -108,10 +108,28 @@ body {
     margin-top: 40px;
 }
 
+.tea-card {
+    margin-bottom: 40px;
+}
+
 .tea-title {
     font-family: 'Kanit', sans-serif;
+    font-size: 21px;
+}
+
+.tea-score {
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(58, 58, 58);
 }
 
 .tea-desc {
     font-family: 'Montserrat', sans-serif;
+}
+
+.tea-brands {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.no-teas {
+    margin-left: 50px;
 }
