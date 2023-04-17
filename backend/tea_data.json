@@ -18,7 +18,8 @@
                 "Mark T. Wendell",
                 "Foojoy",
                 "Arbor Teas"
-            ]
+            ],
+            "caffeine": "high"
         },
         {
             "tea_type": "Pure Tea (Camellia sinensis)",
@@ -38,7 +39,8 @@
                 "Ahmad Tea",
                 "Two Leaves and a Bud",
                 "Hampstead Tea"
-            ]
+            ],
+            "caffeine": "high"
         },
         {
             "tea_type": "Pure Tea (Camellia sinensis)",
@@ -48,7 +50,8 @@
             "reviews": [
                 "The dry leaves are a lovely dull brown colour. I just really like the look of them. I'm having slightly mixed feelings. It is flowery as advertised, but it's also a bit 'dull' in a way that cheap teabags often are. Maybe I used too much tea or let it steep for too long. Or maybe too many leaves and not steeped long enough? It is generally pleasant, though. Sweetish and reminds me of liquorice (the root, not the sweets)."
             ],
-            "top_rated_brands": []
+            "top_rated_brands": [],
+            "caffeine": "high"
         },
         {
             "tea_type": "Pure Tea (Camellia sinensis)",
@@ -58,7 +61,8 @@
             "reviews": [
                 "The leaves are small and tightly twisted/rolled and give off quite a smokey aroma, which dissapates as the tea brews. It does so even more in the taste, which is fairly light, smooth, creamy and just a wee bit smokey. There are hints of cocoa and roasted vegetables. It really is an excellent tea, but on the expensive side. I probably shouldn't quibble, as it is organic, hand picked and hand processed. I might even buy more than a sample, it is so good."
             ],
-            "top_rated_brands": []
+            "top_rated_brands": [],
+            "caffeine": "high"
         },
         {
             "tea_type": "Pure Tea (Camellia sinensis)",
@@ -78,7 +82,8 @@
                 "Ahmad Tea",
                 "Ahmad Tea",
                 "Upton Tea Imports"
-            ]
+            ],
+            "caffeine": "high"
         },
         {
             "tea_type": "Pure Tea (Camellia sinensis)",
@@ -98,7 +103,8 @@
                 "Hampstead Tea",
                 "Arbor Teas",
                 "Happy Earth Tea"
-            ]
+            ],
+            "caffeine": "high"
         },
         {
             "tea_type": "Pure Tea (Camellia sinensis)",
@@ -118,7 +124,8 @@
                 "Harney and Sons",
                 "Happy Earth Tea",
                 "Teavana"
-            ]
+            ],
+            "caffeine": "high"
         },
         {
             "tea_type": "Pure Tea (Camellia sinensis)",
@@ -135,7 +142,8 @@
             "top_rated_brands": [
                 "Arbor Teas",
                 "Rishi Tea"
-            ]
+            ],
+            "caffeine": "high"
         },
         {
             "tea_type": "Pure Tea (Camellia sinensis)",
@@ -149,7 +157,8 @@
                 "Wow. Udyan tea recently sent me some samples, and they are of impressive quality. This is the first sample I'm reviewing, and only the second tea I've ever tried from Castleton estate. It got my attention immediately as a top-quality tea. The dry leaf of this tea is explosively aromatic and the aroma is extraordinarily fresh, strong, and complex. At first it smells like a Darjeeling, with strong fruity and floral qualities, but this quick falls into the background behind a spicy and malty aroma that reminds me a little of some Yunnan teas, or some other Chinese teas. And this is before brewing it! Upon brewing, produces a very smooth cup with a bold and fresh flavor. Fairly cooling for a black tea. Aroma is very floral and fruity, and has woody notes (like in the description, and a little like an amber oolong). Although the leaf looks darker, typical for a Darjeeling autumn flush, this tastes greener in character, like a first flush tea with a bit of the edge taken off. The second cup was surprisingly good. Interestingly, the second steep was when this tea really started to shine. It had a strong herbaceous character, a lot like hops, and the aroma was less like a typical Darjeeling, more malty. The net effect was that it reminded me of some craft-brewed beers. Bold flavor, and interesting. Slightly tricky to brew: easy to oversteep. This tea doesn't become too bitter or astringent, but it is somehow overbearing and unpleasant if brewed too strongly. I initially tried using a teaspoon of leaf and a 3 minute steep, and this came out too strong for my tastes. The aroma was pleasantly complex and the flavor good, but something about the cup was still too potent. I liked a 3 minute steep using less than a teaspoon, or a 1-2 minute steep using about a teaspoon. Brewing this tea less strongly brings out a honey-like sweetness. I usually liked brewing two cups but no more, the second cup was always outstanding, but the wonderful aromatic notes were mostly gone after that. The price on this is exceptional. This is a top-notch artisanal tea, and the leaf stretches very far. At under $6 for 100 grams, this is undoubtedly the best Darjeeling I've ever sampled in this price range. Udyan lists this as FTGFOP1, and it among the better examples of teas of this grade that I've tried, and it's also super fresh.",
                 "This second-flush Darjeeling was very different from the other one from Jungpana estate, that I just tried from this same company. I prepared them the same ways. I didn't like this tea as much, but it was still good. The dry leaf is not quite as intensely aromatic, but has a fascinating aroma with a fleeting wintergreen note and a hint of malt. Upon brewing, the cup takes on a subdued quality reminding me of cool, clean stone in a forest. The cup has a strong cooling quality, more so than most autumn flush teas, which often seem more warming to me. There are interesting vegetal notes, and as the cup cools, the flavor and aroma of olive start to come out rather strongly. I like the initial aroma more than the olive notes. I tried varying the amount of leaf and steeping time, and I found that brewing strength didn't make much of a difference in the character of this tea...it only made it subtly stronger or weaker. Resteeps decently, only a second cup though, and not as interesting, a bit thin. Doesn't resteep quite as well as some Darjeelings. I was surprised to see this tea was more expensive than the autumn flush from Jungpana, which I strongly preferred to this one. This tea is priced pretty high, even with the sale price, but it didn't seem quite up to the level of teas I would want to buy at this price."
             ],
-            "top_rated_brands": []
+            "top_rated_brands": [],
+            "caffeine": "high"
         },
         {
             "tea_type": "Pure Tea (Camellia sinensis)",
@@ -160,7 +169,8 @@
                 " 2 - A fairly light smooth Darjeeling. All right but seems overpriced. ",
                 "Steeping 5 minutes results in nutty and fruity flavour that is long lasting. The tea leaves are fine rolled with a beautiful golden amber liquor and it is more complete in second cup. The tea is little sweet in between and plane at the back. This tea is medium as compared to other darjeeling FTGFOP1 grade or other speciality tea from the same Invoice. This tea is a good seller but not among the Gopaldhara speciality."
             ],
-            "top_rated_brands": []
+            "top_rated_brands": [],
+            "caffeine": "high"
         },
         {
             "tea_type": "Pure Tea (Camellia sinensis)",
@@ -168,7 +178,8 @@
             "about": "Winter or early flush Darjeeling is Darjeeling tea that has been harvested earlier in the year than first flush teas. Winter or early flush Darjeeling is not common and is only produced by a few estates, such as Arya estate. It is considered highly desireable, not only because of its unique qualities (being between a first flush and autumnal tea in character), but also because it typically becomes available before the first flush teas, thus allowing connoisseurs to enjoy the current year's Darjeeling harvest earlier than it would normally be available. ",
             "avg_rating": 0,
             "reviews": [],
-            "top_rated_brands": []
+            "top_rated_brands": [],
+            "caffeine": "high"
         },
         {
             "tea_type": "Pure Tea (Camellia sinensis)",
@@ -184,7 +195,8 @@
             ],
             "top_rated_brands": [
                 "Upton Tea Imports"
-            ]
+            ],
+            "caffeine": "high"
         },
         {
             "tea_type": "Pure Tea (Camellia sinensis)",
@@ -204,7 +216,8 @@
                 "Bare Tea",
                 "Tazo Tea",
                 "Novus Tea"
-            ]
+            ],
+            "caffeine": "high"
         },
         {
             "tea_type": "Pure Tea (Camellia sinensis)",
@@ -222,7 +235,8 @@
                 "TeaVivre",
                 "Teavana",
                 "Adagio Teas"
-            ]
+            ],
+            "caffeine": "high"
         },
         {
             "tea_type": "Pure Tea (Camellia sinensis)",
@@ -242,7 +256,8 @@
                 "Red Rose Tea",
                 "Bewley's Coffee and Tea Company",
                 "Adagio Teas"
-            ]
+            ],
+            "caffeine": "high"
         },
         {
             "tea_type": "Pure Tea (Camellia sinensis)",
@@ -261,7 +276,8 @@
                 "TeaVivre",
                 "Arbor Teas",
                 "Upton Tea Imports"
-            ]
+            ],
+            "caffeine": "high"
         },
         {
             "tea_type": "Pure Tea (Camellia sinensis)",
@@ -273,7 +289,8 @@
                 "This tea has a nice, dark color and a crisp, smoky aroma. The flavor is not bitter, not too dry and not very smoky at all, as I thought it would be from the aroma and my experience with other Keemun teas. It is even less smoky than its nearly as delicious sibling, Hao Ya 'B'. It has a very clean, crisp, fresh taste, very complex and sophisticated. This tea has a depth of character unlike any other tea I have tasted. This really is an excellent tea. It does not need cream or sugar to be fully appreciated, but I found that if you do use cream and sugar, both work better with this tea than either alone, but be cautious; you only need a very small amount of both to augment rather than overwhelm this tea's natural flavor, which just keeps getting better and better with every sip. Even the aftertaste is itself a unique and flavorful experience. I must admit, this tea has greatly improved my heretofore under-informed opinion of Keemun teas and may indeed have supplanted others as my tea of choice. I am delightfully surprised by how delicious this tea is and I'm already looking forward to my next cup and to sharing this tea with others!",
                 "Pouring the tea into the cup, the color is a medium brown color. It smells sour with a complex flowery undertone. The taste is mildly sour but incredibly sweet. There are hints of a rose taste with overtone of a flower that I can not identify."
             ],
-            "top_rated_brands": []
+            "top_rated_brands": [],
+            "caffeine": "high"
         },
         {
             "tea_type": "Pure Tea (Camellia sinensis)",
@@ -286,7 +303,8 @@
                 "This tea has a mild flavor, but it's good. I added cream and sugar. ",
                 "I was surprised to find that I strongly preferred the slightly less expensive Keemun Grade 1 from TeaVivre to this offering. While this was a very good tea, it did not wow me as being outstanding, or even higher quality than a typical Keemun. It was just different. I was surprised at the strength of the cup, the darkness of the liquor, and the edginess present in the first cup. Much darker in color than most Keemun...more blackish than reddish. Second cup is much smoother. Both cups have a 'deep' sort of quality to them. Brewed western-style, the aroma has more of the cocoa-like tones, a lot like the Keemun Mao Feng I recently sampled from Life in Teacup, or like a Ceylon OPA. However, there is much less of the smokiness, and somewhat less of the woody qualities. Overall, this tea was more like a very high-end, large-leaf Ceylon than it was like other Keemuns. The price on this tea is also good. It is only slightly more expensive than the Grade 1 of the same brand. I would not think of this as a 'better' tea, merely a different one. For people who want a warmer, smoother tea, I'd recommend the grade 1. For people wanting a deeper, darker tea with a little more edge, this might be a better choice. I strongly prefer the grade 1 however. I tried this tea gongfu style. I was surprised by a more intense smokiness that came out in the first infusion. The second infusion was more balanced and more complex, but still smoky, and bearing an odd resemblance to shu Pu-erh. By the third infusion, this tea became a bit more normal, and was less interesting from this point on. The flavor gave out surprisingly quickly, with little flavor left after the third steeping. I actually settled on preferring to brew this tea western-style, in contrast to the grade 1 which I found really shined with gongfu-style brewing."
             ],
-            "top_rated_brands": []
+            "top_rated_brands": [],
+            "caffeine": "high"
         },
         {
             "tea_type": "Pure Tea (Camellia sinensis)",
@@ -300,7 +318,8 @@
                 "I'm having a hard time rating this tea. It smelled pretty bad to me, like burnt pine. I guess that's the smokiness. The flavor was nicely earthy and slightly chocolaty with the occasional subtle fruit note. I enjoyed the flavor, but hated the aroma. I always knew it was done brewing and would taste the way I liked it when it smelled like someone forced a jigsaw through a board of old wood as quickly as possible. The less offensive the smell, the more bland it tasted. I guess if the smell of charred wood doesn't bother you, this is a pretty good tea for the price, but I couldn't get past that. ",
                 "Based on my experiences with black gunpowder, I was not surprised that this doesn't taste like Mao Feng at all. It's more like other Chinese black teas I've had. It's got just a tiny little bit of sweetness but it's hardly there. It's pleasantly almost-bitter (but I did make it pretty strong). Resteeps quite decently. It's a nice tea but nothing exciting."
             ],
-            "top_rated_brands": []
+            "top_rated_brands": [],
+            "caffeine": "high"
         },
         {
             "tea_type": "Pure Tea (Camellia sinensis)",
@@ -319,7 +338,8 @@
                 "Wegmans",
                 "TeaVivre",
                 "Twinings"
-            ]
+            ],
+            "caffeine": "moderate"
         },
         {
             "tea_type": "Pure Tea (Camellia sinensis)",
@@ -333,7 +353,8 @@
                 "I like this tea. It has a weird kind of aroma, but it's good overall. The flavor is strong, crisp, and not too bitter. I added cream and sugar. It's interesting that on the package it recommends adding cream and not milk, because I always add cream to my tea. ",
                 "A wonderful, nuanced black tea with a mild flavor, and complex aroma, also creating nice sensations on the palate. Dry leaf has a mild but very pleasing aroma suggestive of sweet dried fruit, but fresher and lighter smelling. Upon brewing, this produces a very dark brown cup with a mellow aroma, yet exquisite flavor. The aroma is subtle and very pleasing: I agree with the description that claims hints of caramel and cocoa, and spiciness...there's a very faint hint of caraway and wintergreen as well. Upon drinking the whole cup, tones suggestive of banana, cinnamon, and nut come out. I find this tea's aroma tricky to describe: it's very complex and nuanced. The flavor is very pleasing, naturally sweet with a slight bitterness and noticeable savory (umami) quality. It's the sensations on the palate though that I think really make this tea...it has a moderately astringent body, giving it a sort of dry feeling, but this fades into leaving a tingling sensation on the tongue. Has a much more cooling quality than usual for Chinese teas. I really liked this one. I was able to brew a second cup off the same set of leaves, but it required a long steeping and was less flavorful than the first...this tea didn't do quite as well with multiple steepings as some high-grade Chinese black teas do. That said I still thought this tea was top notch. It is not cheap, but I thought the price was reasonable for a tea of this quality. I found the pricing a bit odd; the 50g size is a better deal than the sample or 25g size but the 75g size isn't any cheaper, and 5 grams for a sample seems a little on the small size--I like 15 gram or so samples and I sometimes even think of 25 grams as a sample."
             ],
-            "top_rated_brands": []
+            "top_rated_brands": [],
+            "caffeine": "moderate"
         },
         {
             "tea_type": "Pure Tea (Camellia sinensis)",
@@ -350,7 +371,8 @@
             "top_rated_brands": [
                 "Harney and Sons",
                 "Upton Tea Imports"
-            ]
+            ],
+            "caffeine": "moderate"
         },
         {
             "tea_type": "Pure Tea (Camellia sinensis)",
@@ -368,7 +390,8 @@
                 "Murchie's Tea & Coffee Ltd",
                 "Taylors of Harrogate",
                 "Upton Tea Imports"
-            ]
+            ],
+            "caffeine": "moderate"
         },
         {
             "tea_type": "Pure Tea (Camellia sinensis)",
@@ -388,7 +411,8 @@
                 "Adagio Teas",
                 "Rishi Tea",
                 "TeaVivre"
-            ]
+            ],
+            "caffeine": "low"
         },
         {
             "tea_type": "Pure Tea (Camellia sinensis)",
@@ -408,7 +432,8 @@
                 "Adagio Teas",
                 "Yunnan Sourcing",
                 "Adagio Teas"
-            ]
+            ],
+            "caffeine": "moderate"
         },
         {
             "tea_type": "Pure Tea (Camellia sinensis)",
@@ -418,7 +443,8 @@
             "reviews": [
                 "My first tea from Sichuan. Surprisingly strong aroma like concord grapes, very different from the lighter muscatel aroma of Darjeeling or Bai Hao oolong. Smoky and woody tones in the aroma. Smooth, with a slightly dusty finish, and a hint of some floral nuances. A very interesting tea and a very smooth tea. Full-bodied. I normally like black teas to have more bite to them, but I found this one pleasing even though it was smoother. I recommend brewing more strongly than Upton recommends...this tea does not become bitter at all if brewed as instructed; if you use a bit more leaf and a longer brewing period it takes on a pleasing bitterness more typical of a good black tea. Not the cheapest tea in Upton's catalog but I think exceptional value for a tea of this quality. This tea is interesting to try for something new, but I can see it becoming a regular favorite for many people as well."
             ],
-            "top_rated_brands": []
+            "top_rated_brands": [],
+            "caffeine": "high"
         },
         {
             "tea_type": "Pure Tea (Camellia sinensis)",
@@ -438,7 +464,8 @@
                 "TeaVivre",
                 "Teavana",
                 "TeaVivre"
-            ]
+            ],
+            "caffeine": "moderate"
         },
         {
             "tea_type": "Pure Tea (Camellia sinensis)",
@@ -451,7 +478,8 @@
                 "The aroma is very delicate and very fresh, a mellow blend of fruit like sweetness and roasted chestnuts. Of course there is a vegetal presence, it is one of green beans and fresh vegetation, there is also a delicate hint of flowers at the finish. This tea smells wonderful, it has my favorite aspects of a delicate Chinese green tea, smelling like late spring and rain. The first steep starts out with a delicate creamy mouthfeel, this is one of those teas that really fills the mouth up with each taste. And what a taste it is! Delicate vegetal notes of green beans and lima beans with a finish of sweet chestnuts. The taste is incredibly delicate and subtle but incredibly nuanced. I was able to get several steeps and experiment with a new brewing style with this tea. Every part of the experience was wonderful.",
                 "What a delightful and relaxing tea. "
             ],
-            "top_rated_brands": []
+            "top_rated_brands": [],
+            "caffeine": "low"
         },
         {
             "tea_type": "Pure Tea (Camellia sinensis)",
@@ -461,7 +489,8 @@
             "reviews": [
                 "I purchased this at a Cantonese grocery store in Edison, NJ. I really liked this. It is a high-end Japanese tea, but is unsorted, meaning that it also contains larger pieces of leaf and stem, something that is often missing from the higher-quality teas. As such I find it has a bolder flavor and more complex aroma. For brewing a single cup, I found I preferred one teaspoon of leaf or slightly less per cup, and brewing 1 minute, using water in the 160-180(degrees)F temperature range. Resteeps well and you can easily get 2 cups, possibly more from one set of leaves, even using that little leaf. Flavor is fairly bold: there is a strong savory flavor, and a moderate, but pleasant bitterness. Little sourness. Cup is moderately astringent, and the combination of the savory flavor and moderate astringency makes this full-bodied and thick. Aroma is strongly seaweedy and vegetal, a little toasty, with hints of grain. I love how this tea smells. This also makes an exceptional iced tea. To make it iced, I like to use 3 teaspoons of leaf and steep for about 12 minutes to make about 4 cups worth. This makes a pretty strong iced tea; you could use less if you want something milder. I liked this tea overall. I found it slightly more forgiving on brewing than other high-end teas, stronger, and more aromatically complex. I'm not sure if everyone would like this though, it's definitely more suited to people who like bold flavors and vegetal aromas. My only complaint is that this is a bit on the pricey side, especially if you buy the smaller (100g) size. It's good, but at this price it is competing with some of the better artisan teas out there. I have found a number of teas that I like equally wth this (although not exactly the same, just different teas that I enjoy about the same amount) that are a good bit cheaper. That said, the price is moderated by the fact that the leaf stretches very far, and if you buy the 200g size online the price seems more reasonable than what I paid for it in the retail grocery. Bottom line, this is good stuff, and if you like strong-tasting Japanese green teas, I recommend it!"
             ],
-            "top_rated_brands": []
+            "top_rated_brands": [],
+            "caffeine": "moderate"
         },
         {
             "tea_type": "Pure Tea (Camellia sinensis)",
@@ -475,7 +504,8 @@
                 "An aromatically-interesting tea that was too harsh for me to enjoy it. I wonder if, like a raw or sheng Pu-erh, this tea could be aged. I couldn't enjoy drinking it as-is. This is the first summer-harvest Assam green tea, and I was curious to see if it tasted appreciably different from the others. I was disappointed that it tasted more-or-less similar, and I don't think I would be able to pick it out of the lineup as being harvested at a different time. TEAORB describes this tea as having a sweet aroma but strong flavor, and I agree. Dry leaf, which looks beautiful, is mild, but the aroma is slightly sweet. Unfortunately, none of this sweetness came through in the cup. The brewed cup has a soapy aroma, again, mild. As I sip it, it develops fresh herbaceous notes. At times it reminds me of greener oolongs. I very much like the aromatic profile, but it was very astringent, even if brewed mildly. I experimented brewing it progressively weaker, and when it was mild enough to drink, it was watery and aromatically weak. Experimenting with brewing temperature also had little positive effect. I would pass on this one; I found it hard to enjoy drinking.",
                 "When TEAORB sent me a massive array of Assam green teas to sample, I was a little worried that they would all taste too similar to each other, especially given how they all seem to look very similar to each other. Many of the Assam greens I've tried have been bold, alien, and the sort of tea I would need to be in the right mood to drink, but this one was quite different...I'd describe it as an easy-drinking tea, especially for someone who likes Chinese green teas. Dry leaf has a grassy and toasty aroma, closer to Chinese green teas than any, a lot like a dragon well in particular. Cup is fresh and crisp tasting, more cooling and less warming than any of the other Assam greens so far. When brewed it reminded of a cross between dragon well and more inexpensive Chinese green teas like chun mee; it was cleaner tasting, but seemed to lack the depth that some of the other Assam green teas I've been trying from TEAORB have. This tea was easy to brew and retained a remarkably similar character regardless of how I brewed it. It seems to take near-boiling water just fine, but also tastes fine when brewed with lower-temperature water. Varying the leaf amount or steeping times just makes it stronger or weaker. Compare with the tea from Basundhara estate, that I just reviewed...this one is the same price, had a similar character, and I preferred it slightly on all counts."
             ],
-            "top_rated_brands": []
+            "top_rated_brands": [],
+            "caffeine": "high"
         },
         {
             "tea_type": "Pure Tea (Camellia sinensis)",
@@ -489,7 +519,8 @@
                 "This may be the best bancha I've ever tried. It's better than a number of lower-end sencha's I've bought in the U.S. The dry leaf is green for bancha and has the most delightful aroma, the best yet of any bancha I've tried. It smells a lot like coffee cake, a sort of sweet, baked good smell with hints of cinnamon, and there are a few vegetal or grassy notes. Flavor is sweet and slightly savory (umami) with a hint of tanginess and only a very slight bitterness. Overall the flavor is balanced and complex. The aroma is strongly of corn, reminiscent almost of bourbon, with light straw notes. Light astringency, just enough to impart body. Eminently pleasing. Not that caffeinated, I enjoyed drinking this in the late afternoon and was happily able to drink two cups of it without it it keeping me up later. I found this tasted best with a brief (1.5 min.) first steep. This minimizes the astringency but still yields a pleasantly flavorful and aromatic cup. I was then able to resteep it just five with a 5 minute or longer second steep. Unfortunately, this tea only seemed to resteep twice, there wasn't much flavor left in the leaves after that. I was careful with the water temperature; I'm not sure how this would fare with hotter water but I used water about 170-180F and it was good. Good price, especially given that it resteeps.",
                 "This is truly an 'upgraded' Bancha, picked just after first flush from the larger, thicker base of the leaves. More astringent than sencha, but well balanced in flavor and aroma. I love the grassy flavor and feel it leaves in your mouth. Den's Bancha Suruga is wonderfully refreshing when brewed as per their instructions, and I have found it to be excellent when ice brewed, as well. It is produced in the Shizuoka province of Japan of the Yabukita cultivar/species which is hard to find since most 'Bancha' teas available in the US are actually from China. A nice tea to sip casually through out the day."
             ],
-            "top_rated_brands": []
+            "top_rated_brands": [],
+            "caffeine": "low"
         },
         {
             "tea_type": "Pure Tea (Camellia sinensis)",
@@ -506,7 +537,8 @@
             "top_rated_brands": [
                 "TeaVivre",
                 "Tea King of China (Starway)"
-            ]
+            ],
+            "caffeine": "low"
         },
         {
             "tea_type": "Pure Tea (Camellia sinensis)",
@@ -523,7 +555,8 @@
             "top_rated_brands": [
                 "TeaVivre",
                 "Teavana"
-            ]
+            ],
+            "caffeine": "moderate"
         },
         {
             "tea_type": "Pure Tea (Camellia sinensis)",
@@ -531,7 +564,8 @@
             "about": "Curled dragon silver tip is a green tea from China that is sometimes described as intermediate between green and white teas. The name refers to the unusual and striking shape and color of the leaves, which are rolled into complex, tightly-curled dragon-like shapes with a silvery color. According to Plymouth Tea, it is a rare tea that is hand-made.[1] ",
             "avg_rating": 0,
             "reviews": [],
-            "top_rated_brands": []
+            "top_rated_brands": [],
+            "caffeine": "moderate"
         },
         {
             "tea_type": "Pure Tea (Camellia sinensis)",
@@ -545,7 +579,8 @@
                 "Dry leaf has a mild herbaceous aroma, and a dusty appearance. Produces an olive-green cup. Crisp, clear flavor, with honey-like qualities. Aroma is mild, dominated by melow herbaceous tones. Flavor is clean and the tea has a cooling quality. I found its flavor grew on me a bit. Produces two very flavorful infusions with only a teaspoon of leaves. Tastes much better to me while cooled to room temperature. For some reason, seems a bit harsh when hot and smoother/cleaner tasting when cool. This struck me as a good tea, and quite interesting. Among Darjeeling green teas, it was more expensive than the long-leaf green produced by Makaibari estate, a tea which is not always available, but which I strongly prefer to this one. But the two teas are like apples and oranges:.that tea is edgier, bolder, and less floral or honey-like.",
                 "The liqueur is a light amber color, almost looking like it has no flavoring to it. It smells floral and fruity. The flower smells like rose but it tastes like jasmine. There is a lightly earthen tone at the back of the smell that is similar to many black darjeelings. The taste is started off with a overtone of jasmine that slowly introduces the taste of fruit. It is sort of like a low roasted fruit taste though, like a low roasted pear or red apple. As you hit the end of the tea flavor it starts to hit a roasted nut and rice tone."
             ],
-            "top_rated_brands": []
+            "top_rated_brands": [],
+            "caffeine": "moderate"
         },
         {
             "tea_type": "Pure Tea (Camellia sinensis)",
@@ -565,7 +600,8 @@
                 "Novus Tea",
                 "Ten Ren Tea",
                 "TeaVivre"
-            ]
+            ],
+            "caffeine": "high"
         },
         {
             "tea_type": "Pure Tea (Camellia sinensis)",
@@ -581,7 +617,8 @@
             ],
             "top_rated_brands": [
                 "Numi Organic Tea"
-            ]
+            ],
+            "caffeine": "moderate"
         },
         {
             "tea_type": "Pure Tea (Camellia sinensis)",
@@ -597,7 +634,8 @@
             ],
             "top_rated_brands": [
                 "Teavana"
-            ]
+            ],
+            "caffeine": "high"
         },
         {
             "tea_type": "Pure Tea (Camellia sinensis)",
@@ -617,7 +655,8 @@
                 "Adagio Teas",
                 "ITO EN",
                 "Wegmans"
-            ]
+            ],
+            "caffeine": "low"
         },
         {
             "tea_type": "Pure Tea (Camellia sinensis)",
@@ -625,7 +664,8 @@
             "about": "Kamairicha is a Japanese green tea that is pan-fired, not steamed like most Japanese green teas. Both the production process and the aroma and flavor of this tea make it resemble Chinese green teas, most of which are pan-fired in a similar way. Not well-known in western countries, it is still available through some specialty importers, mainly Japanese companies. It is produced in some of the southern regions of Japan, including locations in Nagasaki, Saga, and Miyazaki prefectures.",
             "avg_rating": 0,
             "reviews": [],
-            "top_rated_brands": []
+            "top_rated_brands": [],
+            "caffeine": "low"
         },
         {
             "tea_type": "Pure Tea (Camellia sinensis)",
@@ -635,7 +675,8 @@
             "reviews": [
                 "I have no idea if I'm doing this right; I may update my review if there are any developments. The loose tea is visually very interesting. Small dark green 'sprinkles' that I believe I'm supposed to put directly into the cup and add hot water. They partly dissolve, making the liquid a lovely murky swamp green. I am not entirely surprised to find it tastes quite bitter and a bit sour. Still, it's not quite as strong as I'd have expected, especially given the colour and opacity. Honestly, the best way I can describe the flavour and aroma is 'cheap bulk green tea steeped for too long in too hot water'. (Like Alghazaleen green tea which I make extremely strong to make milk tea.) It does have a hint of matcha, though. It might taste better if I actually knew what I was doing. To be quite honest I'm mostly giving it points for novelty value. In addition, the fact that I had no idea what to expect and have nothing to compare it to works in its favour as I weigh the score against other teas that have disappointed me, or exceeded expectations."
             ],
-            "top_rated_brands": []
+            "top_rated_brands": [],
+            "caffeine": "moderate"
         },
         {
             "tea_type": "Pure Tea (Camellia sinensis)",
@@ -651,7 +692,8 @@
             ],
             "top_rated_brands": [
                 "Adagio Teas"
-            ]
+            ],
+            "caffeine": "low"
         },
         {
             "tea_type": "Pure Tea (Camellia sinensis)",
@@ -662,7 +704,8 @@
                 "The aroma is delightfully loamy and mildly roasted, it reminds me of the forest at the end of autumn. Brewing the tea makes the roasted aroma and loamy aroma more intense and it brings in notes of umami as well. The taste is earthy, loamy, and a hint of woody with very mild roasted flavor. I have to be careful to not chug this tea because it is delicious and soothing. The mouthfeel is buttery and smooth. As the tea cools it becomes sweeter and smoother. ",
                 "Roasting the bancha leaves produces a tea that combines the best of hojicha and bancha together in one brew. The light grassy flavors are enhanced by the light smokiness, and the astringency is cut to a minimum. The sample I had of this was used up quickly as I tried brewing it both hot and cold the same day, and both were equally satisfying. I hope to order more of this soon, as I have found all of Obubu's teas to be exceptionally delicious."
             ],
-            "top_rated_brands": []
+            "top_rated_brands": [],
+            "caffeine": "low"
         },
         {
             "tea_type": "Pure Tea (Camellia sinensis)",
@@ -678,7 +721,8 @@
             ],
             "top_rated_brands": [
                 "TeaVivre"
-            ]
+            ],
+            "caffeine": "low"
         },
         {
             "tea_type": "Pure Tea (Camellia sinensis)",
@@ -697,7 +741,8 @@
                 "Tazo Tea",
                 "TeaVivre",
                 "Tea King of China (Starway)"
-            ]
+            ],
+            "caffeine": "low"
         },
         {
             "tea_type": "Pure Tea (Camellia sinensis)",
@@ -713,7 +758,8 @@
             ],
             "top_rated_brands": [
                 "TeaVivre"
-            ]
+            ],
+            "caffeine": "low"
         },
         {
             "tea_type": "Pure Tea (Camellia sinensis)",
@@ -729,7 +775,8 @@
             ],
             "top_rated_brands": [
                 "Teavana"
-            ]
+            ],
+            "caffeine": "moderate"
         },
         {
             "tea_type": "Pure Tea (Camellia sinensis)",
@@ -737,7 +784,8 @@
             "about": "Mecha is a Japanese green tea that is made exclusively of buds, making it an example of a tippy tea. It is also called gacha in Japanese. It is considered a highly desirable type of tea, often roughly between sencha and gyokuro in price. Contrasting with many tippy teas, mecha has a sharply bitter flavor and is quite astringent. It is also highly aromatic. Mecha is often the tea served as 'agari', the tea served at the end of a meal of sushi. The bitterness of the tea is seen as cleansing the palate.",
             "avg_rating": 0,
             "reviews": [],
-            "top_rated_brands": []
+            "top_rated_brands": [],
+            "caffeine": "moderate"
         },
         {
             "tea_type": "Pure Tea (Camellia sinensis)",
@@ -748,7 +796,8 @@
                 "I thought this was a good everday tea, especially if you want a stronger green tea that isn't too harsh, but I wasn't crazy about it for the high price that it had. I've had only one other Sejak (although I've had other types of Korean green teas, all of which I liked better) and it was pretty similar. I initially brewed this one with around 180 degree water, but I find it tastes better when the water is even cooler. The hotter the water is, I find the more bitter this tea gets. If you use around 160F degree water it comes out very sweet and savory and with what seemed like the perfect amount of bitterness. The aroma is very seaweedy and vegetal, lots of ocean aromas. It reminds me of being at a restaurant on the wharf in maine. Even smells a little like crabmeat. 2nd cup remarkably seaweedy; I find this quality persists more through the second cup than is typical. Flavor is bold in both cups. There's a moderate amount of bitterness, and also some astringency. I find that this tea also leaves a bit of a tingling sensation on the palate, and a slight metallic aftertaste. Cooling, crisp, and fresh. Infuses relatively quickly (possibly because the leaf is pretty finely broken). I like at most a 2 minute first steep but I think slightly shorter than that is ideal. It was interesting to try, but the price is just too high for me to recommend buying this regularly. For lower prices I can get Japanese teas that I think are similar but that I much prefer to this one. ",
                 "Thank you Dewey for this sample! Dry leaf doesn't have much smell, but the minute the water hits the leaves there is an explosion of aroma that reminds me of very good Japanese sencha. But once the tea has steeped it has a very different aroma, more like a Chinese green tea, very grassy, and with some toasty and floral tones. Flavor is strong and quite brisk, but pleasantly so. Strong umami or savory flavor. This is among one of the most umami teas I've ever tried, making it taste a lot like gyokuro or kabusecha. Really potent, and brews very fast. Arbor teas gave a generic recommendation of a 2-3 minute steeping. I thought that produced a first cup that was too strong, and then I tried resteeping, and that did not go well. The resulting cup was bitter and astringent, but lacked most of the pleasant aromatic qualities and was also watery. I liked this tea better if steeped for only a minute or less for the first cup, and not much longer for the second. This produces a first cup that smelled more vegetal and tasted smoother, but still very savory / umami. This tea still did not work as well as some for multiple infusions, but more of the toasty tones came out in the second cup this way. This may be though because the sample I received was the bottom of the bag, and the leaf was more broken than it normally would be, but I did notice overall that the leaf looked much more broken than it does in the picture on the Arbor Teas' website...whether that's a question of handling post-shipping, I don't know. Very enjoyable. But, for me, far too pricey for a tea that doesn't resteep that well. "
             ],
-            "top_rated_brands": []
+            "top_rated_brands": [],
+            "caffeine": "moderate"
         },
         {
             "tea_type": "Pure Tea (Camellia sinensis)",
@@ -768,7 +817,8 @@
                 "Harney and Sons",
                 "Mellow Monk",
                 "Twinings"
-            ]
+            ],
+            "caffeine": "moderate"
         },
         {
             "tea_type": "Pure Tea (Camellia sinensis)",
@@ -779,7 +829,8 @@
                 "I took the dégustation comparée (comparative tasting) of three green teas of a higher quality. This is one of the three I was served. I got a zhong with dry leaves in it, a small cup, and a thermos of water. I was recommended to finish with this tea, so I tasted this one last. The leaves are very dark green and look fine and powdery. First steeping (15 sec.): Strong vegetal aroma, but the flavour is very different from any tea I've had before. It tastes savoury. Second steeping (20 sec.): Lovely lime green liqueur, the aroma is still there. There's a hint of bitter now but in a pleasant way. It's still vegetal. Third steeping (20 sec.): The colour is undiminished and the leaves have unfolded to many times their size when dry. It tastes more bitter and less vegetal. Fourth steeping (20 sec.): It still has the same colour. It tastes fresh and even more bitter, but less flavourful. Fifth steeping (25 sec.): The colour is slightly lighter but still not yellowing. (Enjoyment of the colour is important to me.) Sweet and bitter. Sixth steeping (25 sec.): Very sweet, the bitterness is fading. It has a minty aftertaste. At this point I ran out of water again and didn't dare ask for more another time.",
                 "The aroma is very green, like fresh grass and moisture, an odd description, but it reminded me of the way cut grass smells after a brief rain storm. There is also a touch of nuttiness and sweetness with an end note of sweet peas. The taste is a bit grassy and sweet like stone fruit, there is a touch of fresh kelp and a touch of spring dew. The mouthfeel is incredibly smooth and as it cools it becomes honey sweet. The flavors are incredibly subtle while being distinct."
             ],
-            "top_rated_brands": []
+            "top_rated_brands": [],
+            "caffeine": "moderate"
         },
         {
             "tea_type": "Pure Tea (Camellia sinensis)",
@@ -790,7 +841,8 @@
                 "I was surprised, but also not, about this super premium shincha. You see, I know my tastes and I know that I've loved some 'cheap' teas because even though they were inexpensive, they were great teas. I've also had some disappointing experiences with really expensive teas. So, I purchased this with that knowledge somewhere at the back of my mind. Now, I tried brewing this the same way as the other shincha that I got from Maeda-en and it turned out terrible. I thought I'd go for an even lower temperature, so I went from 75(degrees)C to 70(degrees)C, and holy heck, it felt like I got hit in the head. The effect that the caffeine had on me was miserable. My body was miserable and I could barely finish two small 110ml cups. I then went searching around online and found a suggestion to raise the temperature instead. I didn't want to go to far, so I just settled on 80(degrees)C. This took away that nasty effect, but the tea didn't have nearly as much of a fullness as the other shincha. Now, I'm open to the notion that this 75/100 rating is more demonstrative of my brewing method. I'd be happy to revise and try to find a better method. But, for the time being, this is the best I've found. I'd be very hesitant to try a low temperature again. I think if I did, I'd try something really, really low -- my kettle goes as low as 40(degrees)C, though I think I'd try 45(degrees)C or 50(degrees)C. I definitely wouldn't try anything in the 70-75(degrees)C range again. I'll add any notes I have if and when I decide to experiment. For the time being, I'd say that I much prefer the other shincha. I wouldn't order this one again. It was a strange and interesting taste experience, though. The leaves are also beautiful. They're so thin and slender. They look almost like green pine needles. Update: After brewing this many, many times, I started to have better results. First of all, 80(degrees)C is much better than other temperatures. I use 1tsp (heaping) per 110ml and start at around 20s, then increment up by 5-10s for a few brews. I think that part of it might actually be just letting it sit. I have noticed other green teas not brewing well right after harvest. Maybe some people prefer them this way. To me, they're undrinkable (some of them). It takes some time for them to 'calm down' and then they're quite good. I think the other part was just the brewing process and learning to do it more smoothly. It did take me time to get this one just right, but it was a good tea afterward, so I'm raising the rating. I'd say that I still prefer the other shincha, but this one is much better than before.",
                 "This is, easily, the most striking tea that I've ever had in my life -- and I've had hundreds. First of all, the scent was lightly fruity at the same time that it exhibited notes similar to the umami gyokuro green tea. The color was the most rich green I'd ever seen. I think the description had said that it leans to a blue and it almost does. It's so green, it's almost blue. But, none of this prepared me for the flavor. I brewed 1 tsp with 110ml of water heated to 75(degrees)C for about 20-30s (no rinse). There was some dusting in it -- about as much as fukamushi-cha. The color was a deep green, edging on blue. The flavor was like nothing I'd ever tasted before. The tea had more body than even the most premium green oolongs I'd had. There was such a fullness in the breath, with a sweet/umami note that was so complex, I'd like to think myself good at describing things, but I'm at a loss for words. There was an energy to the tea, beyond anything I'd ever experienced before. It has so much life in it and it's so obvious. I'm almost glad that I spent my life trying hundreds of other teas first. Because, if I'd had this first, I'd have been ruined for other teas. The flavor is very interesting, it's so complex and so full, but it's not the kind of thing that I think I'd tire of. It's already sold out on the online shop. There were a handful left when I made my own order. With how good this tea is, I can see why people rush to snatch it up. It's seasonal, so it won't be back in stock until spring. Shin-cha, you see, is the first crop and it isn't stored before going through the process to prepare it for consumption and then being sent out. So, this is the freshest you can get, short of picking tea leaves right off the bush. I'd definitely buy more of this in the future. This is astounding tea. It's in a league of its own. It's also a pleasure that's not the least bit guilty. Because, you have to drink it as soon as possible. You have to absolutely devour this tea, so that it's as fresh as possible when you do. You really shouldn't store it. It also feels so incredibly nourishing. So, my only concern is the inevitable sadness over finishing the last drop and having to wait until next year for more. I'd recommend this to try to anyone in a heartbeat. You must like green/umami flavored teas, though. This is more like gyokuro than any other tea. So, if you don't like gyokuro, this wouldn't be for you. But, if you do enjoy a green/umami gyokuro with a sweetness, this would be above and beyond that and you'd likely fall in love with it at first sip. I'm going to continue on, brewing as many cups out of this as possible. If you manage to pick some up for yourself at some point, enjoy! Update: I'm changing this to 100/100. This is perfect tea, even though I typically think that 'nothing is perfect,' this is perfect tea. So, it deserves the rating. As for the value, this is a bit expensive, but it's also worth it. So, I'm giving it 5-stars there."
             ],
-            "top_rated_brands": []
+            "top_rated_brands": [],
+            "caffeine": "moderate"
         },
         {
             "tea_type": "Pure Tea (Camellia sinensis)",
@@ -803,7 +855,8 @@
                 "This is the first example of Tai Ping Hou Kui that I've sampled, so I didn't really know what to expect. I was disappointed. This tea was slow to infuse. I wish I had had more of the sample to experiment with; I only had enough for two western-style brewings, both of which I steeped twice, using Upton's 3-minute recommendation. The first infusion of this tea struck me as having a cooling quality, overall, but, like Upton says in their description, also a thick mouthfeel. There's a smoky, dusty quality, like in some lower grades of gunpowder and chun mee. It did not strike me as particularly sweet: rather it seemed, to me, slightly sour, and muted in flavor. There are some subtle tones that come out upon drinking, including corn. Very pleasing on the palate while drinking, but leaving a dry, dusty finish that was less-than-satisfing. Through this whole cup, I wanted more aroma. A second infusion was much more rich and flavorful, but the aroma was still weaker than I would like. This cup shared certain qualities in common with other long-leaf greens, including ones from diverse regions such as Thailand and Darjeeling. There is a certain soapy quality to it, however, which I dislike. I've sometimes encountered this soapy quality in the first infusion of greener oolongs. I tried brewing a third infusion but the leaves were spent, and the result tasted like little more than water. The whole process makes me think I did not brew this tea optimally, as most of the flavor went into the second cup. Bottom line, I was disappointed. This tea is pricey, and in quality or versalitility, it did not compare to a number of Chinese teas that I've tried from Upton as well as other companies. Even some of Upton's inexpensive green teas really impress me more than this did.",
                 "This is a quality green tea! The leaves are made with just two leaves, no bud, and so the bitterness is kept to a minimum. The tea can be as light or as heavy as one would want it depending on brewing style, and either way it is delicious. The flavor could be a bit stronger (for my tastes) but I think lovers of good greens would appreciate this one!"
             ],
-            "top_rated_brands": []
+            "top_rated_brands": [],
+            "caffeine": "moderate"
         },
         {
             "tea_type": "Pure Tea (Camellia sinensis)",
@@ -820,7 +873,8 @@
             "top_rated_brands": [
                 "Wegmans",
                 "Two Leaves and a Bud"
-            ]
+            ],
+            "caffeine": "moderate"
         },
         {
             "tea_type": "Pure Tea (Camellia sinensis)",
@@ -836,7 +890,8 @@
             ],
             "top_rated_brands": [
                 "TeaVivre"
-            ]
+            ],
+            "caffeine": "low"
         },
         {
             "tea_type": "Pure Tea (Camellia sinensis)",
@@ -852,7 +907,8 @@
             ],
             "top_rated_brands": [
                 "TeaVivre"
-            ]
+            ],
+            "caffeine": "low"
         },
         {
             "tea_type": "Pure Tea (Camellia sinensis)",
@@ -872,7 +928,8 @@
                 "Upton Tea Imports",
                 "TeaVivre",
                 "Teehaus Bachfischer"
-            ]
+            ],
+            "caffeine": "moderate"
         },
         {
             "tea_type": "Pure Tea (Camellia sinensis)",
@@ -888,7 +945,8 @@
             ],
             "top_rated_brands": [
                 "Upton Tea Imports"
-            ]
+            ],
+            "caffeine": "moderate"
         },
         {
             "tea_type": "Pure Tea (Camellia sinensis)",
@@ -904,7 +962,8 @@
             ],
             "top_rated_brands": [
                 "Verdant Tea"
-            ]
+            ],
+            "caffeine": "moderate"
         },
         {
             "tea_type": "Pure Tea (Camellia sinensis)",
@@ -920,7 +979,8 @@
             ],
             "top_rated_brands": [
                 "TeaVivre"
-            ]
+            ],
+            "caffeine": "moderate"
         },
         {
             "tea_type": "Pure Tea (Camellia sinensis)",
@@ -936,7 +996,8 @@
             ],
             "top_rated_brands": [
                 "Fresh Darjeeling Tea"
-            ]
+            ],
+            "caffeine": "moderate"
         },
         {
             "tea_type": "Pure Tea (Camellia sinensis)",
@@ -950,7 +1011,8 @@
                 "A lovely, smooth oolong. I brought the water to 185 (degrees)F and steeped it for a few minutes. It has a hint of herbaceousness, almost floweriness, and overall tastes like a very solid, everyday tea. I wonder how it would do if left to steep longer, as I like my teas strong. I experienced no bitterness or anything unpleasant in the taste. I'm curious about how others, those who are generally fans of oolong and those who aren't, would feel about this tea.",
                 "The aroma of this oolong is very mild, not really vegetal but more like fresh vegetation growing on a spring day. It is also floral and a touch like fresh hay. Once brewed the aroma is much stronger and more floral, especially lilacs. The tea is very mild, a touch vegetal with a bit of green beans and pine needles. The tea has a very mild aftertaste and is tasty, especially if you are craving a mellow tea."
             ],
-            "top_rated_brands": []
+            "top_rated_brands": [],
+            "caffeine": "low"
         },
         {
             "tea_type": "Pure Tea (Camellia sinensis)",
@@ -960,7 +1022,8 @@
             "reviews": [
                 "Odd, just odd, and I didn't enjoy it very much. My first experience with GABA tea. The dry leaf of this tea looks brown, like a moderately roasted oolong, and has a faint nutty aroma with hints of gingerbread cookie dough. Upon brewing, the main thing I notice is the lack of obvious oolong aroma. The aroma is very strange. Up front, there's a quality I dislike, that I find hard to describe. Past this, the aroma is fruity, in a way completely unlike other teas. I've heard GABA oolong described as smelling like guava, and I do see the guava resemblance. There's also a suggestion of baked goods. I noticed that Nicole Martin once described a GABA tea as 'biscuity', and I see that quality in this teas as well. Astringent for an oolong, with an astringency that is similar to that of stronger black teas. The overall mouthfeel is much more like a black tea, as is the finish. I find the astringency, especially in the finish, to be unpleasant--and it certainly clashes with the commercial description of this tea, which claims a 'long lasting smooth finish'. I found the opposite, it left me with a noticeable puckering or sandpaper sensation on my palate. I did notice feeling calm after drinking this tea, but the effect wasn't particularly pronounced or dramatic, and I have no idea how much of that was psychological. This tea seems like a bit of an oddity. I can't see myself drinking it regularly because I don't like the flavor and overall experience of drinking it."
             ],
-            "top_rated_brands": []
+            "top_rated_brands": [],
+            "caffeine": "moderate"
         },
         {
             "tea_type": "Pure Tea (Camellia sinensis)",
@@ -977,7 +1040,8 @@
             "top_rated_brands": [
                 "Eco-Cha",
                 "Tradition"
-            ]
+            ],
+            "caffeine": "high"
         },
         {
             "tea_type": "Pure Tea (Camellia sinensis)",
@@ -993,7 +1057,8 @@
             ],
             "top_rated_brands": [
                 "Tradition"
-            ]
+            ],
+            "caffeine": "moderate"
         },
         {
             "tea_type": "Pure Tea (Camellia sinensis)",
@@ -1010,7 +1075,8 @@
             "top_rated_brands": [
                 "Eco-Cha",
                 "TeaVivre"
-            ]
+            ],
+            "caffeine": "low"
         },
         {
             "tea_type": "Pure Tea (Camellia sinensis)",
@@ -1024,7 +1090,8 @@
                 "This tea has an overwhelming honey-like aroma that I find a bit repulsive. I don't like the flavor of honey much, though. I brewed it for 10 minutes to make it strong enough, and the flavor was still pretty subtle and watery-tasting, but it's okay. It's interesting. I don't usually like oolongs much, so I probably like this one more than usual. I like strong black teas. I added cream and sugar. ",
                 "I think Arbor Teas' description of this tea is spot-on: Velvety-smooth and sweet, almost suggestive of marmalade. I would not have guessed that this example is not from Taiwan--it tasted very similar to the Taiwanese Oriental Beauty oolongs. Dry leaf has little aroma. Brews a rich, dark colored cup, very smooth but thick, syrupy. Aroma is mild, but strongly suggests sweetness. Dominant tones in the aroma are grapes and caramel. There's a faint soapiness in the aroma as well. Flavor is mostly slightly sweet, with almost no bitterness or sourness. Surprisingly little leaf is necessary to produce a full-bodied cup. I recommend not oversteeping; even though this tea does not become bitter or astringent, and even though I overall thought it not flavorful enough for my tastes, I thought it more enjoyable when steeped only for a shorter time ("
             ],
-            "top_rated_brands": []
+            "top_rated_brands": [],
+            "caffeine": "high"
         },
         {
             "tea_type": "Pure Tea (Camellia sinensis)",
@@ -1042,7 +1109,8 @@
                 "Rishi Tea",
                 "Teehaus Bachfischer",
                 "Arbor Teas"
-            ]
+            ],
+            "caffeine": "low"
         },
         {
             "tea_type": "Pure Tea (Camellia sinensis)",
@@ -1052,7 +1120,8 @@
             "reviews": [
                 "Overall this was more run-of-the-mill than I expected for such a high-end tea. My favorite thing about it was the smell of the dry leaf, the actual cup was good, but not as interesting. The dry leaf smells incredibly beautiful...multifaceted too, lightly roasty, very fruity, like baked goods, suggesting sweetness, hints of spice. Rou Gui means 'cinnamon' and there is definitely a cinnamon note there, but it's only one quality among many, and this smells more malty and fruity than anything else. The aroma of the brewed cup isn't exactly disappointing, it's pleasant, but it neither as mind-blowing nor as complex as the dry leaf suggested. The flavor is typical for an oolong, relatively mild. Finish slightly metallic, but also very smooth. More warming than typical for an oolong. I was more a fan of the overall experience of drinking it than the smell or taste. Didn't resteep as well as I had hoped. The aroma was less complex, the cup tasted much more like a generic oolong on the second steep, and lost that magic. The second cup is also oddly acidic, tasting a little like an aged oolong that has been roasted and re-roasted. There's a pleasant softness in the roast, and the cup was both warming and clean and crisp, a combination that isn't super common among teas, but flavor-wise and aromatically, it was less interesting. Good but this is an exceptionally expensive tea...I just don't see paying this kind of price when I've been really wowed by oolongs in a much lower price range."
             ],
-            "top_rated_brands": []
+            "top_rated_brands": [],
+            "caffeine": "moderate"
         },
         {
             "tea_type": "Pure Tea (Camellia sinensis)",
@@ -1068,7 +1137,8 @@
             ],
             "top_rated_brands": [
                 "Upton Tea Imports"
-            ]
+            ],
+            "caffeine": "moderate"
         },
         {
             "tea_type": "Pure Tea (Camellia sinensis)",
@@ -1079,7 +1149,8 @@
                 "I received this oolong in a set of samples from Life in Teacup, but could not find it for sale on their website. This one immediately got my attention from even smelling the dry leaf--so aromatic. I have rarely encountered such intense floral aromas outside of the most expensive Dong Ding or Tie Guan Yin oolongs. I brewed a 3 minute infusion and the result was a cup of tea with a clean, clear, but full body, and an intense floral aroma. Most importantly, there was a complete absence of the soapy qualities that plague some of the lower grades of greener oolong. This is a completely different tea from the lower grade of Ben Shan oolong offered by Life in Teacup--in my opinion it's in a completely different category. I made a second 6-minute infusion, and the cup had a noticeable different character: less of the lighter floral tones, but still fairly complex and very full-bodied. Compared to that basic Ben Shan, this tea has less roast in the aroma, and more complexity and strength to the floral aroma (that one just smells like orchids whereas this one is harder to describe). The aroma, especially in the second infusion, is not at all soapy, unlike the basic ben shan. Overall, this is a much more interesting and complex tea, much smoother too, and with fewer objectionable qualities. Among the best of green oolongs that I've tried.",
                 "I made two infusions of this tea. I found, using longer brewings, it's only really good for two and then most of the flavor is gone. I used 3 min. and 6 min. For the first infusion, the aroma is floral and orchid-like, like many of the greener Anxi oolongs, but there's a depth and warmth to it that I've found is absent from many of the other Se Chungs. This does resemble a greener Tie Guan Yin fairly closely. Interesting, in addition to the rich floral aroma, there is also a hint of roast in the finish. Second, six-minute infusion was surprisingly dark and full-bodied, but less floral. Deeper aroma, with a hint of soapy and vegetal qualities. I enjoyed the aroma of this cup less, but the overall qualities more. Inexpensive, but I'd rather either spend more and buy Tie Guan Yin, or buy other Se Chung oolongs."
             ],
-            "top_rated_brands": []
+            "top_rated_brands": [],
+            "caffeine": "moderate"
         },
         {
             "tea_type": "Pure Tea (Camellia sinensis)",
@@ -1090,7 +1161,8 @@
                 "The aroma is potent, a little too potent for my liking. Like old orchids mixed with malt and a touch of smoke. Once steeped the aroma is like tobacco and pine mixed with smoke. The taste is like a humidor, bitter and piney with too much tobacco taste. On a second steep the taste is better with more sweetness and less cigar, but still not to my liking. ",
                 "The dry leaf is strongly aromatic and has a strange, different aroma--considerably sharper than most greener oolongs. After brewing the first cup, I notice a mildly soapy aroma, but this completely vanishes upon drinking it. The aroma is very complex, with spicy, herbaceous tones, reminiscent of a weedy thicket in late summer. I can see how this is called bergamot, as it really does bear a slight resemblance to bergamot--I find it is more like the wild bergamot plant in the mint family than it is like the bergamot orange used in Earl grey tea. There's a peppery finish. This tea is flavorful, and in an odd way. There is a strong, but muted bitterness--rather than taking the form of a bite or kick, it's more constantly bitter throughout. I really like this tea, and it is unlike any oolong I have tried. Unfortunately, it's getting up to the pricey side at $4.50 an ounce. But comparing it to Tie Guan Yin? I strongly prefer this to any Tie Guan Yin I've tried, including stuff exceeding that price. It's different, substantive, and strong."
             ],
-            "top_rated_brands": []
+            "top_rated_brands": [],
+            "caffeine": "low"
         },
         {
             "tea_type": "Pure Tea (Camellia sinensis)",
@@ -1104,7 +1176,8 @@
                 "I am still feeling my way with Oolongs, so I followed Directions and brewed this at about 205 for about 2 minutes. There was a light flowery scent that flowed right into a soft flowery taste, that just skims over your tongue. I want to experiment with different times and temps to see how that might change.",
                 "After being really impressed by Life in Teacup's Huang Jin Gui traditional style, this one was a disappointment. I experimented a little bit with brewing, but, regardless of how I brewed, compared to that other tea, the aroma of this one is weaker and less pleasant overall. I also find this tea to have less depth. It is not thin by any means, but it is also not as rich. The flavor is similar: almost no bitterness or sweetness, and a very faint sourness. Unlike the other Huang Jin Gui, I found that using water close to boiling, and a longer steeping time did not appreciably improve this tea. It also has a soapy quality, like some of the modern green Tie Guan Yin. All that said, these criticisms are subtle. I definitely did not enjoy this one as much as the other Se Chung oolongs from Life in Teacup, but this is still not a bad tea. To some degree the blandness can be remedied by using more leaf, the only downside is the soapy quality. If you're going to buy this type of tea from Life in Teacup, I'd recommend to go for the traditional style."
             ],
-            "top_rated_brands": []
+            "top_rated_brands": [],
+            "caffeine": "moderate"
         },
         {
             "tea_type": "Pure Tea (Camellia sinensis)",
@@ -1125,7 +1198,8 @@
                 "the aroma of the dried leaves is certainly a Yancha, I notice the tobacco and char notes that are so familiar, but they are much milder and joined by dried cherry and flowers, specifically hyacinths. Many rock oolongs are sweet, this one takes it too a whole new level, much like combining a Dan Cong and a Yancha for ultimate yummy smells. The first thing I will say about this steep is it feels good, fancy tea folk might call this Cha Qi, it tingles and makes me feel both relaxed and focused, it is a beautiful feeling, much like my body is blending with the tea. It coats the mouth and is very smooth, the tastes starts out with walnuts and a hint of char, like a very distant and now dead fire. This transitions to sweetness, like figs and dates, two of my favorite things to eat, so extra yummy points there. It ends with a blend of toasted nuts and spring flowers.",
                 "I've only had dark Wuyi Qi Lan oolongs before, and I like them very much, so I was eager to try this greener one. I've heard that in general, more tightly rolled teas are higher quality, and this tea was rather loosely rolled, with the leaves taking up a lot of space. But the aroma suggests otherwise...the dry leaf has a strong orchid aroma--much more so than darker, more oxidized qi lan that I've tried. I don't think I'd be able to recognize this tea as the same varietal as the darker qi lan, from the first infusion at least. I've had Tie Guan Yin and Dong Ding with a dominant orchid aroma, but this tea is different. Although the aroma is light and floral, and suggests sweetness, I find upon drinking this tea, there are more darker herbaceous tones, but without the bitterness I normally associate with those sorts of aromas. There's a complete absence of astringency, bitterness, sourness, or sweetness, although somehow this tea has some body to it. I made two infusions. The second was surprisingly different in character. It had a peppery quality that was totally absent in the first infusion, and was less floral. In this cup, the aroma was more like the darker qi lans with which I am familiar, than in the first cup. I enjoyed this tea greatly."
             ],
-            "top_rated_brands": []
+            "top_rated_brands": [],
+            "caffeine": "moderate"
         },
         {
             "tea_type": "Pure Tea (Camellia sinensis)",
@@ -1139,7 +1213,8 @@
                 "The dry leaf of this oolong looked and smelled heavily roasted, and frankly, smelled more than a little boring to me. But when I brewed this cup, I was pleasantly surprised. The aroma is complex and a bit edgy--there are some fairly strong skunky, herbaceous qualities, tones of celery, and a few floral tones in the background. Overall character is completely unlike Wuyi Shui Xian; I don't think I would recognize these as being from the same varietal, not comparing it to a Wuyi tea nor to the green Zhang Ping Shui Xian from Life in Teacup (which I enjoyed greatly). Similar in character to some Tie Guan Yin with a similar level of roast, but I find that the character is a little more crisp, edgy, and sharp. Although I can imagine some people might think that this oolong had more 'off' aromas than a Tie Guan Yin of comparable price, I think it is also a little more complex. Interestingly, this tea had little in common (other than appearance, origin, and price) with the green oolong from the same source. There was none of the soapy quality that I objected to in that tea, and I found this tea to be more flavorful overall, but for some intangible reason, I liked that other one better...I think it was the weaker floral qualities in the dark roast tea. Still? They're both a bit pricey, relative to their quality. I think they have more appeal as a novelty than as an everyday tea, at least to me.",
                 "This was a fascinating tea for me to try. It was completely unlike any other oolong I've tried. The loosely-packed leaves separate easily and infuse quicker than I'd expect for their tough texture. After steeping I noticed that the larger leaves are mostly whole, but the smaller leaves and buds are mostly broken. If you are used to tightly-rolled greener oolongs from southern Fujian, I advise you to use a briefer steeping time for this one. Overall character is floral, but with more depth and body than is typical for greener oolongs. Color is a rich amber. Aroma is slightly soapy, but I don't mind this because there is little bitterness. First infusion was my favorite; later ones becomes a bit more sour, but still retain a good amount of flavor and aroma. As a note, the floral qualities really do strike me as smelling like narcissus. Wuyi and other darker Shui Xian that I've tried did not ever suggest this aroma to me. Usually I see Shui Xian translated as 'Water Sprite' or 'Water Fairy', but the characters also mean 'Narcissus'. As someone who loved growing daffodils (narcissus) in our garden as a kid, I recognize the smell of these flowers well, and this tea definitely has this characteristic aroma. I found this tea very interesting, although I think for this price there are a lot of greener oolongs that I like better. But since it comes conveniently in such nice little packets, I'd recommend throwing one in next time you order from Life in Teacup if you want to try something a bit unusual."
             ],
-            "top_rated_brands": []
+            "top_rated_brands": [],
+            "caffeine": "moderate"
         },
         {
             "tea_type": "Pure Tea (Camellia sinensis)",
@@ -1159,7 +1234,8 @@
                 "Ten Ren Tea",
                 "Foojoy",
                 "Teavana"
-            ]
+            ],
+            "caffeine": "low"
         },
         {
             "tea_type": "Pure Tea (Camellia sinensis)",
@@ -1179,7 +1255,8 @@
                 "Prince of Peace",
                 "TeaVivre",
                 "Adagio Teas"
-            ]
+            ],
+            "caffeine": "low"
         },
         {
             "tea_type": "Pure Tea (Camellia sinensis)",
@@ -1190,7 +1267,8 @@
                 "I liked this one a lot, much more than typical for white teas. I normally don't like tippy white teas, but I was super impressed by what may be this same exact same tea, or at least a similar one, sold by Golden Tips Tea. Unfortunately, this tea is no longer in stock at either company! It is worth waiting for this tea and jumping on it if it is available from any company, because it is exquisite. Kudos to Harney for (briefly) supplying this one! The leaf of this smells fantastic, both sweet and fresh...it's intensely aromatic, first bursting with light floral and melon tones, followed by a deep, sweet, smell of fresh-baked pastries. There's a vegetal note in there peculiar to Darjeeling teas, almost like asparagus. Just the smell of the leaf is exquisite. The brewed cup adds a lot of aromas not evident just from smelling the dry leaf. Upon steeping, I notice grape, slight skunky notes. Overall it smells more like a Darjeeling black tea, such as a first flush, than like a white tea, but the color of the cup is very light. The mouthfeel is very smooth and the body very light. Flavor is sweet, slightly tangy, and low in bitterness, giving it a feel a tiny bit like a mild fruit juice. I was surprised at how different this was from the other batch of white tea I had tried from Okayti estate, that one Okayti Silver Needle Darjeeling White Tea Second Flush, sold by Golden Tips Tea. This one had more melon notes in the arom, like a typical silver needle, and lacked the cocoa and coffee notes. I initially wasn't quite as wowed by this tea, but I still really enjoyed drinking it. Resteeped really well. I liked steeping 2-3 minutes following by 15. I think the full, very long steep of 15 minutes was necessary, when I went shorter it was still a little weak, but with a long steep the second cup was very potent. I don't think I'd want to go any shorter on the first steep because it was already not super strong; this is a delicate tea, about at the delicate limit of what I tend to like, and I was using a fair amount of leaf. The second cup was a little more like a silver needle in character, but still had some of those Darjeeling-black-tea notes. Overall this tea was excellent but not quite as insanely good as the batch of a presumably similar tea I had tried from Golden Tips Tea.",
                 "The aroma of the leaves is nothing short of bright and brisk! Like someone mixed up grapefruit peel, orange blossoms, wildflower honey, and lilies with a green broken vegetation undertone. It is really quite aromatic, and honestly kinda reminds me of my favorite soaps...not that this smells at all soapy, I just have a very tea smelling soap! First steeping time, the taste manages to be very clean and crisp while also being mellow and mild. It starts out with a mild lettuce and nasturtium note. This moves on to an intense sweetness of honey and scuppernongs with orange blossom and grapefruit. The finish is grapefruit and lemon verbena with a slight note of cucumber that lasts as the aftertaste. The mouthefeel is a bit dry, adding that edge of a crisp texture to a crisp taste."
             ],
-            "top_rated_brands": []
+            "top_rated_brands": [],
+            "caffeine": "moderate"
         },
         {
             "tea_type": "Pure Tea (Camellia sinensis)",
@@ -1204,7 +1282,8 @@
                 "I wasn't feeling well lately. I think I may have caught the flu, which has been going around. I tried a remedy of tea and herbs that often helps me, but it wore of quickly. So, I felt the urge to try some of this white tea, because I remember something I was told by someone regarding white tea being considered medicine at a certain point. For 5g of tea, in a 110ml gaiwan, I brewed water at 90(degrees)C, rinsed for 5 seconds, then brewed for 20, 25, 30, 35, 40, 45... I did a full brewing session of it, and I actually felt a lot better after. I continued on today, repeating this (the first session I did yesterday). I had better results with Nightlife than Old Whitey (I tried both). What surprised me the most was how well Nightlife aged. It used to be really, really caffeinated. But, after aging it for a while, it became a lot more mellow. The fruity notes seemed even a bit stronger. The medicinal effect was very, very welcome. I never would've suspected that white tea could have such medicinal properties. I'd been using elderberry supplements and sticking to other remedies. This is definitely the kind of thing to add to my toolbox for when the flu comes around. (Note: The 'flu' I mention was mostly in my head/sinuses, and the most strong symptom was an unbelievable amount of fatigue. I also had some sinus pressure, clogged ears, and headaches, which are uncommon for me. There was some throat congestion and nasal congestion, but it was mild. Having this white tea did help me, which makes sense, given I read that white tea has anti-viral properties. I would not recommend taking white tea if you have a sensitive stomach or are feeling nauseous, because it is caffeinated and can upset the stomach. Herbal ginger tea is better in those instances, in my experience.)",
                 "An amazing and sweet tea! It is not very expensive and is a very high quality tea. The ball is tightly packed and I was able to get several infusions(keep in mind you can't break up the ball easily so I would use a at least 12 oz cup and fuse for 5 minutes). The aroma isn't strong but is very nice and sweet, it smells like a more faint and sweet black tea. The taste is very nice and is comparable to some of the chocolate-y black tea pearls from teavivre and adagio. Overall, I'd strongly recommend this tea to almost anyone, as I can't see anyone finding it gross."
             ],
-            "top_rated_brands": []
+            "top_rated_brands": [],
+            "caffeine": "low"
         },
         {
             "tea_type": "Pure Tea (Camellia sinensis)",
@@ -1221,7 +1300,8 @@
             "top_rated_brands": [
                 "Foojoy",
                 "TeaVivre"
-            ]
+            ],
+            "caffeine": "low"
         },
         {
             "tea_type": "Pure Tea (Camellia sinensis)",
@@ -1239,7 +1319,8 @@
                 "TeaVivre",
                 "Royal Tea of Kenya",
                 "Adagio Teas"
-            ]
+            ],
+            "caffeine": "moderate"
         },
         {
             "tea_type": "Pure Tea (Camellia sinensis)",
@@ -1252,7 +1333,8 @@
                 "This is very similar to the Xue Ya I tried from Adagio, but I prefer this tea as it is richer and more full-bodied. I find this to be a very grassy tea, more like green tea than white. It has a sharpness, a bite to it. The cup is quite astringent and pleasingly bitter, but the finish is sweet and has depth to it. Light in color but full-bodied. I imagine people who like white teas like silver needle or even bai mu dan might not like this one: it is strong. People who like the kick that grassy, pan-fired green teas have, but want something lighter and different, might really enjoy this one. I found Rishi's brewing instructions to be a bit off. If brewed as instructed, it is overly astringent. I used a 2 minute infusion and then made a second infusion. The second is a bit thinner but still strong, and the shorter brewing time keeps the astringency in check a bit. This is a little more expensive than Adagio's offering, and theirs is not cheap either. I think it's worth it; this one is organic, and I think it's a slightly better tea.",
                 "This is my favorite tea from Adagio so far. When brewed as recommended this tea is very light with a sweetness and some fruity tones. But I found it too thin this way. I like brewing it much longer (8+ minutes) and with slightly warmer water (190-ish)...it comes out much stronger and more interesting...more grassy tones come out...more bitterness and astringency but in an enjoyable sort of way. If it's brewed this way, you only get one infusion out of the leaves, but I actually preferred this brewing method. An interesting tea, especially if you like teas that are light like a white tea, but have some crispness and bite to them like most green teas."
             ],
-            "top_rated_brands": []
+            "top_rated_brands": [],
+            "caffeine": "low"
         },
         {
             "tea_type": "Pure Tea (Camellia sinensis)",
@@ -1260,7 +1342,8 @@
             "about": "White matcha is a powdered white tea, similar in some respects to matcha, a powdered Japanese green tea. White matcha was developed in Kenya very recently, and to our knowledge, is currently only produced there. White matcha is often promoted for claims of its supposed 'health benefits' being greater than other teas; however, in the absence of careful scientific study published in peer-reviewed journals, we recommend being skeptical of such claims and holding back from drawing any conclusions. You can read our article on the health benefits of tea for a science-based approach to this topic.",
             "avg_rating": 0,
             "reviews": [],
-            "top_rated_brands": []
+            "top_rated_brands": [],
+            "caffeine": "moderate"
         },
         {
             "tea_type": "Pure Tea (Camellia sinensis)",
@@ -1279,7 +1362,8 @@
                 "TeaVivre",
                 "Adagio Teas",
                 "Two Leaves and a Bud"
-            ]
+            ],
+            "caffeine": "low"
         },
         {
             "tea_type": "Pure Tea (Camellia sinensis)",
@@ -1299,7 +1383,8 @@
                 "Numi Organic Tea",
                 "TeaVivre",
                 "The Tao of Tea"
-            ]
+            ],
+            "caffeine": "moderate"
         },
         {
             "tea_type": "Pure Tea (Camellia sinensis)",
@@ -1319,7 +1404,8 @@
                 "Numi Organic Tea",
                 "TeaVivre",
                 "The Tao of Tea"
-            ]
+            ],
+            "caffeine": "moderate"
         },
         {
             "tea_type": "Pure Tea (Camellia sinensis)",
@@ -1337,7 +1423,8 @@
                 "TeaVivre",
                 "TeaVivre",
                 "TeaVivre"
-            ]
+            ],
+            "caffeine": "moderate"
         },
         {
             "tea_type": "Pure Tea (Camellia sinensis)",
@@ -1353,7 +1440,8 @@
             ],
             "top_rated_brands": [
                 "The Tao of Tea"
-            ]
+            ],
+            "caffeine": "moderate"
         },
         {
             "tea_type": "Pure Tea (Camellia sinensis)",
@@ -1367,7 +1455,8 @@
                 "Yellow tea! I was turned on by the possibility of trying a new variety of tea, one that I had not heard of before. But this was nothing groundbreaking - it seemed to fall in between the green and oolong styles, leaning toward oolong. It was all right, but there were no revelations here. Overpriced imo.",
                 "I drank this tea in the Unami Maison de Thé in Lille. It was served prepared in a small teapot. This means it was made exactly as it should, though I didn't get to see any leaves. My first impression was an intensely nutty and earthy aroma. The flavour is nutty too, but not as strong as expensive. It reminds me of autumn leaves somehow. It's not astringent but ever so slightly bitter, and leaves the mouth dry. The last cup from the bottom of the teapot is a warm brownish orange. It's expensive to drink in the tea shop, but much more reasonable to buy dry. Though, as with many of Unami's teas, I still think it's on the pricey side."
             ],
-            "top_rated_brands": []
+            "top_rated_brands": [],
+            "caffeine": "low"
         },
         {
             "tea_type": "Pure Tea (Camellia sinensis)",
@@ -1379,7 +1468,8 @@
                 "The aroma of the dry leaves is quite sweet, there are notes of lightly roasted sweet corn, gently roasted sesame seeds, bamboo leaves, and a tiny hint of tomato leaves. At the finish of the sniff there is a hint of smoke. It is odd, every yellow tea I have had has had that tiny hint of smoke at the finish, I find that really neat. For the first steep, oh wow, that is a sublime tea. It starts with a sweet corn and a touch of roasted sesame, there is a mild sweetness and a touch of bamboo. There is a nice tingly mouthfeel at the back of the throat and a peppery aftertaste.",
                 "This is the first yellow tea I've sampled and in many respects it resembles a green tea. The aroma is fairly rich; there are some of the grassy tones that characterize many green teas, but these are weak and in the background. A bit peppery like Upton describes, and also a bit perfumey. Subtle, but with a lot of different things going on. There are some unpleasant tones in the aroma...reminiscent to the aroma resulting if you brew pan-fired green teas with water that is too hot...but I used 180 degree water to brew this. Oddly, some of the more complex aspects of the aroma sink to the bottom of the cup...including hints of olive and wine. Perhaps this tea would be best consumed in very small teacups! The flavor is crisp, with some bitterness and some sourness. Remarkably full-bodied, given the lightness of the aroma. This was an interesting tea but it was a little bit disappointing. I only had enough in the sample to brew two batches. The first I brewed once as recommended and also made a second longer infusion. Both cups were too weak for my taste. The second I brewed once for a little over 5 minutes, and I found more enjoyable although it also became unpleasantly acidic. If I brewed this tea again I'd try using water below 180 degrees to see if that would diminish the acidity. The verdict? I think the jury is still out on this one. After drinking a few cups of it, I just don't know what to think. But it's pricey enough and doesn't stand out among Upton's other offerings (many of which are simply outstanding), and I think it's doubtful I'd order it again."
             ],
-            "top_rated_brands": []
+            "top_rated_brands": [],
+            "caffeine": "low"
         },
         {
             "tea_type": "Pure Tea (Camellia sinensis)",
@@ -1390,7 +1480,8 @@
                 "Half-litre pot at home, made from inch-long thin handrolled leaves - they look like tiny sticks. Pours clear light straw (against white china) with no sediment. Clear aroma of tea (yellow, to be sure, but the scent is not very different from that of green or white), with a faint touch of peach. Delicate bitter flavour reminiscent of pure white tea, just with a touch of fermentation. Mild palate, low on tannin, with only little astringency and some smooth touches. Tastes good as is, but a small amount of sugar (a quarter of a teaspoonful) definitely does not do it any harm, either. This is my first pure yellow tea and the experience is quite positive. I am looking forward to tasting more specimens of the style. Not the cheapest pleasure but not very expensive, either and worth the money (55 DKK per 100 g). 7 4 4 72 12 g / l; 80 C; 4 min. Review #58 ",
                 "I really wanted to like this tea. 'Camellia Sinensis' has a very good reputation and I'm a huge fan of Jun Shan Yin Zhen. Unfortuantely, while this particular tea is GOOD and has a near-excellent value, it isn't GREAT. I steeped 2.5g at 190F for 3 minutes.This tea is known for being mild in flavour yet even with this standard I found it to be somewhat dull. A resteeping under the same settings had a reversal of an effect; the tea was now too astringent and tannic for my liking. However, like my other instances with Jun Shan Yin Zhen I find more than 2 cups gives me a long-lasting energy and focus that, whilst not intense, was definitely prevalent roughly an hour after my last cup. In short, I like how this tea makes me feel and find it to be a useful functional food."
             ],
-            "top_rated_brands": []
+            "top_rated_brands": [],
+            "caffeine": "low"
         },
         {
             "tea_type": "Pure Tea (Camellia sinensis)",
@@ -1401,7 +1492,8 @@
                 "The aroma is a bit surprising, instead of smelling like flowers it smells like a blend of baking bread, cooked squash, and dried persimmons. It is really quite a fascinating aroma, very warm and almost autumnal in its quality. The taste is honey sweet, specifically it reminds me of the richness of clover honey and the sweetness of straw. If you have ever chewed on a piece of straw you know it has that distinctly warm sweetness, and this tea shares it. It fades to ripe persimmon fruit and the idea of flowers. A strange description, but it does not taste like flowers, it is very much so a sensation that is more aroma than taste, and very faint at that. The aftertaste is that of corn silk",
                 "The aroma of the dried flowers is very evocative of straw flowers or chrysanthemum, slightly woody. The aroma of the liquid still has the woodsy quality but also brings in slight mineral and mossy. The flavor of the tea flowers is incredibly sweet, not at all floral and reminds me of a mixture of Scuppernongs and Autumn Squash drizzled with honey. Simply delicious!"
             ],
-            "top_rated_brands": []
+            "top_rated_brands": [],
+            "caffeine": "low"
         },
         {
             "tea_type": "Pure Tea (Camellia sinensis)",
@@ -1419,7 +1511,8 @@
                 "teakruthi",
                 "Stash Tea",
                 "Tazo Tea"
-            ]
+            ],
+            "caffeine": "low"
         },
         {
             "tea_type": "Pure Tea (Camellia sinensis)",
@@ -1429,7 +1522,8 @@
             "reviews": [
                 "This has a hoity-toity description, claiming that it is the 'beverage of choice' at the Palm Court in New York City's Plaza Hotel. I actually went there once, several years ago, and had a cup of tea, which I don't remember as being anything special. Despite the pedigree, this is a fairly ordinary cup of tea - it is smooth and light, and seems designed to not offend. It somewhat unexpectedly pairs better with milk than lemon and sugar."
             ],
-            "top_rated_brands": []
+            "top_rated_brands": [],
+            "caffeine": "moderate"
         },
         {
             "tea_type": "Pure Tea (Camellia sinensis)",
@@ -1445,7 +1539,8 @@
             ],
             "top_rated_brands": [
                 "teakruthi"
-            ]
+            ],
+            "caffeine": "moderate"
         },
         {
             "tea_type": "Pure Tea (Camellia sinensis)",
@@ -1461,7 +1556,8 @@
             ],
             "top_rated_brands": [
                 "Tazo Tea"
-            ]
+            ],
+            "caffeine": "moderate"
         },
         {
             "tea_type": "Pure Tea (Camellia sinensis)",
@@ -1477,7 +1573,8 @@
             ],
             "top_rated_brands": [
                 "Stash Tea"
-            ]
+            ],
+            "caffeine": "moderate"
         },
         {
             "tea_type": "Flavored Tea",
@@ -1497,7 +1594,8 @@
                 "Trader Joe's",
                 "Wegmans",
                 "Arbor Teas"
-            ]
+            ],
+            "caffeine": "low"
         },
         {
             "tea_type": "Flavored Tea",
@@ -1513,7 +1611,8 @@
             ],
             "top_rated_brands": [
                 "Bigelow Tea"
-            ]
+            ],
+            "caffeine": "low"
         },
         {
             "tea_type": "Flavored Tea",
@@ -1533,7 +1632,8 @@
                 "Republic of Tea",
                 "Tea Horse",
                 "Twinings"
-            ]
+            ],
+            "caffeine": "high"
         },
         {
             "tea_type": "Flavored Tea",
@@ -1550,7 +1650,8 @@
             "top_rated_brands": [
                 "Twinings",
                 "Bigelow Tea"
-            ]
+            ],
+            "caffeine": "high"
         },
         {
             "tea_type": "Flavored Tea",
@@ -1566,7 +1667,8 @@
             ],
             "top_rated_brands": [
                 "Teavana"
-            ]
+            ],
+            "caffeine": "low"
         },
         {
             "tea_type": "Flavored Tea",
@@ -1586,7 +1688,8 @@
                 "Ahmad Tea",
                 "Republic of Tea",
                 "Adagio Teas"
-            ]
+            ],
+            "caffeine": "moderate"
         },
         {
             "tea_type": "Flavored Tea",
@@ -1604,7 +1707,8 @@
                 "Novus Tea",
                 "Adagio Teas",
                 "Mariage Freres"
-            ]
+            ],
+            "caffeine": "moderate"
         },
         {
             "tea_type": "Flavored Tea",
@@ -1624,7 +1728,8 @@
                 "Ahmad Tea",
                 "Foojoy",
                 "Taylors of Harrogate"
-            ]
+            ],
+            "caffeine": "high"
         },
         {
             "tea_type": "Flavored Tea",
@@ -1641,7 +1746,8 @@
             "top_rated_brands": [
                 "Bigelow Tea",
                 "Twinings"
-            ]
+            ],
+            "caffeine": "high"
         },
         {
             "tea_type": "Flavored Tea",
@@ -1656,7 +1762,8 @@
             ],
             "top_rated_brands": [
                 "Foojoy"
-            ]
+            ],
+            "caffeine": "moderate"
         },
         {
             "tea_type": "Flavored Tea",
@@ -1669,7 +1776,8 @@
                 "The first thing you notice with this tea is the overpowering perfume of roses, it is like walking into a rose garden during full summer and everything is in bloom. It is not at all unpleasant or artificial smelling. The taste is sublime, it is like drinking a rose garden with a really lovely black tea. Subtly sweet, this tea seems both bold and delicate at the same time. It would be the perfect tea for a Victorian style tea party. ",
                 "Overall, this is one of the best teas you can buy from Tealuxe. The aroma and flavor are both fantastic. This is a great tea to enjoy first thing in the morning, since it's not strong or biting, or for relaxing later in the day. Make sure to enjoy the smell."
             ],
-            "top_rated_brands": []
+            "top_rated_brands": [],
+            "caffeine": "low"
         },
         {
             "tea_type": "Flavored Tea",
@@ -1689,7 +1797,8 @@
                 "Arbor Teas",
                 "Bigelow Tea",
                 "Bigelow Tea"
-            ]
+            ],
+            "caffeine": "moderate"
         },
         {
             "tea_type": "Flavored Tea",
@@ -1709,7 +1818,8 @@
                 "TeaVivre",
                 "Republic of Tea",
                 "Teavana"
-            ]
+            ],
+            "caffeine": "moderate"
         },
         {
             "tea_type": "Flavored Tea",
@@ -1723,7 +1833,8 @@
                 "I like the idea of this tea a bit better than the execution, in this case. I'm not generally a fan of black teas, but bergamot is a nice flavor, so with the right green tea and done well, I bet that it would be lovely. Here, it was a bit too easy to overbrew the tea. The directions advise 2-4 minutes, but that's far too long. Leaving the bag in for more than a minute results in a somewhat bitter cup--which surprised me. A longer brew produced an even more bitter cup. My favorite brewing was the third time precisely because I didn't let it brew very long. If you like bergamot, this is a variation on Earl Grey that's worth trying. Just make sure that you keep the brew time short, not only with the first cup but also with later brewings. It diffuses quite quickly, so that shouldn't result in a weak cup.",
                 "I find it interesting that this tea is sometimes presented as green and other times presented as oolong. The base is pouchong or bao zhong, and it is flavored with bergamot as Earl Grey tea is...it is NOT the same as Yongchun Fo Shou, the other tea called Bergamot Oolong, a tea I like very much. Edgy, lemony, and skunky, but not skunky in the herbaceous way that a lot of greener oolongs are. Un-oolong-like. I see why this is marketed and presented as a green tea. I like this tea's edginess. I enjoyed it a lot, and I can see why it's popular. It seems quite expensive relative to Rishi's other offerings, however. The price is above average among Rishi's teas, and it's one of the few teas Rishi sells that is not organic or fair trade certified. It's a flavored tea, and in my opinion, it isn't even a contender for one of their best teas."
             ],
-            "top_rated_brands": []
+            "top_rated_brands": [],
+            "caffeine": "moderate"
         },
         {
             "tea_type": "Flavored Tea",
@@ -1743,7 +1854,8 @@
                 "Republic of Tea",
                 "Bigelow Tea",
                 "Two Leaves and a Bud"
-            ]
+            ],
+            "caffeine": "moderate"
         },
         {
             "tea_type": "Flavored Tea",
@@ -1757,7 +1869,8 @@
                 "Meh. Not impressed. You are better off brewing your favorite green tea and squeezing fresh lemon into it. I do not care for lemon in my green tea - unless it is iced. That said, Bigelow is inexpensive (and in my office - provided for free - in bags and K-cups) and accessible. An average, inoffensive green tea.",
                 "Overall a pleasant flavor tea, bright for an afternoon pick-me-up. However I will echo the 'lemonade' flavor previously mentioned and this is probably from the 'natural flavor' in this tea. My opinion is that quality tea, blends, and herbs speak for themselves without need of such flavor enhancers. "
             ],
-            "top_rated_brands": []
+            "top_rated_brands": [],
+            "caffeine": "moderate"
         },
         {
             "tea_type": "Flavored Tea",
@@ -1775,7 +1888,8 @@
                 "Ten Ren Tea",
                 "Adagio Teas",
                 "Numi Organic Tea"
-            ]
+            ],
+            "caffeine": "low"
         },
         {
             "tea_type": "Flavored Tea",
@@ -1786,7 +1900,8 @@
                 "I wasn't sure whether I would like this one or not, but I found it delightfully refreshing. The ginseng gives the tea a bright yet herbaceous flavor. The light feeling that the tea imparts is quite nice. I'm glad I tried this one. I didn't add any creamer or sweetener to this tea.",
                 "Chinese sencha tea made with ginseng, ginger, and pineapple. The description makes it seem exotic and potent, but it is fairly mild and not really very exciting."
             ],
-            "top_rated_brands": []
+            "top_rated_brands": [],
+            "caffeine": "low"
         },
         {
             "tea_type": "Flavored Tea",
@@ -1804,7 +1919,8 @@
                 "Harney and Sons",
                 "Bigelow Tea",
                 "Dilmah"
-            ]
+            ],
+            "caffeine": "moderate"
         },
         {
             "tea_type": "Flavored Tea",
@@ -1816,7 +1932,8 @@
                 "SerendipiTea's Rose Alongi is a blend of organic Chinese green tea and rose petals. The tea leaves on their own smell grassy. After it's brewed, the tea smells like fresh roses with a definite (and pleasant) undercurrent of green tea. This is a smooth and slightly sweet tea. It's light-bodied and leaves a wonderful lingering clean/fresh taste. I think it makes a great afternoon tea to share with a loved one! This tea has became one of my favorites and I drink a few of cups of it each week (usually paired with dark chocolate!). It tastes best when prepared according to the package directions: warm up the teapot with hot (but not boiling) water and pour out, sprinkle bottom of pot with tea, pour in water, brew for 3 minutes, enjoy. ",
                 "Whereas people often think of roses as delicate and gentle, this is a very bold tea. The aroma is fruity, dark, and rich, and less floral than one would expect. The flavor is sharp and tangy, much more bitter than the fruity aroma might suggest. This is an outstanding tea, and is available at a very reasonable price. It is not, however, for the faint-hearted. Although this is one of my favorite teas, many of my friends have found it to be too bitter. I almost always drink it plain and hot, but it also makes a delicious iced tea, with or without a bit of honey. It stands up very well to multiple brewing. I prefer brewing it at a higher temperature than recommended: unlike most flower-scented green teas, this tea does not scald easily, and will yield a much stronger bitterness (which I like) at a higher temperature. However, if brewed at a lower temperature, the subtlety and complexity of the aroma does come out much more, especially the pleasing vegetal tones."
             ],
-            "top_rated_brands": []
+            "top_rated_brands": [],
+            "caffeine": "moderate"
         },
         {
             "tea_type": "Flavored Tea",
@@ -1824,7 +1941,8 @@
             "about": "Shiso sencha is a blend of sencha, a Japanese green tea, with shiso, a Japanese herb. Shiso, also known as perilla, beefsteak plant, Japanese basil, or wild coleus, is a member of the mint family. Native to Japan, it is widely naturalized in North America, and is invasive in some areas. Shiso comes in green and red-leaved varieties; usually the red-leaved variety is blended with sencha. The shiso imparts an aroma that is somewhat basil-like, somewhat mint-like, and somewhat like anise or licorice.",
             "avg_rating": 0,
             "reviews": [],
-            "top_rated_brands": []
+            "top_rated_brands": [],
+            "caffeine": "low"
         },
         {
             "tea_type": "Flavored Tea",
@@ -1843,7 +1961,8 @@
                 "Adagio Teas",
                 "Blue Q",
                 "Teavana"
-            ]
+            ],
+            "caffeine": "moderate"
         },
         {
             "tea_type": "Flavored Tea",
@@ -1856,7 +1975,8 @@
                 "I found the aroma to be very green, like bamboo leaves and herbaceous like dill weed. There is also earthiness and the aroma of baked bread with a slight undertone of sweetness. The ginseng is an odd smelling herb, it gives a slight muskiness to the already herbaceous aroma. The taste is strange yet good, it is the strangeness of trying something completely new. I have had ginseng before but only in candy or in supplements, this is my first time tasting it in a tea. At first the taste is slightly floral like cherry blossoms followed by the vegetal taste of asparagus. There is a hint of fruity tartness, like a mix of tart cherries and lychees. As the tea cools it takes on the typical chestnut flavor I associate with Oolongs.",
                 "It's been a long time since I tried a ginseng oolong, so I'm not the most experienced reviewer of this type of blend. Dry leaf shows a dusty appearance, and has a strong but muted aroma, suggestive of greener oolongs, but perhaps more woody and earthy. Upon brewing, the aroma is predominately of oolong and the ginseng influence is only subtle. A smooth, clear tea with an earthy, dusty, and surprisingly sweet aftertaste. This oolong is pretty easily recognizable from a pure oolong, but it's hard to tell exactly where the tea's aroma and flavor end and the ginseng begins. More astringent than I'd like, and I suspect some of the astringency is coming from the ginseng as oolongs with this nice an aroma are usually smoother. This was pretty inexpensive, but I still prefer other oolongs form TeaVivre, and I can't see myself wanting to drink this every day."
             ],
-            "top_rated_brands": []
+            "top_rated_brands": [],
+            "caffeine": "moderate"
         },
         {
             "tea_type": "Flavored Tea",
@@ -1875,7 +1995,8 @@
                 "Rishi Tea",
                 "Numi Organic Tea",
                 "Numi Organic Tea"
-            ]
+            ],
+            "caffeine": "moderate"
         },
         {
             "tea_type": "Flavored Tea",
@@ -1883,7 +2004,8 @@
             "about": "Chrysanthemum pu-erh is pu-erh tea that has been blended with chrysanthemum flowers. Unlike other Chinese floral teas like Jasmine which involve repeated scenting followed by removal of the flowers, chrysanthemum pu-erh is usually made by mixing actual flowers in with the tea leaves. This can be done at the time of brewing, but pre-blended teas mixing pu-erh with chrysanthemum flowers are also available. This style of tea is popular in regions speaking cantonese, and often, the Cantonese word for pu-erh, bo nay, is used. Some companies market chrysanthemum pu-erh tea as dim sum bo nay tea, referring to how this tea is often served with dim sum, a way of serving food common in Cantonese restaurants. Chrysanthemum pu-erh is distinct from chrysanthemum tea, a tea made solely out of chrysanthemum flowers.",
             "avg_rating": 0,
             "reviews": [],
-            "top_rated_brands": []
+            "top_rated_brands": [],
+            "caffeine": "moderate"
         },
         {
             "tea_type": "Flavored Tea",
@@ -1903,7 +2025,8 @@
                 "Teavana",
                 "Adagio Teas",
                 "Trader Joe's"
-            ]
+            ],
+            "caffeine": "moderate"
         },
         {
             "tea_type": "Flavored Tea",
@@ -1923,7 +2046,8 @@
                 "Adagio Teas",
                 "Trader Joe's",
                 "Revolution Tea"
-            ]
+            ],
+            "caffeine": "moderate"
         },
         {
             "tea_type": "Flavored Tea",
@@ -1943,7 +2067,8 @@
                 "Numi Organic Tea",
                 "TeaVivre",
                 "Teavana"
-            ]
+            ],
+            "caffeine": "moderate"
         },
         {
             "tea_type": "Flavored Tea",
@@ -1962,7 +2087,8 @@
                 "TeaVivre",
                 "Teavana",
                 "Harney and Sons"
-            ]
+            ],
+            "caffeine": "moderate"
         },
         {
             "tea_type": "Flavored Tea",
@@ -1978,7 +2104,8 @@
             ],
             "top_rated_brands": [
                 "Wegmans"
-            ]
+            ],
+            "caffeine": "low"
         },
         {
             "tea_type": "Flavored Tea",
@@ -1989,7 +2116,8 @@
                 "Very tasty, with a light, green smokiness blending with the sweet, floral flavor. Clearly an above average jasmine tea.",
                 "This tea is very aromatic, and is both richer and less perfumey than some Jasmine teas. The flavor is mellow and smooth, there is very little bitterness and no astringency. I have had good results with a shorter infusion time than recommended, and I think this tea is good for multiple infusions. You can also get away with using less tea than is recommended. This tea is pricey but the leaves go pretty far."
             ],
-            "top_rated_brands": []
+            "top_rated_brands": [],
+            "caffeine": "moderate"
         },
         {
             "tea_type": "Flavored Tea",
@@ -2005,7 +2133,8 @@
             ],
             "top_rated_brands": [
                 "Tea Horse"
-            ]
+            ],
+            "caffeine": "low"
         },
         {
             "tea_type": "Flavored Tea",
@@ -2019,7 +2148,8 @@
                 "I've heard some people say that they think this tea is a bit strong when not made as a latte, but I think it's excellent either way. The smell is wonderful and the tea itself feels like a warm blanket and a crackling fireplace in the middle of a quiet winter's night. Wholeheartedly recommended--but with the addendum about the spice.",
                 "I love the flavor of this tea. It has a lovely, mellow sweetness to it and it very smooth. This is a very healthy tea too. Red tea has no caffeine, but white tea does, though very little. I don't feel any caffeine effects from drinking this tea, and I'm sensitive to caffeine. This tea needs nothing added to it. It has such a wonderful, relaxing flavor that is great to sip at."
             ],
-            "top_rated_brands": []
+            "top_rated_brands": [],
+            "caffeine": "low"
         },
         {
             "tea_type": "Herbal Tea",
@@ -2027,7 +2157,8 @@
             "about": "Barley tea, is an herbal tea made out of whole barley kernels. Usually it is made of roasted barely, and it is sometimes called roasted barely tea. Roasted barley tea is popular in Japan, where it is called mugicha, and in Korea, where it is called boricha. The word 'tisane', now a general word for herbal tea, originated from the French word ptisana for barley water.[1] Barley tea can be drunk both hot and iced. In Japan, it is a popular summer drink, commonly served iced. The Korean variant is often served hot. Japanese brands are widely available in tea bags designed for cold-brewing. The blog Just Hungry offers a few tips on preparation on their post Mugicha (barley tea) is the flavor of summer in Japan. A barley-based beverage, called Caffè d'orzo, is also popular in Italy; that drink is different in style and preparation from the Japanese and Korean barley teas, more similar to how hot chocolate or espresso is prepared than to most tea. This drink is often called barley coffee. Rather than being steeped for flavor and then removed, the barley is added directly to hot water to make a thicker drink; milk is usually added. Orzo is Italian for barley, not to be confused with the pasta of the same name, which is named because it resembles cooked barley kernels. In addition to this beverage, Italian varieties of barley are sometimes used to make barley teas that are prepared more like traditional Japanese and Korean types, by steeping the barley in hot water like conventional teas. To complicate things further, people in Latin American countries drink beverages called café de cebada, which is literally translated 'coffee of barley', which are prepared more like the barley teas of Japan and Korea. Mugicha or boricha can be made at home from whole barley kernels, by toasting them in a pan and then steeping the roasted kernels in or storing them for later steeping. Whole barley kernels are available at most supermarkets and bulk food stores. The blog La Fuji Mama offers instructions on Making your own mugicha by roasting your own barley. Commercial preparations often involve crushing the barley; crushing has been shown to increase the intensity of the flavor and aroma.[2] Because it is made of whole grain kernels, barley tea does not stay fresh as long as most dried herbal teas once it has been opened. It can be frozen for short periods of time but is generally best to buy only in as small a packet as you can use up quickly. Barley tea contains more calories than is typical for an herbal tea, but the amount is still small relative to most caloric drinks like milk or juice. Barley tea has been shown to contain a number of compounds with potent antioxidant activity.[3] Barley contains gluten, so it needs to be avoided by people sensitive to gluten. Some preliminary work has shown that barley coffee helps to prevent bacteria from adhering to surfaces, which suggests that it may be useful for promoting oral health and preventing tooth decay.[4] It also has been shown to promote blood fluidity.[5] ",
             "avg_rating": 0,
             "reviews": [],
-            "top_rated_brands": []
+            "top_rated_brands": [],
+            "caffeine": "low"
         },
         {
             "tea_type": "Herbal Tea",
@@ -2047,7 +2178,8 @@
                 "Adagio Teas",
                 "Tazo Tea",
                 "Celestial Seasonings"
-            ]
+            ],
+            "caffeine": "low"
         },
         {
             "tea_type": "Herbal Tea",
@@ -2058,7 +2190,8 @@
                 "The aroma is a strange yet not unpleasant blend of strawflowers, dill weed, cocoa, fresh flowers, caramel, and raw honey. It is really complex, I found myself sniffing the flowers for quite a while just trying to pick out all the notes and see how they blend together. This tea is surprisingly rich for a floral tea, there are flavor notes of dill and sage with a nice kick of strawflowers. This fades to sweet caramel and apricots that leaves a lingering sweetness. I gave this tea a second steep and had the same result, it is very enjoyable...and as someone who is usually not the biggest fan of chrysanthemum tea, I consider that a win.",
                 "I am not a huge fan of Chrysanthemum tea - unless it's iced and sweetened and then i get kinda-sorta get into it, but when I lived in NY I would go to the Ito-En flagship store and get a bunch of different kids. Their Chrysanthemum tea is fun to brew and watch the blossoms in the water. Smells a bit floral but also a bit like tumeric or a root of some kind (dry floral). Yellowish-brown and pale when you steep it - and it needs the entire 3 minutes."
             ],
-            "top_rated_brands": []
+            "top_rated_brands": [],
+            "caffeine": "low"
         },
         {
             "tea_type": "Herbal Tea",
@@ -2074,7 +2207,8 @@
             ],
             "top_rated_brands": [
                 "Celestial Seasonings"
-            ]
+            ],
+            "caffeine": "high"
         },
         {
             "tea_type": "Herbal Tea",
@@ -2088,7 +2222,8 @@
                 "Prep: 212F, 5min, 1.5tsp, 12oz Aroma: Nice cocoa nib and milk chocolate notes. This is really inviting. 8/10 Flavor: This is almost a light hot chocolate. Delicious but not weighty. 8/10 Body: A touch thin (I'll brew again with more tea and see if that makes a difference) 6/10 Value: Another of the 30 dollar pounds of honeybush from Adagio. Worth it! 8/10 Overall: This fits my desire for a chocolate tea. It's nice to have an alternative to black tea that still hits those dessert notes. 8/10",
                 "Half-litre pot at home. Pours clear orangeish copper brown with no sediment. Clear aroma of Rooibos, with touches of honey and hints of almonds and vanilla. Sweetish onset of honey and almonds, with touches of vanilla, giving way to bitterish tea notes and returning to the sweety nuances towards the end. Slightly rough palate of tea leaves, with creamy touches and hints of honey. A refreshing and quite well-balanced drink. It needs no sweetener at all, even for those who like to add a pinch of sugar to their tea. Fair price (42 DKK per 100 g). I have enjoyed it for several years and am always ready to buy more to replenish my supplies. 8 4 4 85 13 g / l; 100 C; 6 min. Review #21 "
             ],
-            "top_rated_brands": []
+            "top_rated_brands": [],
+            "caffeine": "low"
         },
         {
             "tea_type": "Herbal Tea",
@@ -2108,7 +2243,8 @@
                 "Celestial Seasonings",
                 "Two Leaves and a Bud",
                 "Mighty Leaf Tea"
-            ]
+            ],
+            "caffeine": "low"
         },
         {
             "tea_type": "Herbal Tea",
@@ -2125,7 +2261,8 @@
             "top_rated_brands": [
                 "Organic Herbie",
                 "Teavana"
-            ]
+            ],
+            "caffeine": "low"
         },
         {
             "tea_type": "Herbal Tea",
@@ -2143,7 +2280,8 @@
                 "Equo",
                 "Teavana",
                 "Numi Organic Tea"
-            ]
+            ],
+            "caffeine": "low"
         },
         {
             "tea_type": "Herbal Tea",
@@ -2153,7 +2291,8 @@
             "reviews": [
                 "One-litre pot at home, made from leaves of rooibos sprinkled with bergamot oil and flavouring. Pours clear darkish copper brown (against white china) with no sediment. Clear aroma of rooibos leaves and bergamot oil. Bitterish and herbal flavour of rooibos leaves, with clear notes of bergamot oil. Smooth palate with an aftertaste of rooibos. I don't think I have ever tasted a rooibos Earl Grey before. I like the idea, though, and this particular specimen of it is really good. Fair price (38 DKK per 100 g). 8 4 4 77 12 g / l; 100 C; 10 min. Review #180 "
             ],
-            "top_rated_brands": []
+            "top_rated_brands": [],
+            "caffeine": "low"
         },
         {
             "tea_type": "Herbal Tea",
@@ -2173,7 +2312,8 @@
                 "Celestial Seasonings",
                 "Celestial Seasonings",
                 "Bigelow Tea"
-            ]
+            ],
+            "caffeine": "low"
         },
         {
             "tea_type": "Herbal Tea",
@@ -2181,7 +2321,8 @@
             "about": "Ginseng is a plant valued for its supposed medicinal properties. While its root is normally used in medicine, its leaves are also sometimes used in tea. Many ginseng teas contain a blend of both root and leaves. When unspecified, ginseng in an ingredient list usually (but not always) refers to the root of the plant. There are several different species of ginseng, including species native both to Asia and North America. American ginseng, Panax quinquefolius, is native to North America; it has been introduced and cultivated in China, where it is known as Huaqishen. American ginseng is now rare and vulnerable in the U.S. due to overharvesting. Asian ginseng, Panax ginseng, is known as rénsēnshu in China. A third species is often called ginseng: Siberian ginseng or Eleuthero ginseng, Eleutherococcus senticosus, is a member of the same family as ginseng but is not a true ginseng; it was named ginseng primarily as a marketing ploy, and the labelling of this plant as ginseng has been illegal in the U.S. since 2002.[1] Although Eleuthero has medicinal properties, it has not been as extensively studied as the true ginsengs, and what is known about it suggests that it has different chemical components and different health effects.[1] Ginseng is frequently blended with teas, such as green or oolong teas. We list these teas, respectively, as ginseng green tea and ginseng oolong tea. This category is for herbal teas made exclusively of ginseng. ",
             "avg_rating": 0,
             "reviews": [],
-            "top_rated_brands": []
+            "top_rated_brands": [],
+            "caffeine": "low"
         },
         {
             "tea_type": "Herbal Tea",
@@ -2197,7 +2338,8 @@
             ],
             "top_rated_brands": [
                 "Simply Balanced"
-            ]
+            ],
+            "caffeine": "low"
         },
         {
             "tea_type": "Herbal Tea",
@@ -2213,7 +2355,8 @@
             ],
             "top_rated_brands": [
                 "Numi Organic Tea"
-            ]
+            ],
+            "caffeine": "low"
         },
         {
             "tea_type": "Herbal Tea",
@@ -2223,7 +2366,8 @@
             "reviews": [
                 "I'm used to drinking iced herbal tea brewed from fresh lemon balm, or from my own dried batches of the herb, which I dry in whole-leaf form. This herb was pretty finely broken, and had a pretty different flavor and aroma. The aroma is only very mildly lemony, much less so than my own batches of the herb, but it's very pleasant. The aroma is reminiscent of hay, straw, or alfalfa. Much less vegetal than my own dried versions of this herb, but there are still some vegetal undertones. Flavor is crisp, and there's a pleasing bitterness and a tangy quality. Pleasantly astringent, but not overwhelmingly so. There's also a slightly sweetness, especially in the finish. The color of the brew is quite dark, as dark as some of the lighter black teas--when I brew this tea myself, even from the dried herb, it comes out very light. I found this to be quite enjoyable...it's not really the same as the stuff I've grown in my garden though, and I strongly prefer my own lemon balm. I used a heaping teaspoon of leaf and brewed for 8 minutes. This may be a bit astringent for some people's tastes, but I liked it with a stronger flavor. The price would seem reasonable, when compared to other bulk lemony herbs, but I can't see buying it because this herb is so easy to grow and dry yourself where I live, and I think the home-grown stuff tastes much better."
             ],
-            "top_rated_brands": []
+            "top_rated_brands": [],
+            "caffeine": "low"
         },
         {
             "tea_type": "Herbal Tea",
@@ -2233,7 +2377,8 @@
             "reviews": [
                 "The aroma of both the tea and the dried leaf are intensely lemony, much more so than the other lemon herbs I've tried, including lemongrass, lemon balm, and lemon verbena. More like lemongrass than the others, and least like lemon balm. The lemon quality is so overpowering that it's hard to notice other aspects of the aroma, but there are a few other qualities in there, like a suggestion of resinous wood, a skunky quality, and a hint of ginger. The overall aroma is very rich and dark, even though it is so fresh. When I first tried this tea, there was a faint unpleasant quality. I first described it as like decaying resinous wood The quality is still in there, but it has grown on me and no longer bothers me. This tea has an odd tangy quality to it, more like actual lemon than any of the other lemon herbs I've tried. It leaves a tingly sensation on the mouth, and has a clean, fresh aftertaste. You will taste lemon after drinking this tea; it's so lingering that it even will affect the aroma rather strongly if you brew another cup of tea in the same teapot without thoroughly scrubbing it out. I can also see wanting to use this in cooking or for blending with other herbs. This is not just 'another lemon herb'--this one is really worth checking out! The price on this may seem high, but I assure you it is reasonable...this herb is so strong that you don't need as much leaf to achieve the same amount of lemony-quality, and when compared side-by-side to lemongrass, the most similar substitute, I think this herb offers equal or superior value."
             ],
-            "top_rated_brands": []
+            "top_rated_brands": [],
+            "caffeine": "low"
         },
         {
             "tea_type": "Herbal Tea",
@@ -2249,7 +2394,8 @@
             ],
             "top_rated_brands": [
                 "Frontier"
-            ]
+            ],
+            "caffeine": "low"
         },
         {
             "tea_type": "Herbal Tea",
@@ -2263,7 +2409,8 @@
                 "It wasn't too strong and had a pleasant taste, almost sweet, but not too much.",
                 "Tastes...like lemongrass. There's a fair amount of astringency, which I could do without, but the aroma is wonderful and very strong. I've never had straight lemongrass tea before, although I've enjoyed it when it has been an ingredient in other teas, so it's hard to know what to compare this to...but I like it! To my surprise, I was able to get a relatively tasty second infusion out of the leaves, even brewing as instructed. The first was 8 minutes, the second was about 15. It was noticeably weaker but still quite enjoyable."
             ],
-            "top_rated_brands": []
+            "top_rated_brands": [],
+            "caffeine": "low"
         },
         {
             "tea_type": "Herbal Tea",
@@ -2273,7 +2420,8 @@
             "reviews": [
                 "I first had some of this drink when living in Miami almost 30 years ago, at a Salvadoran restaurant, without having tried linden tea of any sort before. I recalled enjoying it with pupusas, so another time I was there, shortly before joining RateTea, I saw a packet of teabags at Publix and brought it back, and (thought I had) finished it all off. Meanwhile, a couple of basswood trees (American lindens) I had planted in my yard, for the shade more than the tea, began flowering; I have made some pretty good tea from their dried blossoms on a few occasions. Imagine my pleasant surprise, then, when I found a well-sealed little Ziploc-style bag in my pantry that still had a couple of Carmencita bags therein. They had been hidden at the bottom of a miscellaneous spice tin, in a dark place and still smelling fresh, despite the passage of a few years. The Carmencita tea still looked, smelled and tasted as I remembered: a nice, clear yellow/amber hue, rich, smooth, somewhat buttery, faintly reminiscent of a mix of chamomile, vanilla and mild anise, and creamier than the much younger, dried basswood flowers from the yard. The commercial, chopped, Spanish linden-flowers tea and the homegrown stuff taste just different enough to notice (Okie-grown basswood flowers yield a tea that's sharper and a little grassier), but it's a compliment to Carmencita that their years-old bags from European lindens held their own against relatively fresh, whole linden flowers (albeit from the variety native to North America). I probably won't buy linden tea anymore, since I can make as much at home as ever desired, but it was nice to rediscover this one for the sake of strolling memory lane, if nothing else. "
             ],
-            "top_rated_brands": []
+            "top_rated_brands": [],
+            "caffeine": "low"
         },
         {
             "tea_type": "Herbal Tea",
@@ -2293,7 +2441,8 @@
                 "Bigelow Tea",
                 "Bigelow Tea",
                 "Tazo Tea"
-            ]
+            ],
+            "caffeine": "low"
         },
         {
             "tea_type": "Herbal Tea",
@@ -2313,7 +2462,8 @@
                 "Two Leaves and a Bud",
                 "Twinings",
                 "Stash Tea"
-            ]
+            ],
+            "caffeine": "low"
         },
         {
             "tea_type": "Herbal Tea",
@@ -2324,7 +2474,8 @@
                 "I love spearmint herbal tea, but it's usually only available as a blend with peppermint. The only pure spearmint that I've been able to find locally in tea bags is Traditional Medicinals and they've been out of stock at the store where I buy them. I normally don't buy bulk because it's often stale, but since I was ordering online, I decided to gamble on a one-pound, wholesale-sized bag for $14.48. I'm glad I did. This is the best spearmint I've ever had. I'm sure it's at least partly because it's the freshest (the bulk bags are heat-sealed Mylar), but the herb is also visually higher quality than other brands I've had. I've even grown fresh spearmint before and this is better. The dry herb is pungent. It smells overpoweringly like spearmint oil with a light vegetal background, like grass or alfalfa. I examined the dry herb and saw no sign of the woody stems often present in bulk mints. The tea bags I'm used to are filled with 1.5g of herb, so I weighed 3g for my 16oz mug. The liquor steeps to a deep amber-green and once again, the scent is powerful. The combination of flavor and aroma is perfect. The flavor of spearmint oil dominates, but in the background is the light vegetal or chlorophyll bitterness that I enjoy. I couldn't detect, even faintly, any of the catnip skunkiness often present in mint. After steeping, the hydrated leaves are recognizable as spearmint and look like fresh leaves that went through a lawnmower. There was also no sand or grit in the bottom of my mug after I finished drinking it. Without hyperbole, this is the best spearmint herb I've ever had and at less than $1 per ounce, the least expensive. I've transferred the contents of the bag to airtight glass jars to hopefully preserve the freshness until I can drink 300 cups of it, but I'll have broken even compared to the price of my usual brand of tea bags if I can get through 50. ",
                 "One of the very few pure spearmint herbal teas available in tea bags. The tea smells strongly and recognizably of spearmint even before adding water. After steeping, the tea has a pronounced spearmint flavor with just enough herbal notes to avoid tasting like candy. A second steeping still carries a lot of flavor. The flavor this time is more strongly herbal, tasting very much like catnip. At a typical retail of $5 for 16 tea bags, Traditional Medicinals herbal teas cost two or three times as much as Bigelow and offer similar quality. Traditional Medicinals, however, has a much wider selection and unblended spearmint doesn't seem to be popular enough for more mainstream brands."
             ],
-            "top_rated_brands": []
+            "top_rated_brands": [],
+            "caffeine": "low"
         },
         {
             "tea_type": "Herbal Tea",
@@ -2332,7 +2483,8 @@
             "about": "Nettle tea is a tea made from a group of plants called stinging nettles. The most commonly used species is Urtica dioica, often called the 'Common Nettle'. This species is native to temperate regions of Europe, Asia, North America, and northern Africa. Nettle tea is remarkable in that it is produced from a plant that is covered with hairs that produce a painful sting when touched. The stinging hairs, however, are completely destroyed upon heating. The nettle, protected by its stinging hairs from being eaten by herbivores, is nutrient rich and edible as a cooked vegetable in addition to being used as an herbal tea. Nettle has a long history of traditional use for hypertension, rheumatism, and as a diuretic. More recently, it was also studied for other properties, and was found to have antioxidant and antimicrobial activity, ulcer-preventing properties, and also an analgesic (pain-killing) effect.[1] However, these studies were on rats, and it is not yet clear the degree to which these benefits transfer to humans drinking nettle tea. ",
             "avg_rating": 0,
             "reviews": [],
-            "top_rated_brands": []
+            "top_rated_brands": [],
+            "caffeine": "low"
         },
         {
             "tea_type": "Herbal Tea",
@@ -2352,7 +2504,8 @@
                 "Twinings",
                 "Two Leaves and a Bud",
                 "Bigelow Tea"
-            ]
+            ],
+            "caffeine": "low"
         },
         {
             "tea_type": "Herbal Tea",
@@ -2370,7 +2523,8 @@
                 "Twinings",
                 "Numi Organic Tea",
                 "Adagio Teas"
-            ]
+            ],
+            "caffeine": "low"
         },
         {
             "tea_type": "Herbal Tea",
@@ -2384,7 +2538,8 @@
                 "I thought I'd try something new when I saw this box of tea at my local health food store and remember seeing Rooibos on the list of teas on this site, so I bought a box. I wasn't sure of how it smelled until I got home as the box was sealed as were the bags, but it has a nice sweet 'grassy' scent. The green rooibos taste came as a pleasant surprise as light and sweet, and a bit grassy. When my son went to South Africa and asked his niece what she would like to have brought back, she asked for a 'piece of Africa.' She got a sealed vial of red Botswana dirt. Likewise, I feel as though this tea gave me a 'taste of Africa,' in its grasslands. Very nice. This is a tea I will keep on hand in the pantry. Not to most sophisticated tea I've ever had, but something different and pleasant. ",
                 "I really like this! It's astonishingly different from the other green Rooibos I've tried, from Upton. This one has a bit of red leaf/stem mixed in and brews a bright orange color. I recommend a very long steeping time; after 3 minutes the aroma hasn't fully developed. The aroma is fresh, light, and clean, with a bit of a pleasant seafood-like quality to it, also somewhat like grass or straw. Fruity, but in a subdued way. Less earthy than red rooibos, and with less sourness. An outstanding herbal tea!"
             ],
-            "top_rated_brands": []
+            "top_rated_brands": [],
+            "caffeine": "low"
         },
         {
             "tea_type": "Herbal Tea",
@@ -2402,7 +2557,8 @@
                 "Mountain Rose Herbs",
                 "Upton Tea Imports",
                 "Organic India"
-            ]
+            ],
+            "caffeine": "low"
         },
         {
             "tea_type": "Herbal Tea",
@@ -2414,7 +2570,8 @@
                 "Aroma mostly of licorice, but more complex, herbaceous, and spicy. Very summery aroma; this smells much more like familiar sweet basil and less like holy basil, which makes sense, as Vana tulsi is the same species as sweet basil, and a different one from the Rama and Krishna Holy basil, which I have tried (and drink regularly) both from Upton and other sources. I recommend using much less leaf than one would use for other types of tulsi; the finely-broken leaf infuses quickly and thoroughly, and takes up less space, so it's easy to overbrew and make an overly strong cup. Brews a very dark color, almost like black tea. Flavor is initially smooth, there is a strong but muted bitter aftertaste. Very pleasing, and very different from the other two tulsi offerings of Upton. ",
                 "Full bodied tea. Absolutely the best cup of tea I've had this year. I've given it to several friends, and they have asked me where to buy it. "
             ],
-            "top_rated_brands": []
+            "top_rated_brands": [],
+            "caffeine": "low"
         },
         {
             "tea_type": "Herbal Tea",
@@ -2434,7 +2591,8 @@
                 "Yogi Tea",
                 "Traditional Medicinals",
                 "Traditional Medicinals"
-            ]
+            ],
+            "caffeine": "low"
         },
         {
             "tea_type": "Herbal Tea",
@@ -2444,7 +2602,8 @@
             "reviews": [
                 "Mild, woody aroma, with a hint of wintergreen. The smell reminds me of the inside of some people's homes...it's a homey, comfortable, familiar sort of smell, but slightly medicinal. This tea is slightly sweet, and very mellow. After drinking two cups (the sample only really makes three) I'm still not sure how I feel about this stuff. I'd recommend trying it though...it's not like any other herbal tea I've tried, even though the aroma is oddly familiar. It's a little pricey because you need to use a good amount of the bark to get a flavorful cup. It's silly they say 'bold leaf' -- there's nothing remotely resembling leaf in this herbal tea. Watch out handling it; you can get a splinter out of this stuff; it's sharp, so I recommend using a very fine tea strainer, using it very carefully, and making sure you keep it out of the brewed tea and avoid touching it with your hands."
             ],
-            "top_rated_brands": []
+            "top_rated_brands": [],
+            "caffeine": "low"
         },
         {
             "tea_type": "Herbal Tea",
@@ -2452,7 +2611,8 @@
             "about": "Licorice(Glycyrrhiza glabra) is a plant that is commonly used as an ingredient in herbal teas. It has strong medicinal properties however, and is not necessarily safe for general consumption. For this reason, RateTea classifies licorice as a wellness or medicinal tea. Licorice can raise blood pressure, and this effect is strong enough that it can be dangerous even in the quantities typically used for flavoring candy and herbal teas. For this reason, people who have high blood pressure should avoid anything containing licorice.",
             "avg_rating": 0,
             "reviews": [],
-            "top_rated_brands": []
+            "top_rated_brands": [],
+            "caffeine": "low"
         },
         {
             "tea_type": "Herbal Tea",
@@ -2460,7 +2620,8 @@
             "about": "Passionflower or passion flower is an herb commonly used as a medicinal tea, for relaxation. Passionflower, used as an herb, generally refers to Passiflora incarnata, also called maypop, a plant growing as a vine, although there are numerous other plants in the Passiflora genus, also called passionflower, which are less commonly used, but share some similar chemical components. Passionflower tea is produced from an infusion of the whole dried plant, including stems, leaves, root, and vine tendrils. The dried herb is also commonly included in herbal blends intended for medicinal use, usually those aimed to promote relaxation or reduce anxiety. The passionflower plant also produces an edible fruit, called a maypop. The fruit lacks the strong medicinal properties of the herb; the fruit resembles the passionfruit, from the different species Passiflora edulis. The effect of passionflower tea is considerably stronger than that of more casual 'relaxing' teas such as chamomile or lemon balm, and for this reason, we classify it as a wellness tea rather than an herbal tea for beverage use. There are also more safety concerns with this herb at common doses, which are discussed below. Passionflower has a long history of traditional use for a wide range of conditions. There is a reasonable body of scientific evidence lending some validity to its use, but the bulk of the research on this herb comes from studies on mice, so it is not fully clear which effects carry through to humans, and the degree to which they carry through. The anti-anxiety properties of passionflower have been better studied than other uses. One study of 60 adults undergoing surgery found that using passionflower before surgery reduced anxiety without causing sedation.[1] The herb seems to act similarly to the benzodiazepine class of medications. However, unlike these medications, passionflower does not seem to cause the problems of tolerance and dependency; one study on mice found not only that long-term passionflower use does not result in dependency, but that the herb is able to prevent or mitigate the effects of benzodiazepine dependency.[2] Passionflower, as the name suggests, has been traditionally used as an aphrodisiac, to increase sexual desire. There is evidence from a study on mice that passionflower can have an aphrodisiac effect.[3] Passionflower is also used as a cough suppressant; a study on mice also found evidence supporting antitussive (cough suppressant) effects, similar to codeine.[4] According to WebMD's page on passionflower, passionflower is not safe for use during pregnancy because it can cause uterine contractions. WebMD lists dizziness, confusion, irregular muscle action and coordination, altered consciousness, and inflamed blood vessels as potential side effects. There is also a single case of serious toxicity that may be attributable to passionflower use. ",
             "avg_rating": 0,
             "reviews": [],
-            "top_rated_brands": []
+            "top_rated_brands": [],
+            "caffeine": "low"
         },
         {
             "tea_type": "Herbal Tea",
@@ -2475,7 +2636,8 @@
             ],
             "top_rated_brands": [
                 "Runa"
-            ]
+            ],
+            "caffeine": "moderate"
         },
         {
             "tea_type": "Herbal Tea",
@@ -2502,7 +2664,8 @@
                 "I'm not very familiar with yerba mate. It smells like a tree or something. But it tastes really good - it has a rich flavor, kind of chocolaty. I added cream and sugar. ",
                 "This is a decent everyday tea. It has a slight grassy aroma with a more noticeable smooth herbal flavor along with a greenish-amber coloring. A filling tea with some relaxation."
             ],
-            "top_rated_brands": []
+            "top_rated_brands": [],
+            "caffeine": "high"
         },
         {
             "tea_type": "Herbal Tea",
@@ -2518,7 +2681,8 @@
             ],
             "top_rated_brands": [
                 "Runa"
-            ]
+            ],
+            "caffeine": "moderate"
         },
         {
             "tea_type": "Herbal Tea",
@@ -2537,7 +2701,8 @@
                 "Teavana",
                 "Teavana",
                 "Teavana"
-            ]
+            ],
+            "caffeine": "high"
         },
         {
             "tea_type": "Herbal Tea",
@@ -2548,7 +2713,8 @@
                 "As black-tea blends go, this is a bit above-average in my experience, and worth purchasing at a discount if you seek a coffee alternative with a caffeine kick. Mine was supplied at a hotel, and I took a couple extra bags home to try in my own well water for fair-comparison's sake. Bigelow delivers extra caffeine through the added ingredient, 'black tea extract'. In essence, they take concentrated tea and add it back to black tea to dose up the caffeine, and presumably, taste too. This is a simple yet clever approach, and it works, but not as well as I thought it would. The flavor is just a hint stronger than most of their black blends, but not so much so that it slaps you in the face and proclaims that message with startling unambiguity. Yet it still is good, with a noticeable bitterness that stops just short of being unpleasant. It does remind me a lot of my wife's Connemara Kitchen Irish Breakfast tea in overall flavor, though not quite as rich and full-bodied. I can't tell you if this is the black-tea counterpart of Mountain Dew on the caffeine front. Since I'm largely caffeine-immune after three decades of drinking a liter or two of Diet Dr Pepper a day, you'll have to rely on someone else for a fair evaluation of the energy-boosting effect. The stated dose on their website is 60-90 mg per cup. ",
                 "Fast Lane Black Tea is the best I've found for waking up in the morning. It has excellent flavor and aroma with the right mix of ingredients to be better than energy drinks."
             ],
-            "top_rated_brands": []
+            "top_rated_brands": [],
+            "caffeine": "high"
         },
         {
             "tea_type": "Herbal Tea",
@@ -2568,7 +2734,8 @@
                 "Harney and Sons",
                 "Lipton Tea",
                 "Teavana"
-            ]
+            ],
+            "caffeine": "low"
         },
         {
             "tea_type": "Herbal Tea",
@@ -2584,7 +2751,8 @@
             ],
             "top_rated_brands": [
                 "Celestial Seasonings"
-            ]
+            ],
+            "caffeine": "high"
         }
     ]
 }
