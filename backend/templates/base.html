@@ -26,6 +26,10 @@
     </div>
 
     <script>
+        function formatScore(score) {
+            return "Percent Confidence: " + Math.round(score * 100, 2) + "%"
+        }
+
         function formatDescription(description) {
             descriptionSentences = description.toString().split('.');
             finalDescription = descriptionSentences[0];
@@ -40,9 +44,10 @@
             else return "Reccomended Brands: " + brands.toString().replaceAll(',', ', ');
         }
 
-        function answerBoxTemplate(name, description, brands) {
+        function answerBoxTemplate(name, description, brands, score) {
             return `<div class='tea-card'>
                 <h3 class='tea-title'>${name}</h3>
+                <p class='tea-score'>${formatScore(score)}</p>
                 <p class='tea-desc'>${formatDescription(description)}</p>
                 <p class='tea-brands'>${formatBrands(brands)}</p>
             </div>`
@@ -58,17 +63,21 @@
                 .then((response) => response.json())
                 .then((data) => {
                     console.log(data.top_k_teas) // TODO - create a dropdown with these teas and allow the user to select which one is most similar instead of automatically searching for the most similar by edit distance
-                    if (data.data.length == 0) {
-                        `<div class='tea-card'>
-                            <h3>${'No Search Results'}</h3>
-                        </div>`
-                    }
-                    else {
-                            data.data.forEach(row => {
+                    let numTeasDisplayed = 0
+                    data.data.forEach(row => {
+                        if(row.score > 0.05) { // TODO - choose an appropriate score cutoff
                             let tempDiv = document.createElement("div")
-                            tempDiv.innerHTML = answerBoxTemplate(row.tea_category, row.about, row.brands)
+                            tempDiv.innerHTML = answerBoxTemplate(row.tea_category, row.about, row.brands, row.score)
                             document.getElementById("answer-box").appendChild(tempDiv)
-                        });
+                            numTeasDisplayed += 1
+                        }
+                    });
+                    if (numTeasDisplayed == 0) {
+                        let tempDiv = document.createElement("div")
+                        tempDiv.innerHTML = `<div class='no-teas'>
+                                                <h3>${'No teas that match your search :('}</h3>
+                                            </div>`
+                        document.getElementById("answer-box").appendChild(tempDiv)
                     }
                 });
         }
