@@ -18,7 +18,7 @@ os.environ['ROOT_PATH'] = os.path.abspath(os.path.join("..", os.curdir))
 # Don't worry about the deployment credentials, those are fixed
 # You can use a different DB name if you want to
 MYSQL_USER = "root"
-MYSQL_USER_PASSWORD = "koyabears777"
+MYSQL_USER_PASSWORD = ""
 MYSQL_PORT = 3306
 MYSQL_DATABASE = "teadb"
 
@@ -43,12 +43,16 @@ num_teas = len(tea_data)
 def home():
     return render_template('base.html', title="sample html")
 
+@app.route("/api/tea_names/")
+def get_tea_names():
+    return tea_categories
+
 @app.route("/api/teas")
 def get_teas():
     search_tea = request.args.get("tea")
     return get_recommendations(search_tea, 5)
 
-@app.route("/app/reviews/<tea_id:int>/")
+# @app.route("/app/reviews/<tea_id:int>/")
 def create_review():
     ## TODO create a review for a tea
     pass
