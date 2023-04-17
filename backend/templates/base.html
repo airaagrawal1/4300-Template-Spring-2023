@@ -14,10 +14,14 @@
             </div>
             <div class="input-box" onclick="sendFocus()">
                 <img src="{{ url_for('static', filename='images/mag.png') }}" />
-                <input placeholder="Search for a tea or flavor profile that you enjoy!" id="search-tea-text-val"
-                    onkeyup="searchText()">
+                <input 
+                    placeholder="Search for a tea or flavor profile that you enjoy!" 
+                    id="search-tea-text-val"
+                />
             </div>
         </div>
+    </br>
+        <button id="find-teas-button" onClick="searchText()">Find Teas!</button>
         <div id="answer-box"></div>
     </div>
 

@@ -63,6 +63,15 @@ html, body {
     outline: 0;
 }
 
+#find-teas-button {
+    height: 35px;
+    width: 120px;
+    color: black;
+    background-color:  white;
+    border-color: white;
+    font-weight: bold
+}
+
 #answer-box {
     width: 700px;
     margin-top: 40px;
