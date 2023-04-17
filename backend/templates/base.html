@@ -30,25 +30,27 @@
         }
 
         function formatDescription(description) {
-            descriptionSentences = description.toString().split('.');
+            descriptionSentences = description.toString().split('. ');
             finalDescription = descriptionSentences[0];
-            if(descriptionSentences.length > 1) finalDescription+= '. ' + descriptionSentences[1];
-            if(descriptionSentences.length > 2) finalDescription+= '. ' + descriptionSentences[2];
-            if(descriptionSentences.length > 3) finalDescription+='...';
+            if (descriptionSentences.length > 1) finalDescription += '. ' + descriptionSentences[1];
+            if (descriptionSentences.length > 2) finalDescription += '. ' + descriptionSentences[2];
+            if (descriptionSentences.length > 3) finalDescription += '...';
             return finalDescription;
         }
 
         function formatBrands(brands) {
-            if(brands.length == 0) return "No reccomended brands for this tea"
+            if (brands.length == 0) return "No reccomended brands for this tea"
             else return "Reccomended Brands: " + brands.toString().replaceAll(',', ', ');
         }
 
         function answerBoxTemplate(name, description, brands, score) {
-            return `<div class='tea-card'>
+            return `<div class='card'>
+                <div class='container'>
                 <h3 class='tea-title'>${name}</h3>
                 <p class='tea-score'>${formatScore(score)}</p>
                 <p class='tea-desc'>${formatDescription(description)}</p>
                 <p class='tea-brands'>${formatBrands(brands)}</p>
+            </div>
             </div>`
         }
 
@@ -140,7 +142,7 @@
                     let numTeasDisplayed = 0
                     // autocomplete(document.getElementById("search-tea-text-val"), data.top_k_teas)
                     data.data.forEach(row => {
-                        if(row.score > 0.05) { // TODO - choose an appropriate score cutoff
+                        if (row.score > 0.05) { // TODO - choose an appropriate score cutoff
                             let tempDiv = document.createElement("div")
                             tempDiv.innerHTML = answerBoxTemplate(row.tea_category, row.about, row.brands, row.score)
                             document.getElementById("answer-box").appendChild(tempDiv)
