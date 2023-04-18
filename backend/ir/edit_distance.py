@@ -12,6 +12,17 @@ tea_to_index = { tea:index for index, tea in enumerate(d["tea_category"] for d i
 index_to_tea = { v:k for k, v in tea_to_index.items() }
 
 def top_k_edit_distance(search_tea, k):
+    """
+    Returns a ranking of the top k teas in the database ranked by the levenshtein edit distance 
+    from the search_tea
+
+    Parameters
+    ----------
+    search_tea : string 
+        the tea type query 
+    k: int 
+        the number of ranked teas to return
+    """
     tea_names = [t["tea_category"] for t in tea_data]
     edit_distances = [edit_distance(search_tea, tea_name) for tea_name in tea_names]
     ranked_ids = np.argsort(edit_distances)
