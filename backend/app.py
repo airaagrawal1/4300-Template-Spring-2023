@@ -44,13 +44,15 @@ num_teas = len(tea_data)
 def home():
     return render_template('base.html', title="sample html")
 
+
 @app.route("/api/tea_names/")
 def get_tea_names():
     return tea_categories
 
+
 @app.route("/api/teas")
 def get_teas():
-    search_tea = request.args.get("tea")
+    search_tea = request.args.get("tea").lower()
     return get_recommendations(search_tea, 5)
 
 # @app.route("/app/reviews/<tea_id:int>/")
