@@ -64,14 +64,26 @@ def get_recommendations(search_tea, k):
     ranked_ids = (-merged_sims).argsort()
 
     data = []
-    for tea_id in ranked_ids[:k]:
-        data.append({
-            "tea_category": tea_data[tea_id]["tea_category"],
-            "tea_type": tea_data[tea_id]["tea_type"],
-            "about": tea_data[tea_id]["about"],
-            "brands": tea_data[tea_id]["top_rated_brands"],
-            "score": merged_sims[tea_id]
-        })
+    counter = 0 
+    while (len(data) < 5):
+        tea_id = ranked_ids[counter]
+        if(tea_data[tea_id]["tea_category"] != search_tea):
+            data.append({
+                "tea_category": tea_data[tea_id]["tea_category"],
+                "tea_type": tea_data[tea_id]["tea_type"],
+                "about": tea_data[tea_id]["about"],
+                "brands": tea_data[tea_id]["top_rated_brands"],
+                "score": merged_sims[tea_id]
+            })
+        counter+=1 
+    # for tea_id in ranked_ids[:k]:
+    #     data.append({
+    #         "tea_category": tea_data[tea_id]["tea_category"],
+    #         "tea_type": tea_data[tea_id]["tea_type"],
+    #         "about": tea_data[tea_id]["about"],
+    #         "brands": tea_data[tea_id]["top_rated_brands"],
+    #         "score": merged_sims[tea_id]
+    #     }) 
 
     result = {
         "data": data,
