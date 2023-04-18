@@ -13,9 +13,12 @@
                 <h1 id="matcha-color">Match-A Tea</h1>
             </div>
             <form autocomplete="off">
-                <div class="input-box" onclick="sendFocus()">
+                <div class="input-box" onclick="sendFocusTea()">
                     <img src="{{ url_for('static', filename='images/mag.png') }}" />
                     <input placeholder="Search for a tea or flavor profile that you enjoy!" id="search-tea-text-val" />
+                </div>
+                <div class="input-box" onclick="sendFocusDescription()">
+                    <input placeholder="Search for a flavor profile that you enjoy!" id="search-description-text-val" />
                 </div>
             </form>
         </div>
@@ -54,8 +57,12 @@
             </div>`
         }
 
-        function sendFocus() {
+        function sendFocusTea() {
             document.getElementById('search-tea-text-val').focus()
+        }
+
+        function sendFocusDescription() {
+            document.getElementById('search-description-text-val').focus()
         }
 
         function autocomplete(inp, arr) {
@@ -84,6 +91,7 @@
                     }
                 }
             });
+
             // using arrow keys to move up and down dropdown menu
             inp.addEventListener("keydown", function (e) {
                 var x = document.getElementById(this.id + "autocomplete-list");
@@ -135,12 +143,13 @@
 
         function searchText() {
             document.getElementById("answer-box").innerHTML = ""
-            fetch("/api/teas?" + new URLSearchParams({ tea: document.getElementById("search-tea-text-val").value }).toString())
+            fetch("/api/teas?" + new URLSearchParams({ 
+                tea: document.getElementById("search-tea-text-val").value, 
+                description: document.getElementById("search-description-text-val").value
+            }).toString(), { method: "POST" })
                 .then((response) => response.json())
                 .then((data) => {
-                    console.log(data.top_k_teas) // TODO - create a dropdown with these teas and allow the user to select which one is most similar instead of automatically searching for the most similar by edit distance
                     let numTeasDisplayed = 0
-                    // autocomplete(document.getElementById("search-tea-text-val"), data.top_k_teas)
                     data.data.forEach(row => {
                         if (row.score > 0.05) { // TODO - choose an appropriate score cutoff
                             let tempDiv = document.createElement("div")
