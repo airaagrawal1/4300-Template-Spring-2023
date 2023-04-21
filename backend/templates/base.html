@@ -42,8 +42,8 @@
         }
 
         function formatBrands(brands) {
-            if (brands.length == 0) return "No reccomended brands for this tea"
-            else return "Reccomended Brands: " + brands.toString().replaceAll(',', ', ');
+            if (brands.length == 0) return "No recommended brands for this tea"
+            else return "Recommended Brands: " + brands.toString().replaceAll(',', ', ');
         }
 
         function answerBoxTemplate(name, description, brands, score) {
@@ -161,7 +161,7 @@
                     if (numTeasDisplayed == 0) {
                         let tempDiv = document.createElement("div")
                         tempDiv.innerHTML = `<div class='no-teas'>
-                                                <h3>${'No teas that match your search :('}</h3>
+                                                <h3>${'No teas match your search ;('}</h3>
                                             </div>`
                         document.getElementById("answer-box").appendChild(tempDiv)
                     }
