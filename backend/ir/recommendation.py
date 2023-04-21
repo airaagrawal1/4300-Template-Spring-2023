@@ -43,7 +43,6 @@ def get_sim_scores(search_tea, search_description, k):
         if percent_edit < threshold: # the query is likely a valid tea
             search_tea = top_k_teas[0]
             search_data = tea_data[tea_to_index[search_tea]]
-            print("here")
             about_tfidf, about_query_tfidf = create_vector([d["about"] for d in tea_data], [search_data["about"]])
             review_tfidf, review_query_tfidf = create_vector([" ".join(d["reviews"]) for d in tea_data], [" ".join(search_data["reviews"])])
             about_sims, review_sims = cosine_sims(about_tfidf, review_tfidf, about_query_tfidf, review_query_tfidf)
@@ -51,13 +50,11 @@ def get_sim_scores(search_tea, search_description, k):
             if not search_description: 
                 return search_tea_merged_sims, [search_tea]
     if search_description: 
-        print("here2")
         about_tfidf, about_query_tfidf = create_vector([d["about"] for d in tea_data], [search_description])
         review_tfidf, review_query_tfidf = create_vector([" ".join(d["reviews"]) for d in tea_data], [search_description])
         about_sims, review_sims = cosine_sims(about_tfidf, review_tfidf, about_query_tfidf, review_query_tfidf)
         description_merged_sims = about_weight * about_sims + review_weight * review_sims
         if not search_tea: 
-            print("Here")
             return description_merged_sims, []
     
     search_weight = 0.5
