@@ -3,7 +3,7 @@ import numpy as np
 from nltk.metrics import edit_distance
 
 # load the data
-with open("./../tea_data.json", "r") as f: 
+with open("../../tea_data.json", "r") as f: 
     tea_data = json.load(f)["data"]
 
 # data variables
