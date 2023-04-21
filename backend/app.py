@@ -38,7 +38,7 @@ def failure_response(message, code=404):
     return json.dumps({"error": message}), code
 
 # load the data
-with open("tea_data.json", "r") as f:
+with open("./tea_data.json", "r") as f:
     tea_data = json.load(f)["data"]
 
 # constants
