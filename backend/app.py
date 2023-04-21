@@ -18,7 +18,7 @@ os.environ['ROOT_PATH'] = os.path.abspath(os.path.join("..", os.curdir))
 # Don't worry about the deployment credentials, those are fixed
 # You can use a different DB name if you want to
 MYSQL_USER = "root"
-MYSQL_USER_PASSWORD = ""
+MYSQL_USER_PASSWORD = "koyabears777"
 MYSQL_PORT = 3306
 MYSQL_DATABASE = "teadb"
 
@@ -30,6 +30,12 @@ MYSQL_DATABASE = "teadb"
 
 app = Flask(__name__)
 CORS(app)
+
+def success_response(data, code=200):
+    return json.dumps(data), code
+
+def failure_response(message, code=404):
+    return json.dumps({"error": message}), code
 
 # load the data
 with open("tea_data.json", "r") as f:
@@ -49,15 +55,13 @@ def home():
 def get_tea_names():
     return tea_categories
 
-
-@app.route("/api/teas")
+@app.route("/api/teas", methods=["POST"])
 def get_teas():
-    search_tea = request.args.get("tea").lower()
-    return get_recommendations(search_tea, 5)
+    search_tea = request.args.get("tea")
+    search_description = request.args.get("description")
+    return get_recommendations(search_tea, search_description, 5)
 
 # @app.route("/app/reviews/<tea_id:int>/")
-
-
 def create_review():
     # TODO create a review for a tea
     pass
