@@ -1,6 +1,6 @@
 import json
 import numpy as np
-from nltk import edit_distance
+from nltk.metrics import edit_distance
 
 # load the data
 with open("./../tea_data.json", "r") as f: 
