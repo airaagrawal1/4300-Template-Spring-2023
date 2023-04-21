@@ -4,13 +4,8 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 from ir.edit_distance import top_k_edit_distance
 
-import sys
-import os
-
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
-
 # load the data
-with open("../../tea_data.json", "r") as f:
+with open("./tea_data.json", "r") as f:
     tea_data = json.load(f)["data"]
 
 # vectorizer
