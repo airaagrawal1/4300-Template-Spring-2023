@@ -36,19 +36,18 @@ def cosine_sims(about_tfidf, review_tfidf, about_query_tfidf, review_query_tfidf
 def get_sim_scores(search_tea, search_description, k):
     about_weight = 0.6
     review_weight = 0.4
+    search_tea_merged_sims = 0
+    description_merged_sims = 0
     if search_tea: 
-        top_k_teas, top_k_dists = top_k_edit_distance(search_tea=search_tea, k=k)
-        percent_edit = top_k_dists[0] / len(search_tea)
-        threshold = 0.5
-        if percent_edit < threshold: # the query is likely a valid tea
-            search_tea = top_k_teas[0]
-            search_data = tea_data[tea_to_index[search_tea]]
-            about_tfidf, about_query_tfidf = create_vector([d["about"] for d in tea_data], [search_data["about"]])
-            review_tfidf, review_query_tfidf = create_vector([" ".join(d["reviews"]) for d in tea_data], [" ".join(search_data["reviews"])])
-            about_sims, review_sims = cosine_sims(about_tfidf, review_tfidf, about_query_tfidf, review_query_tfidf)
-            search_tea_merged_sims = about_weight * about_sims + review_weight * review_sims
-            if not search_description: 
-                return search_tea_merged_sims, [search_tea]
+        top_k_teas, _ = top_k_edit_distance(search_tea=search_tea, k=k)
+        search_tea = top_k_teas[0]
+        search_data = tea_data[tea_to_index[search_tea]]
+        about_tfidf, about_query_tfidf = create_vector([d["about"] for d in tea_data], [search_data["about"]])
+        review_tfidf, review_query_tfidf = create_vector([" ".join(d["reviews"]) for d in tea_data], [" ".join(search_data["reviews"])])
+        about_sims, review_sims = cosine_sims(about_tfidf, review_tfidf, about_query_tfidf, review_query_tfidf)
+        search_tea_merged_sims = about_weight * about_sims + review_weight * review_sims
+        if not search_description: 
+            return search_tea_merged_sims, [search_tea]
     if search_description: 
         about_tfidf, about_query_tfidf = create_vector([d["about"] for d in tea_data], [search_description])
         review_tfidf, review_query_tfidf = create_vector([" ".join(d["reviews"]) for d in tea_data], [search_description])
