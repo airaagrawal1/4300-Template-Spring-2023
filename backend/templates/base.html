@@ -46,13 +46,18 @@
             else return "Recommended Brands: " + brands.toString().replaceAll(',', ', ');
         }
 
-        function answerBoxTemplate(name, description, brands, score) {
+        function formatCaffeine(caffeine) {
+            return "Caffeine Content: " + caffeine.toString();
+        }
+
+        function answerBoxTemplate(name, description, brands, caffeine, score) {
             return `<div class='card'>
                 <div class='container'>
                 <h3 class='tea-title'>${name}</h3>
                 <p class='tea-score'>${formatScore(score)}</p>
                 <p class='tea-desc'>${formatDescription(description)}</p>
                 <p class='tea-brands'>${formatBrands(brands)}</p>
+                <p class='caffeine'>${formatCaffeine(caffeine)}</p>
             </div>
             </div>`
         }
@@ -153,7 +158,7 @@
                     data.data.forEach(row => {
                         if (row.score > 0.05) { // TODO - choose an appropriate score cutoff
                             let tempDiv = document.createElement("div")
-                            tempDiv.innerHTML = answerBoxTemplate(row.tea_category, row.about, row.brands, row.score)
+                            tempDiv.innerHTML = answerBoxTemplate(row.tea_category, row.about, row.brands, row.caffeine, row.score)
                             document.getElementById("answer-box").appendChild(tempDiv)
                             numTeasDisplayed += 1
                         }
