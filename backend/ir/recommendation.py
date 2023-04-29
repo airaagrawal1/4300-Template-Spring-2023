@@ -72,6 +72,7 @@ def get_k_recommendations(search_tea, search_description, k=10):
             "tea_type": tea_data[tea_id]["tea_type"],
             "about": tea_data[tea_id]["about"],
             "brands": tea_data[tea_id]["top_rated_brands"],
+            "caffeine": tea_data[tea_id]["caffeine"],
             "score": sims[tea_id] 
         })
 
