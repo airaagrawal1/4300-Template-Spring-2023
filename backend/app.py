@@ -8,7 +8,7 @@ import numpy as np
 from flask import Flask, render_template, request
 from flask_cors import CORS
 from helpers.MySQLDatabaseHandler import MySQLDatabaseHandler
-from ir.recommendation import get_recommendations
+from ir.recommendation import get_k_recommendations
 
 # ROOT_PATH for linking with all your files.
 # Feel free to use a config.py or settings.py with a global export variable
@@ -50,7 +50,6 @@ num_teas = len(tea_data)
 def home():
     return render_template('base.html', title="sample html")
 
-
 @app.route("/api/tea_names/")
 def get_tea_names():
     return tea_categories
@@ -59,7 +58,7 @@ def get_tea_names():
 def get_teas():
     search_tea = request.args.get("tea")
     search_description = request.args.get("description")
-    return get_recommendations(search_tea, search_description, 5)
+    return get_k_recommendations(search_tea, search_description, 10)
 
 # @app.route("/app/reviews/<tea_id:int>/")
 def create_review():
