@@ -35,7 +35,7 @@ def get_description_tfidf(description):
     return description_vec
 
 # get query tfidf
-def get_query_tfidf(search_tea, search_description, k=10):
+def get_query_tfidf(search_tea, search_description):
     tfidf_vec = np.zeros(docs_compressed_normed.shape[1])
     entered_searches = 0
     if search_tea:
@@ -52,16 +52,10 @@ def get_query_tfidf(search_tea, search_description, k=10):
 
 # get recommendations
 def get_k_recommendations(search_tea, search_description, k=10):
-    top_k_teas, edit_dists = top_k_edit_distance(search_tea=search_tea, k=10)
-    if search_tea:
-        if (edit_dists[0] / len(search_tea)) < 0.6: # search tea likely similar enough to a tea in the dataset. less than 60% edited
-            search_tea = top_k_teas[0]
-        else: 
-            search_tea = ""
-
-    query_tfidf = get_query_tfidf(search_tea, search_description, k)
+    query_tfidf = get_query_tfidf(search_tea, search_description)
     sims = docs_compressed_normed.dot(query_tfidf)
     ranked_ids = (-sims).argsort()
+
     if search_tea: 
         ranked_ids = ranked_ids[ranked_ids != tea_to_index[search_tea]] # remove the current search
         
@@ -75,7 +69,6 @@ def get_k_recommendations(search_tea, search_description, k=10):
             "caffeine": tea_data[tea_id]["caffeine"],
             "score": sims[tea_id] 
         })
-
-    result = {"data": data}
+    result = { "data": data }
 
     return json.dumps(result)
