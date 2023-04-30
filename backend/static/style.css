@@ -26,6 +26,10 @@ body {
     padding: 2px 16px;
 }
 
+.fake-container {
+    padding: 0px 0px;
+}
+
 .full-body-container {
     position: absolute;
     top: 0;

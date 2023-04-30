@@ -55,22 +55,24 @@
         }
 
         function answerBoxTemplate(name, description, brands, caffeine, score, num) {
-            return `<div class='card' id='card${num}' onClick='expandCard(this, ${num})'>
+            return `<div class='card' id='card${num}'>
                 <div class='container'>
                 <h3 class='tea-title'>${name}</h3>
-                    <div class='button-group'>
-                        <button id='like${num}' class='like-button' onClick='likeClick(this, ${num})'>
-                            <img src="{{ url_for('static', filename='images/like.png') }}">
-                        </button>
-                        <button id='dislike${num}' class='like-button' onClick='dislikeClick(this, ${num})'>
-                            <img src="{{ url_for('static', filename='images/dislike.png') }}">
-                        </button>
-                    </div>
-                <p class='tea-score'>${formatScore(score)}</p>
-                <p id='desc${num}' class='tea-desc'>${formatDescription(description)}</p>
-                <p id='fulldesc${num}' class='tea-desc-full'>${description.toString()}</p>
-                <p class='tea-brands'>${formatBrands(brands)}</p>
-                <p class='caffeine'>${formatCaffeine(caffeine)}</p>
+                <div class='button-group'>
+                    <button id='like${num}' class='like-button' onClick='likeClick(this, ${num})'>
+                        <img src="{{ url_for('static', filename='images/like.png') }}">
+                    </button>
+                    <button id='dislike${num}' class='like-button' onClick='dislikeClick(this, ${num})'>
+                        <img src="{{ url_for('static', filename='images/dislike.png') }}">
+                    </button>
+                </div>
+                <div class='fake-container' onClick='expandCard(${num})'>
+                    <p class='tea-score'>${formatScore(score)}</p>
+                    <p id='desc${num}' class='tea-desc'>${formatDescription(description)}</p>
+                    <p id='fulldesc${num}' class='tea-desc-full'>${description.toString()}</p>
+                    <p class='tea-brands'>${formatBrands(brands)}</p>
+                    <p class='caffeine'>${formatCaffeine(caffeine)}</p>
+                </div>
             </div>
             </div>`
         }
@@ -213,7 +215,8 @@
             }
         };
 
-        function expandCard(elmnt, id) {
+        function expandCard(id) {
+            let elmnt = document.getElementById("card" + id);
             if (elmnt.classList.contains("active")) {
                 elmnt.classList.remove("active");
                 document.getElementById("desc" + id).style.display = "block";
