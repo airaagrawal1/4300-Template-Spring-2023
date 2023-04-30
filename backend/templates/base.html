@@ -55,7 +55,7 @@
         }
 
         function answerBoxTemplate(name, description, brands, caffeine, score, num) {
-            return `<div class='card'>
+            return `<div class='card' id='card${num}' onClick='expandCard(this, ${num})'>
                 <div class='container'>
                 <h3 class='tea-title'>${name}</h3>
                     <div class='button-group'>
@@ -67,7 +67,8 @@
                         </button>
                     </div>
                 <p class='tea-score'>${formatScore(score)}</p>
-                <p class='tea-desc'>${formatDescription(description)}</p>
+                <p id='desc${num}' class='tea-desc'>${formatDescription(description)}</p>
+                <p id='fulldesc${num}' class='tea-desc-full'>${description.toString()}</p>
                 <p class='tea-brands'>${formatBrands(brands)}</p>
                 <p class='caffeine'>${formatCaffeine(caffeine)}</p>
             </div>
@@ -209,6 +210,18 @@
                 elmnt.classList.add("clicked");
             } else {
                 elmnt.classList.add("clicked");
+            }
+        };
+
+        function expandCard(elmnt, id) {
+            if (elmnt.classList.contains("active")) {
+                elmnt.classList.remove("active");
+                document.getElementById("desc" + id).style.display = "block";
+                document.getElementById("fulldesc" + id).style.display = "none";
+            } else {
+                elmnt.classList.add("active");
+                document.getElementById("desc" + id).style.display = "none";
+                document.getElementById("fulldesc" + id).style.display = "block";
             }
         };
     </script>
