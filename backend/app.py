@@ -10,6 +10,7 @@ from flask_cors import CORS
 from helpers.MySQLDatabaseHandler import MySQLDatabaseHandler
 from ir.recommendation import get_k_recommendations
 from ir.edit_distance import top_k_edit_distance
+from ir.rocchio import rocchio
 
 # ROOT_PATH for linking with all your files.
 # Feel free to use a config.py or settings.py with a global export variable
@@ -67,14 +68,18 @@ def get_teas():
     search_description = request.args.get("description")
     return get_k_recommendations(search_tea, search_description, 10)
 
-# @app.route("/app/reviews/<tea_id:int>/")
-def create_review():
-    # TODO create a review for a tea
-    pass
-
-
-def create_relevant():
-    # TODO allow users to mark relevant teas and then re-generate query results based on rocchio
-    pass
+@app.route("/api/teas/regenerate", methods=["POST"])
+def get_teas_regenerate():
+    search_tea = request.args.get("tea")
+    top_k_teas, edit_dists = top_k_edit_distance(search_tea=search_tea, k=1)
+    if search_tea:
+        if (edit_dists[0] / len(search_tea)) < 0.6: # search tea likely similar enough to a tea in the dataset. less than 60% edited
+            search_tea = top_k_teas[0]
+        else: 
+            search_tea = ""
+    search_description = request.args.get("description")
+    relevant = request.args.get("relevant")
+    irrelevant = request.args.get("irrelevant")
+    return rocchio(search_tea, search_description, relevant, irrelevant)
 
 # app.run(debug=True)

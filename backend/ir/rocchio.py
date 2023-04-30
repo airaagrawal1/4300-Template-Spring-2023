@@ -3,7 +3,7 @@ import json
 from ir.recommendation import get_query_tfidf, tea_to_index, docs_compressed_normed, tea_data
 from ir.edit_distance import top_k_edit_distance
 
-def rocchio(search_tea, search_description, relevant, irrelevant, input_doc_matrix=docs_compressed_normed, a=0.3, b=0.3, c=0.8, clip=True):
+def rocchio(search_tea, search_description, relevant, irrelevant, input_doc_matrix=docs_compressed_normed, a=0.3, b=0.3, c=0.8, clip=True, k=10):
     q0 = get_query_tfidf(search_tea, search_description)
     
     rel_docs_i = [tea_to_index[rel_t] for rel_t in relevant]
