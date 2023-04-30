@@ -130,13 +130,16 @@ body {
 }
 
 .tea-title {
+    display: inline-block;
     font-family: 'Kanit', sans-serif;
     font-size: 21px;
+    padding-bottom: 0px;
 }
 
 .tea-score {
     font-family: 'Montserrat', sans-serif;
     color: rgb(58, 58, 58);
+    padding-top: 0px;
 }
 
 .tea-desc {
@@ -153,4 +156,50 @@ body {
 
 .no-teas {
     margin-left: 50px;
+}
+
+.button-group {
+    background-color: transparent;
+    float: right;
+    padding-bottom: 0px;
+    padding-top: 20px;
+}
+
+.like-button {
+    display: inline-block;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: transparent;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.like-button img {
+    cursor: pointer;
+    width: 25px;
+    height: 25px;
+    filter: grayscale(100%);
+}
+
+.like-button.clicked {
+    animation: clicked .4s ease;
+}
+
+.like-button.clicked img {
+    filter: none;
+}
+
+@keyframes clicked {
+    0% {
+        transform: scale(.8);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
 }
