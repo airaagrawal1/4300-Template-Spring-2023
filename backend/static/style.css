@@ -39,9 +39,13 @@ body {
     height: 100%;
     display: flex;
     justify-content: start;
-    align-items: center;
     flex-direction: column;
     background-color: #acd1ad;
+}
+
+.search-buttons {
+    display: flex;
+    justify-content: center;
 }
 
 #matcha-color {
@@ -52,25 +56,20 @@ body {
     display: flex;
     flex-direction: row;
     margin: 30px;
-    background-color: beige;
-    justify-content: space-around;
-}
-
-.logo-container {
-    margin-right: 200px;
+    justify-content: space-between;
+    align-items: start;
 }
 
 .logo-container img {
-    width: 250px;
-    background-color: olivedrab;
+    width: 300px;
     justify-content: space-around;
 }
 
 .input-container {
     display: flex;
-    background-color: rebeccapurple;
     flex-direction: row;
-    padding-left: -100px;
+    justify-content: space-around;
+    align-items: start;
 }
 
 .input-box {
@@ -78,10 +77,12 @@ body {
     background-color: #ffffff;
     display: flex;
     align-items: center;
-    margin-top: 10px;
-    width: 380px;
-    height: 40px;
+    width: 450px;
     position: relative;
+}
+
+.left-box {
+    margin-right: 30px;
 }
 
 .input-box input {
@@ -178,32 +179,44 @@ body {
     color: #ffffff;
 }
 
-#find-teas-button {
-    height: 35px;
-    width: 120px;
-    color: black;
-    background-color: white;
-    border-color: white;
-    font-weight: bold
-}
-
 #answer-box {
     width: 700px;
     margin-top: 40px;
+    align-self: center;
 }
 
-.regen-button {
+#find-teas-button {
     height: 35px;
-    width: 120px;
+    width: 160px;
+    color: white;
+    border-radius: 10px;
+    background-color: #52796F;
+    border: none;
+    border-color: #52796F;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#regen-button {
+    height: 35px;
+    width: 160px;
     display: none;
+    border: 2px solid #52796F;
     background-color: white;
-    border-color: white;
-    color: black;
+    border-radius: 10px;
+    color: #52796F;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .search-buttons {
     background-color: transparent;
     padding-bottom: 0px;
+    display: flex;
+    margin-left: 460px;
+    margin-right: 460px;
+    margin-top: -30px;
+    justify-content: space-around;
 }
 
 .tea-card {

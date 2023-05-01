@@ -8,13 +8,11 @@
 <body>
     <div class="full-body-container">
         <div class="top-text">
-
             <div class="logo-container">
                 <img src="{{ url_for('static', filename='images/logo.png') }}" />
             </div>
-
             <div class="input-container">
-                <div class="input-box left-input-box">
+                <div class="input-box left-box">
                     <select id="search-tea" multiple>
                         <option></option>
                     </select>
@@ -27,7 +25,7 @@
         </br>
         <div class="search-buttons">
             <button id="find-teas-button" onClick="searchTeas()">Find Teas!</button>
-            <button id="regen-button" class="regen-button" onClick="regenSearch()">Regenerate Search!</button>
+            <button id="regen-button" onClick="regenSearch()">Regenerate Search!</button>
         </div>
         <div id="answer-box"></div>
     </div>
