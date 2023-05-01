@@ -63,6 +63,7 @@ def get_query(search_tea, about_vec, review_vec):
 
 
 def get_recommendations(search_tea, k):
+    cafArray = ["low", "moderate","high"]
     about_tfidf_vec = build_tfidf(n_feats, "english")
     review_tfidf_vec = build_tfidf(n_feats, "english")
     about_tfidf = about_tfidf_vec.fit_transform(
@@ -85,7 +86,8 @@ def get_recommendations(search_tea, k):
     counter = 0 
     while (len(data) < 5):
         tea_id = ranked_ids[counter]
-        if(tea_data[tea_id]["tea_category"] != search_tea):
+        print(tea_data[tea_id]["caffeine"])
+        if(tea_data[tea_id]["tea_category"] != search_tea & tea_data[tea_id]["caffeine"] in cafArray):
             data.append({
                 "tea_category": tea_data[tea_id]["tea_category"],
                 "tea_type": tea_data[tea_id]["tea_type"],
