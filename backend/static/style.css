@@ -70,6 +70,7 @@ body {
     display: flex;
     background-color: rebeccapurple;
     flex-direction: row;
+    padding-left: -100px;
 }
 
 .input-box {
