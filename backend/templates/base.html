@@ -13,7 +13,8 @@
                 <img src="{{ url_for('static', filename='images/logo.png') }}" />
             </div>
             <div class="input-container">
-                <div class="input-box left-input-box" id="tea-category-search-box" onkeyup="detectChange()">
+                <div class="input-box left-input-box" id="tea-category-search-box" onchange="detectChange()"
+                    onkeyup="detectChange()">
                     <select id="search-tea" multiple>
                         <option></option>
                     </select>
