@@ -60,7 +60,8 @@ def get_tea_names():
 def get_teas():
     search_teas = request.args.get("tea").split(",")
     search_description = request.args.get("description")
-    cafArray = request.args.get("caffeine")
+    # cafArray = request.args.get("caffeine")
+    cafArray = ["low", "moderate", "high"]
     return get_k_recommendations(search_teas, search_description, 10, cafArray)
 
 @app.route("/api/teas/regenerate", methods=["POST"])
