@@ -15,12 +15,12 @@
             </div>
 
             <div class="input-container">
-                <div class="input-box left-input-box">
+                <div class="input-box left-input-box" id="tea-category-search-box" onkeyup="detectChange()">
                     <select id="search-tea" multiple>
                         <option></option>
                     </select>
                 </div>
-                <div class="input-box" onclick="sendFocusDescription()">
+                <div class="input-box" onclick="sendFocusDescription()" onkeyup="detectChange()">
                     <input placeholder="Add a flavor profile you enjoy!" id="search-description-text-val" />
                 </div>
             </div>
@@ -176,34 +176,45 @@
 
         function searchTeas() {
             document.getElementById("answer-box").innerHTML = ""
-
-            let searchTeas = []
-            $('#search-tea').select2('val').forEach(tea => searchTeas.push(tea))
-
-            fetch("/api/teas?" + new URLSearchParams({
-                tea: searchTeas,
-                description: document.getElementById("search-description-text-val").value
-            }).toString(), { method: "POST" })
-                .then((response) => response.json())
-                .then((data) => {
-                    let numTeasDisplayed = 0
-                    data.data.forEach(row => {
-                        if (row.score > 0.05) { // TODO - choose an appropriate score cutoff
-                            numTeasDisplayed += 1
+            if (document.getElementById("tea-category-search-box").innerText.toString().length <= 1) {
+                let tempDiv = document.createElement("div")
+                tempDiv.innerHTML = `<div class='no-teas'>
+                                                <h3>${'Please select a tea category!'}</h3>
+                                            </div>`
+                document.getElementById("answer-box").appendChild(tempDiv)
+                document.getElementById("regen-button").style.display = "none"
+            } else {
+                let searchTeas = []
+                $('#search-tea').select2('val').forEach(tea => searchTeas.push(tea))
+                fetch("/api/teas?" + new URLSearchParams({
+                    tea: searchTeas,
+                    description: document.getElementById("search-description-text-val").value
+                }).toString(), { method: "POST" })
+                    .then((response) => response.json())
+                    .then((data) => {
+                        let numTeasDisplayed = 0;
+                        data.data.forEach(row => {
+                            if (row.score > 0.05) { // TODO - choose an appropriate score cutoff
+                                numTeasDisplayed += 1
+                                console.log(numTeasDisplayed);
+                                let tempDiv = document.createElement("div")
+                                tempDiv.innerHTML = answerBoxTemplate(row.tea_category, row.about, row.brands, row.caffeine, row.score, numTeasDisplayed)
+                                document.getElementById("answer-box").appendChild(tempDiv)
+                            }
+                            if (numTeasDisplayed > 0) {
+                                document.getElementById("regen-button").style.display = "inline-block"
+                            }
+                        });
+                        if (numTeasDisplayed == 0) {
                             let tempDiv = document.createElement("div")
-                            tempDiv.innerHTML = answerBoxTemplate(row.tea_category, row.about, row.brands, row.caffeine, row.score, numTeasDisplayed)
-                            document.getElementById("answer-box").appendChild(tempDiv)
-                        }
-                    });
-                    if (numTeasDisplayed == 0) {
-                        let tempDiv = document.createElement("div")
-                        tempDiv.innerHTML = `<div class='no-teas'>
+                            tempDiv.innerHTML = `<div class='no-teas'>
                                                 <h3>${'No teas match your search ;('}</h3>
                                             </div>`
-                        document.getElementById("answer-box").appendChild(tempDiv)
-                    }
-                });
-            document.getElementById("regen-button").style.display = "inline-block";
+                            document.getElementById("answer-box").appendChild(tempDiv)
+                            document.getElementById("regen-button").style.display = "none"
+                        }
+                    });
+            }
         }
 
         $('#search-tea').select2({
@@ -263,5 +274,9 @@
                 document.getElementById("fulldesc" + id).style.display = "block";
             }
         };
+
+        function detectChange() {
+            document.getElementById("regen-button").style.display = "none";
+        }
     </script>
 </body>
