@@ -19,7 +19,7 @@
                         <option></option>
                     </select>
                 </div>
-                <div class="input-box" onclick="sendFocusDescription()" onkeyup="detectChange()">
+                <div class="input-box" id="flavor-search-box" onclick="sendFocusDescription()" onkeyup="detectChange()">
                     <input placeholder="Add a flavor profile you enjoy!" id="search-description-text-val" />
                 </div>
             </div>
@@ -105,10 +105,11 @@
 
         function searchTeas() {
             document.getElementById("answer-box").innerHTML = ""
-            if (document.getElementById("tea-category-search-box").innerText.toString().length <= 1) {
+            if (document.getElementById("tea-category-search-box").innerText.toString().length <= 1 &&
+                document.getElementById("search-description-text-val").value.length < 1) {
                 let tempDiv = document.createElement("div")
                 tempDiv.innerHTML = `<div class='no-teas'>
-                                        <h3 id='message-text'>${'Please select a tea category!'}</h3>
+                                        <h3 id='message-text'>${'Please select a tea category or type in a flavor!'}</h3>
                                     </div>`
                 document.getElementById("answer-box").appendChild(tempDiv)
                 document.getElementById("regen-button").style.display = "none"
@@ -189,7 +190,7 @@
                         document.getElementById("answer-box").appendChild(tempDiv)
                     }
                 });
-            
+
             relevantTeas = []
             irrelevantTeas = []
         }
