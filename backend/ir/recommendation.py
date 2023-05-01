@@ -25,8 +25,11 @@ for t,i in word_to_index.items()}
 tea_to_index = {tea: index for index, tea in enumerate(d["tea_category"] for d in tea_data)}
 
 # get tea tfidf 
-def get_tea_tfidf(tea):
-    return docs_compressed_normed[tea_to_index[tea], :]
+def get_tea_tfidf(teas):
+    tfidf_vec = np.zeros(docs_compressed_normed.shape[1])
+    for tea in teas: 
+        tfidf_vec += docs_compressed_normed[tea_to_index[tea], :]
+    return tfidf_vec / len(teas)
 
 # get description tfidf 
 def get_description_tfidf(description):
@@ -35,11 +38,12 @@ def get_description_tfidf(description):
     return description_vec
 
 # get query tfidf
-def get_query_tfidf(search_tea, search_description):
+def get_query_tfidf(search_teas, search_description):
     tfidf_vec = np.zeros(docs_compressed_normed.shape[1])
+
     entered_searches = 0
-    if search_tea:
-        tfidf_vec += get_tea_tfidf(search_tea)
+    if search_teas:
+        tfidf_vec += get_tea_tfidf(search_teas)
         entered_searches += 1
     if search_description:
         tfidf_vec += get_description_tfidf(search_description)
@@ -51,13 +55,14 @@ def get_query_tfidf(search_tea, search_description):
     return tfidf_vec / entered_searches
 
 # get recommendations
-def get_k_recommendations(search_tea, search_description, k=10):
-    query_tfidf = get_query_tfidf(search_tea, search_description)
+def get_k_recommendations(search_teas, search_description, k=10):
+    query_tfidf = get_query_tfidf(search_teas, search_description)
     sims = docs_compressed_normed.dot(query_tfidf)
     ranked_ids = (-sims).argsort()
 
-    if search_tea: 
-        ranked_ids = ranked_ids[ranked_ids != tea_to_index[search_tea]] # remove the current search
+    if search_teas: 
+        search_tea_ids = [tea_to_index[t] for t in search_teas]
+        ranked_ids = ranked_ids[~np.in1d(ranked_ids, search_tea_ids)] # remove the current searches
         
     data = []
     for tea_id in ranked_ids[:k]:

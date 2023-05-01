@@ -1,31 +1,40 @@
 <!doctype html>
-<title>{% block title %}{% endblock %} - Flaskr</title>
+<title>Match-A Tea</title>
 <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Kanit&family=Montserrat&family=Open+Sans:wght@500&display=swap"
     rel="stylesheet">
-
 <body>
     <div class="full-body-container">
         <div class="top-text">
-            <div class="matcha-title">
-                <h1 id="matcha-color">Match-A Tea</h1>
+
+            <div class="logo-container">
+                <img src="{{ url_for('static', filename='images/logo.png') }}" />
             </div>
-            <form autocomplete="off">
-                <div class="input-box" onclick="sendFocusTea()">
-                    <img src="{{ url_for('static', filename='images/mag.png') }}" />
-                    <input placeholder="Search for a tea that you enjoy!" id="search-tea-text-val" />
+
+            <div class="input-container">
+                <div class="input-box left-input-box">
+                    <select id="search-tea" multiple>
+                        <option></option>
+                    </select>
                 </div>
                 <div class="input-box" onclick="sendFocusDescription()">
-                    <input placeholder="Search for a flavor profile that you enjoy!" id="search-description-text-val" />
-                </div>
-            </form>
+                    <input placeholder="Add a flavor profile you enjoy!" id="search-description-text-val" />
+                </div>    
+            </div>
         </div>
         </br>
-        <button id="find-teas-button" onClick="searchText()">Find Teas!</button>
+        <button id="find-teas-button" onClick="searchTeas()">Find Teas!</button>
         <div id="answer-box"></div>
     </div>
+
+    <!-- JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+    <!-- Select 2 -->
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
 
     <script>
         function formatScore(score) {
@@ -146,10 +155,14 @@
             });
         };
 
-        function searchText() {
+        function searchTeas() {
             document.getElementById("answer-box").innerHTML = ""
+
+            let searchTeas = []
+            $('#search-tea').select2('val').forEach(tea => searchTeas.push(tea))
+
             fetch("/api/teas?" + new URLSearchParams({ 
-                tea: document.getElementById("search-tea-text-val").value, 
+                tea: searchTeas,
                 description: document.getElementById("search-description-text-val").value
             }).toString(), { method: "POST" })
                 .then((response) => response.json())
@@ -172,8 +185,16 @@
                     }
                 });
         }
+
+        $('#search-tea').select2({
+            placeholder: "Add teas you enjoy!",
+            maximumSelectionLength: 3,
+            closeOnSelect: true, 
+            theme: "classic"
+        });
+
         fetch("/api/tea_names/")
             .then((response) => response.json())
-            .then((data) => autocomplete(document.getElementById("search-tea-text-val"), data));
+            .then((data) => data.forEach(tea => $('#search-tea').append(`<option>${tea}</option>`)));
     </script>
 </body>
