@@ -26,7 +26,7 @@
         </br>
         <div class="search-buttons">
             <button id="find-teas-button" onClick="searchTeas()">Find Teas!</button>
-            <button id="regen-button" onClick="regenSearch()">Regenerate Search!</button>
+            <button id="regen-button" onClick="regenSearch()">Re-generate Search!</button>
         </div>
         <div id="answer-box"></div>
     </div>
@@ -39,6 +39,12 @@
     <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
 
     <script>
+        // Keep track of relevant and irrelevant teas
+        let relevantTeas = [];
+        let irrelevantTeas = [];
+        // Current results 
+        let currentResults = [];
+
         function formatScore(score) {
             return "Percent Confidence: " + Math.round(score * 100, 2) + "%"
         }
@@ -73,7 +79,7 @@
                     <button id='like${num}' class='like-button' onClick='likeClick(this, ${num})'>
                         <img src="{{ url_for('static', filename='images/like.png') }}">
                     </button>
-                    <button id='dislike${num}' class='like-button' onClick='dislikeClick(this, ${num})'>
+                    <button id='dislike${num}' class='dislike-button' onClick='dislikeClick(this, ${num})'>
                         <img src="{{ url_for('static', filename='images/broken.png') }}">
                     </button>
                 </div>
@@ -96,82 +102,6 @@
             document.getElementById('search-description-text-val').focus()
         }
 
-        function autocomplete(inp, arr) {
-            var currentFocus;
-
-            inp.addEventListener("input", function (e) {
-                var a, v, i, val = this.value;
-                closeAllLists();
-                if (!val) { return false; }
-                currentFocus = -1;
-                a = document.createElement("DIV");
-                a.setAttribute("id", this.id + "autocomplete-list");
-                a.setAttribute("class", "autocomplete-items");
-                this.parentNode.appendChild(a);
-                for (i = 0; i < arr.length; i++) {
-                    if (arr[i].substr(0, val.length).toUpperCase() == val.toUpperCase()) {
-                        b = document.createElement("DIV");
-                        b.innerHTML = "<strong>" + arr[i].substr(0, val.length) + "</strong>";
-                        b.innerHTML += arr[i].substr(val.length);
-                        b.innerHTML += "<input type='hidden' value='" + arr[i] + "'>";
-                        b.addEventListener("click", function (e) {
-                            inp.value = this.getElementsByTagName("input")[0].value;
-                            closeAllLists();
-                        });
-                        a.appendChild(b);
-                    }
-                }
-            });
-
-            // using arrow keys to move up and down dropdown menu
-            inp.addEventListener("keydown", function (e) {
-                var x = document.getElementById(this.id + "autocomplete-list");
-                if (x) x = x.getElementsByTagName("div");
-                if (e.keyCode == 40) { // down arrow pressed
-                    currentFocus++;
-                    addActive(x);
-                } else if (e.keyCode == 38) { // up arrow pressed
-                    currentFocus--;
-                    addActive(x);
-                } else if (e.keyCode == 13) { // enter key pressed
-                    e.preventDefault();
-                    if (currentFocus > -1) {
-                        if (x) x[currentFocus].click();
-                    }
-                }
-            });
-
-            // classify an item as active
-            function addActive(x) {
-                if (!x) return false;
-                removeActive(x);
-                if (currentFocus >= x.length) currentFocus = 0;
-                if (currentFocus < 0) currentFocus = (x.length - 1);
-                x[currentFocus].classList.add("autocomplete-active");
-            }
-
-            // declassify all items as active
-            function removeActive(x) {
-                for (var i = 0; i < x.length; i++) {
-                    x[i].classList.remove("autocomplete-active");
-                }
-            }
-
-            // close all autocomplete lists except elt
-            function closeAllLists(elmnt) {
-                var x = document.getElementsByClassName("autocomplete-items");
-                for (var i = 0; i < x.length; i++) {
-                    if (elmnt != x[i] && elmnt != inp) {
-                        x[i].parentNode.removeChild(x[i]);
-                    }
-                }
-            }
-            // execute a function when someone clicks in
-            document.addEventListener("click", function (e) {
-                closeAllLists(e.target);
-            });
-        };
-
         function searchTeas() {
             document.getElementById("answer-box").innerHTML = ""
 
@@ -184,6 +114,7 @@
             }).toString(), { method: "POST" })
                 .then((response) => response.json())
                 .then((data) => {
+                    currentResults = data.data;
                     let numTeasDisplayed = 0
                     data.data.forEach(row => {
                         if (row.score > 0.05) { // TODO - choose an appropriate score cutoff
@@ -216,36 +147,90 @@
             .then((data) => data.forEach(tea => $('#search-tea').append(`<option>${tea}</option>`)));
 
         function regenSearch() {
-            // for amy to do stuff
             document.getElementById("answer-box").innerHTML = "";
-            fetch("/api/teas?" + new URLSearchParams({
-                tea: document.getElementById("search-tea-text-val").value,
-                description: document.getElementById("search-description-text-val").value
+            let searchTeas = []
+            $('#search-tea').select2('val').forEach(tea => searchTeas.push(tea))
+
+            fetch("/api/teas/regenerate?" + new URLSearchParams({
+                tea: searchTeas,
+                description: document.getElementById("search-description-text-val").value,
+                relevant: relevantTeas,
+                irrelevant: irrelevantTeas,
             }).toString(), { method: "POST" })
                 .then((response) => response.json())
+                .then((data) => {
+                    currentResults = data.data;
+                    let numTeasDisplayed = 0
+                    data.data.forEach(row => {
+                        if (row.score > 0.05) { // TODO - choose an appropriate score cutoff
+                            numTeasDisplayed += 1
+                            let tempDiv = document.createElement("div")
+                            tempDiv.innerHTML = answerBoxTemplate(row.tea_category, row.about, row.brands, row.caffeine, row.score, numTeasDisplayed)
+                            document.getElementById("answer-box").appendChild(tempDiv)
+                        }
+                    });
+                    if (numTeasDisplayed == 0) {
+                        let tempDiv = document.createElement("div")
+                        tempDiv.innerHTML = `<div class='no-teas'>
+                                                <h3>${'No teas match your search ;('}</h3>
+                                            </div>`
+                        document.getElementById("answer-box").appendChild(tempDiv)
+                    }
+                });
+            
+            relevantTeas = []
+            irrelevantTeas = []
+        }
+
+        function updateRelevant(id, remove) {
+            let tea = currentResults[id].tea_category
+            if (remove) {
+                relevantTeas = relevantTeas.filter(e => e != tea)
+            } else {
+                relevantTeas.push(tea)
+            }
+        }
+
+        function updateIrrelevant(id, remove) {
+            let tea = currentResults[id].tea_category
+            if (remove) {
+                irrelevantTeas = irrelevantTeas.filter(e => e != tea)
+            } else {
+                irrelevantTeas.push(tea)
+            }
         }
 
         function likeClick(elmnt, id) {
             let dislike = document.getElementById("dislike" + id);
+            let tea_id = id - 1;
             if (elmnt.classList.contains("clicked")) {
                 elmnt.classList.remove("clicked");
+                updateRelevant(tea_id, true);
             } else if (dislike.classList.contains("clicked")) {
                 dislike.classList.remove("clicked");
                 elmnt.classList.add("clicked");
+                updateIrrelevant(tea_id, true);
+                updateRelevant(tea_id, false);
             } else {
                 elmnt.classList.add("clicked");
+                updateRelevant(tea_id, false);
             }
         };
 
         function dislikeClick(elmnt, id) {
             let like = document.getElementById("like" + id);
+            let tea_id = id - 1;
             if (elmnt.classList.contains("clicked")) {
                 elmnt.classList.remove("clicked");
+                updateIrrelevant(tea_id, true);
             } else if (like.classList.contains("clicked")) {
                 like.classList.remove("clicked");
                 elmnt.classList.add("clicked");
+                updateRelevant(tea_id, true)
+                updateIrrelevant(tea_id, false);
             } else {
                 elmnt.classList.add("clicked");
+                updateIrrelevant(tea_id, false);
             }
         };
 

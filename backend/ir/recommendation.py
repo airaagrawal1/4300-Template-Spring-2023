@@ -4,7 +4,6 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 from scipy.sparse.linalg import svds
 from sklearn.preprocessing import normalize
-from ir.edit_distance import top_k_edit_distance
 
 # load the data
 with open("./tea_data.json", "r") as f:
@@ -55,7 +54,7 @@ def get_query_tfidf(search_teas, search_description):
     return tfidf_vec / entered_searches
 
 # get recommendations
-def get_k_recommendations(search_teas, search_description, k=10, cafArray=["low", "moderate", "high"]):
+def get_k_recommendations(search_teas, search_description, k=10, caffeine_options=["low", "moderate", "high"]):
     query_tfidf = get_query_tfidf(search_teas, search_description)
     sims = docs_compressed_normed.dot(query_tfidf)
     ranked_ids = (-sims).argsort()
@@ -66,7 +65,7 @@ def get_k_recommendations(search_teas, search_description, k=10, cafArray=["low"
         
     data = []
     for tea_id in ranked_ids[:k]:
-        if (tea_data[tea_id]["caffeine"] in cafArray):
+        if (tea_data[tea_id]["caffeine"] in caffeine_options):
             data.append({
                 "tea_category": tea_data[tea_id]["tea_category"],
                 "tea_type": tea_data[tea_id]["tea_type"],

@@ -264,7 +264,7 @@ body {
     padding-top: 20px;
 }
 
-.like-button {
+.like-button, .dislike-button {
     display: inline-block;
     border: none;
     outline: none;
@@ -274,18 +274,18 @@ body {
     padding-right: 0px;
 }
 
-.like-button img {
+.like-button img, .dislike-button img {
     cursor: pointer;
     width: 25px;
     height: 25px;
     filter: grayscale(100%);
 }
 
-.like-button.clicked {
+.like-button.clicked, .dislike-button.clicked {
     animation: clicked .4s ease;
 }
 
-.like-button.clicked img {
+.like-button.clicked img, .dislike-button.clicked img {
     filter: none;
 }
 
