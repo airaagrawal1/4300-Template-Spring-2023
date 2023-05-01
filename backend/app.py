@@ -59,8 +59,7 @@ def get_tea_names():
 def get_teas():
     search_teas = request.args.get("tea").split(",")
     search_description = request.args.get("description")
-    # cafArray = request.args.get("caffeine")
-    caffeine_options = ["low", "moderate", "high"]
+    caffeine_options = request.args.get("caffeine").split(",")
     search_teas = [i for i in search_teas if len(i) > 0]
     return get_k_recommendations(search_teas, search_description, 10, caffeine_options)
 
@@ -70,6 +69,7 @@ def get_teas_regenerate():
     search_description = request.args.get("description")
     relevant = request.args.get("relevant").split(",")
     irrelevant = request.args.get("irrelevant").split(",")
+    caffeine_options = request.args.get("caffeine").split(",")
     search_teas = [i for i in search_teas if len(i) > 0]
     relevant = [i for i in relevant if len(i) > 0]
     irrelevant = [i for i in irrelevant if len(i) > 0]

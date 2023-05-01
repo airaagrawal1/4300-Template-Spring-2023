@@ -25,18 +25,20 @@
             </div>
         </div>
         <div class="caffeine-checklist" onclick="">
-            <label for="caffeine">Select a Preferred Caffeine Level: </label>
-            <div>
-                <input type="checkbox" class="caffeine-filter" id="low" checked>
-                <label for="low">Low</label>
-            </div>
-            <div>
-                <input type="checkbox" class="caffeine-filter" id="moderate" checked>
-                <label for="moderate">Moderate</label>
-            </div>
-            <div>
-                <input type="checkbox" class="caffeine-filter" id="high" checked>
-                <label for="high">High</label>
+            <label id="caffeine-prompt" for="caffeine">Select a Preferred Caffeine Level: </label>
+            <div id="caffeine-checks">
+                <label class="check-container" for="low">
+                    <input value="low" type="checkbox" onclick="updateCaffeine(this)" class="caffeine-filter" id="low" checked>Low
+                    <span class="checkmark"></span>
+                </label>
+                <label class="check-container" for="moderate">
+                    <input value="moderate" type="checkbox" onclick="updateCaffeine(this)"  class="caffeine-filter" id="moderate" checked> Moderate
+                    <span class="checkmark"></span>
+                </label>
+                <label class="check-container" for="high">
+                    <input value="high" type="checkbox" onclick="updateCaffeine(this)" class="caffeine-filter" id="high" checked>High
+                    <span class="checkmark"></span>
+                </label>
             </div>
         </div>
         </br>
@@ -64,6 +66,8 @@
         // Keep track of relevant and irrelevant teas
         let relevantTeas = [];
         let irrelevantTeas = [];
+        // Keep track of the caffeine options chosen. Default is all selected
+        let caffeineOptions = ["low", "moderate", "high"]
         // Current results 
         let currentResults = [];
 
@@ -124,6 +128,14 @@
             document.getElementById('search-description-text-val').focus()
         }
 
+        function updateCaffeine(cb) {
+            if (cb.checked) {
+                caffeineOptions.push(cb.value)
+            } else {
+                caffeineOptions = caffeineOptions.filter(e => e != cb.value)
+            }
+        }
+
         function searchTeas() {
             document.getElementById("answer-box").innerHTML = ""
             if (document.getElementById("tea-category-search-box").innerText.toString().length <= 1 &&
@@ -134,12 +146,22 @@
                                     </div>`
                 document.getElementById("answer-box").appendChild(tempDiv)
                 document.getElementById("regen-button").style.display = "none"
+            } else if (caffeineOptions.length == 0) {
+                let tempDiv = document.createElement("div")
+                tempDiv.innerHTML = `<div class='no-teas'>
+                                        <h3 id='message-text'>${'Please select at least one caffeine option!'}</h3>
+                                    </div>`
+                document.getElementById("answer-box").appendChild(tempDiv)
+                document.getElementById("regen-button").style.display = "none"
             } else {
+                // Get the teas to search for
                 let searchTeas = []
                 $('#search-tea').select2('val').forEach(tea => searchTeas.push(tea))
+
                 fetch("/api/teas?" + new URLSearchParams({
                     tea: searchTeas,
-                    description: document.getElementById("search-description-text-val").value
+                    description: document.getElementById("search-description-text-val").value, 
+                    caffeine: caffeineOptions
                 }).toString(), { method: "POST" })
                     .then((response) => response.json())
                     .then((data) => {
@@ -148,7 +170,6 @@
                         data.data.forEach(row => {
                             if (row.score > 0.05) { // TODO - choose an appropriate score cutoff
                                 numTeasDisplayed += 1
-                                console.log(numTeasDisplayed);
                                 let tempDiv = document.createElement("div")
                                 tempDiv.innerHTML = answerBoxTemplate(row.tea_category, row.about, row.brands, row.caffeine, row.score, numTeasDisplayed)
                                 document.getElementById("answer-box").appendChild(tempDiv)
@@ -182,38 +203,47 @@
 
         function regenSearch() {
             document.getElementById("answer-box").innerHTML = "";
-            let searchTeas = []
-            $('#search-tea').select2('val').forEach(tea => searchTeas.push(tea))
+            if (caffeineOptions.length == 0) {
+                let tempDiv = document.createElement("div")
+                tempDiv.innerHTML = `<div class='no-teas'>
+                                        <h3 id='message-text'>${'Please select at least one caffeine option!'}</h3>
+                                    </div>`
+                document.getElementById("answer-box").appendChild(tempDiv)
+                document.getElementById("regen-button").style.display = "none"
+            } else {
+                let searchTeas = []
+                $('#search-tea').select2('val').forEach(tea => searchTeas.push(tea))
 
-            fetch("/api/teas/regenerate?" + new URLSearchParams({
-                tea: searchTeas,
-                description: document.getElementById("search-description-text-val").value,
-                relevant: relevantTeas,
-                irrelevant: irrelevantTeas,
-            }).toString(), { method: "POST" })
-                .then((response) => response.json())
-                .then((data) => {
-                    currentResults = data.data;
-                    let numTeasDisplayed = 0
-                    data.data.forEach(row => {
-                        if (row.score > 0.05) { // TODO - choose an appropriate score cutoff
-                            numTeasDisplayed += 1
+                fetch("/api/teas/regenerate?" + new URLSearchParams({
+                    tea: searchTeas,
+                    description: document.getElementById("search-description-text-val").value,
+                    relevant: relevantTeas,
+                    irrelevant: irrelevantTeas,
+                    caffeine: caffeineOptions
+                }).toString(), { method: "POST" })
+                    .then((response) => response.json())
+                    .then((data) => {
+                        currentResults = data.data;
+                        let numTeasDisplayed = 0
+                        data.data.forEach(row => {
+                            if (row.score > 0.05) { // TODO - choose an appropriate score cutoff
+                                numTeasDisplayed += 1
+                                let tempDiv = document.createElement("div")
+                                tempDiv.innerHTML = answerBoxTemplate(row.tea_category, row.about, row.brands, row.caffeine, row.score, numTeasDisplayed)
+                                document.getElementById("answer-box").appendChild(tempDiv)
+                            }
+                        });
+                        if (numTeasDisplayed == 0) {
                             let tempDiv = document.createElement("div")
-                            tempDiv.innerHTML = answerBoxTemplate(row.tea_category, row.about, row.brands, row.caffeine, row.score, numTeasDisplayed)
+                            tempDiv.innerHTML = `<div class='no-teas'>
+                                                    <h3>${'No teas match your search ;('}</h3>
+                                                </div>`
                             document.getElementById("answer-box").appendChild(tempDiv)
                         }
                     });
-                    if (numTeasDisplayed == 0) {
-                        let tempDiv = document.createElement("div")
-                        tempDiv.innerHTML = `<div class='no-teas'>
-                                                <h3>${'No teas match your search ;('}</h3>
-                                            </div>`
-                        document.getElementById("answer-box").appendChild(tempDiv)
-                    }
-                });
-
-            relevantTeas = []
-            irrelevantTeas = []
+                relevantTeas = []
+                irrelevantTeas = []
+            }
         }
 
         function updateRelevant(id, remove) {

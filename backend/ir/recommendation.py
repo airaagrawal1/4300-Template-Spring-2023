@@ -64,7 +64,12 @@ def get_k_recommendations(search_teas, search_description, k=10, caffeine_option
         ranked_ids = ranked_ids[~np.in1d(ranked_ids, search_tea_ids)] # remove the current searches
         
     data = []
-    for tea_id in ranked_ids[:k]:
+
+    result_idx = 0
+    results_added = 0
+
+    while results_added < k:
+        tea_id = ranked_ids[result_idx]
         if (tea_data[tea_id]["caffeine"] in caffeine_options):
             data.append({
                 "tea_category": tea_data[tea_id]["tea_category"],
@@ -74,6 +79,9 @@ def get_k_recommendations(search_teas, search_description, k=10, caffeine_option
                 "caffeine": tea_data[tea_id]["caffeine"],
                 "score": sims[tea_id] 
             })
-        result = { "data": data }
+            results_added += 1
+        result_idx += 1
+
+    result = { "data": data }
 
     return json.dumps(result)
