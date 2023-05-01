@@ -8,10 +8,10 @@
 
 <body>
     <div class="full-body-container">
+        <div class="logo-container">
+            <img src="{{ url_for('static', filename='images/logo.png') }}" />
+        </div>
         <div class="top-text">
-            <div class="logo-container">
-                <img src="{{ url_for('static', filename='images/logo.png') }}" />
-            </div>
             <div class="input-container">
                 <div class="input-box left-input-box" id="tea-category-search-box" onchange="detectChange()"
                     onkeyup="detectChange()">
@@ -22,6 +22,21 @@
                 <div class="input-box" id="flavor-search-box" onclick="sendFocusDescription()" onkeyup="detectChange()">
                     <input placeholder="Add a flavor profile you enjoy!" id="search-description-text-val" />
                 </div>
+            </div>
+        </div>
+        <div class="caffeine-checklist" onclick="">
+            <label for="caffeine">Select a Preferred Caffeine Level: </label>
+            <div>
+                <input type="checkbox" class="caffeine-filter" id="low" checked>
+                <label for="low">Low</label>
+            </div>
+            <div>
+                <input type="checkbox" class="caffeine-filter" id="moderate" checked>
+                <label for="moderate">Moderate</label>
+            </div>
+            <div>
+                <input type="checkbox" class="caffeine-filter" id="high" checked>
+                <label for="high">High</label>
             </div>
         </div>
         </br>
