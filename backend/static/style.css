@@ -77,12 +77,12 @@ body {
     background-color: #ffffff;
     display: flex;
     align-items: center;
-    width: 450px;
+    width: 430px;
     position: relative;
 }
 
-.left-box {
-    margin-right: 30px;
+.left-input-box {
+    margin-right: 20px;
 }
 
 .input-box input {
