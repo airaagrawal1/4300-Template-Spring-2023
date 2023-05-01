@@ -2,7 +2,7 @@ import numpy as np
 import json
 from ir.recommendation import get_query_tfidf, tea_to_index, docs_compressed_normed, tea_data
 
-def rocchio(search_teas, search_description, relevant, irrelevant, input_doc_matrix=docs_compressed_normed, a=1, b=0.7, c=0.2, clip=True, k=10):
+def rocchio(search_teas, search_description, relevant, irrelevant, input_doc_matrix=docs_compressed_normed, a=1, b=0.95, c=0.4, clip=True, k=10):
     q0 = get_query_tfidf(search_teas, search_description)
 
     rel_docs = np.zeros(len(q0))
