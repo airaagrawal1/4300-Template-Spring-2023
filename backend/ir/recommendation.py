@@ -51,7 +51,7 @@ def get_query_tfidf(search_tea, search_description):
     return tfidf_vec / entered_searches
 
 # get recommendations
-def get_k_recommendations(search_tea, search_description, k=10):
+def get_k_recommendations(search_tea, search_description, k=10, cafArray=["low", "moderate", "high"]):
     query_tfidf = get_query_tfidf(search_tea, search_description)
     sims = docs_compressed_normed.dot(query_tfidf)
     ranked_ids = (-sims).argsort()
@@ -61,14 +61,15 @@ def get_k_recommendations(search_tea, search_description, k=10):
         
     data = []
     for tea_id in ranked_ids[:k]:
-        data.append({
-            "tea_category": tea_data[tea_id]["tea_category"],
-            "tea_type": tea_data[tea_id]["tea_type"],
-            "about": tea_data[tea_id]["about"],
-            "brands": tea_data[tea_id]["top_rated_brands"],
-            "caffeine": tea_data[tea_id]["caffeine"],
-            "score": sims[tea_id] 
-        })
-    result = { "data": data }
+        if (tea_data[tea_id]["caffeine"] in cafArray):
+            data.append({
+                "tea_category": tea_data[tea_id]["tea_category"],
+                "tea_type": tea_data[tea_id]["tea_type"],
+                "about": tea_data[tea_id]["about"],
+                "brands": tea_data[tea_id]["top_rated_brands"],
+                "caffeine": tea_data[tea_id]["caffeine"],
+                "score": sims[tea_id] 
+            })
+        result = { "data": data }
 
     return json.dumps(result)
