@@ -55,13 +55,8 @@ def get_query_tfidf(search_teas, search_description):
     return tfidf_vec / entered_searches
 
 # get recommendations
-<<<<<<< HEAD
-def get_k_recommendations(search_tea, search_description, k=10, cafArray=["low", "moderate", "high"]):
-    query_tfidf = get_query_tfidf(search_tea, search_description)
-=======
-def get_k_recommendations(search_teas, search_description, k=10):
+def get_k_recommendations(search_teas, search_description, k=10, cafArray=["low", "moderate", "high"]):
     query_tfidf = get_query_tfidf(search_teas, search_description)
->>>>>>> 0b606595807654c6c4b9524f490f6b1a3e5d0076
     sims = docs_compressed_normed.dot(query_tfidf)
     ranked_ids = (-sims).argsort()
 
