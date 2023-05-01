@@ -23,7 +23,10 @@
             </form>
         </div>
         </br>
-        <button id="find-teas-button" onClick="searchText()">Find Teas!</button>
+        <div class="search-buttons">
+            <button id="find-teas-button" onClick="searchText()">Find Teas!</button>
+            <button id="regen-button" class="regen-button" onClick="regenSearch()">Regenerate Search!</button>
+        </div>
         <div id="answer-box"></div>
     </div>
 
@@ -186,7 +189,19 @@
                         document.getElementById("answer-box").appendChild(tempDiv)
                     }
                 });
+            document.getElementById("regen-button").style.display = "inline-block";
         }
+
+        function regenSearch() {
+            // for amy to do stuff
+            document.getElementById("answer-box").innerHTML = "";
+            fetch("/api/teas?" + new URLSearchParams({
+                tea: document.getElementById("search-tea-text-val").value,
+                description: document.getElementById("search-description-text-val").value
+            }).toString(), { method: "POST" })
+                .then((response) => response.json())
+        }
+
         fetch("/api/tea_names/")
             .then((response) => response.json())
             .then((data) => autocomplete(document.getElementById("search-tea-text-val"), data));

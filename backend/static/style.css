@@ -134,6 +134,20 @@ body {
     margin-top: 40px;
 }
 
+.regen-button {
+    height: 35px;
+    width: 120px;
+    display: none;
+    background-color: white;
+    border-color: white;
+    color: black;
+}
+
+.search-buttons {
+    background-color: transparent;
+    padding-bottom: 0px;
+}
+
 .tea-card {
     margin-bottom: 40px;
 }
