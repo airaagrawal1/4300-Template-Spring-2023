@@ -5,6 +5,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Kanit&family=Montserrat&family=Open+Sans:wght@500&display=swap"
     rel="stylesheet">
+
 <body>
     <div class="full-body-container">
         <div class="top-text">
@@ -19,7 +20,7 @@
                 </div>
                 <div class="input-box" onclick="sendFocusDescription()">
                     <input placeholder="Add a flavor profile you enjoy!" id="search-description-text-val" />
-                </div>    
+                </div>
             </div>
         </div>
         </br>
@@ -73,7 +74,7 @@
                         <img src="{{ url_for('static', filename='images/like.png') }}">
                     </button>
                     <button id='dislike${num}' class='like-button' onClick='dislikeClick(this, ${num})'>
-                        <img src="{{ url_for('static', filename='images/dislike.png') }}">
+                        <img src="{{ url_for('static', filename='images/broken.png') }}">
                     </button>
                 </div>
                 <div class='fake-container' onClick='expandCard(${num})'>
@@ -177,7 +178,7 @@
             let searchTeas = []
             $('#search-tea').select2('val').forEach(tea => searchTeas.push(tea))
 
-            fetch("/api/teas?" + new URLSearchParams({ 
+            fetch("/api/teas?" + new URLSearchParams({
                 tea: searchTeas,
                 description: document.getElementById("search-description-text-val").value
             }).toString(), { method: "POST" })
@@ -206,14 +207,14 @@
         $('#search-tea').select2({
             placeholder: "Add teas you enjoy!",
             maximumSelectionLength: 3,
-            closeOnSelect: true, 
+            closeOnSelect: true,
             theme: "classic"
         });
 
         fetch("/api/tea_names/")
             .then((response) => response.json())
             .then((data) => data.forEach(tea => $('#search-tea').append(`<option>${tea}</option>`)));
-            
+
         function regenSearch() {
             // for amy to do stuff
             document.getElementById("answer-box").innerHTML = "";
