@@ -58,16 +58,10 @@ def get_tea_names():
 
 @app.route("/api/teas", methods=["POST"])
 def get_teas():
-    search_tea = request.args.get("tea")
-    top_k_teas, edit_dists = top_k_edit_distance(search_tea=search_tea, k=1)
-    if search_tea:
-        if (edit_dists[0] / len(search_tea)) < 0.6: # search tea likely similar enough to a tea in the dataset. less than 60% edited
-            search_tea = top_k_teas[0]
-        else: 
-            search_tea = ""
+    search_teas = request.args.get("tea").split(",")
     search_description = request.args.get("description")
     cafArray = request.args.get("caffeine")
-    return get_k_recommendations(search_tea, search_description, 10, cafArray)
+    return get_k_recommendations(search_teas, search_description, 10, cafArray)
 
 @app.route("/api/teas/regenerate", methods=["POST"])
 def get_teas_regenerate():
