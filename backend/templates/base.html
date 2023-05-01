@@ -108,8 +108,8 @@
             if (document.getElementById("tea-category-search-box").innerText.toString().length <= 1) {
                 let tempDiv = document.createElement("div")
                 tempDiv.innerHTML = `<div class='no-teas'>
-                                                <h3>${'Please select a tea category!'}</h3>
-                                            </div>`
+                                        <h3 id='message-text'>${'Please select a tea category!'}</h3>
+                                    </div>`
                 document.getElementById("answer-box").appendChild(tempDiv)
                 document.getElementById("regen-button").style.display = "none"
             } else {

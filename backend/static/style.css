@@ -302,3 +302,7 @@ body {
         transform: scale(1);
     }
 }
+
+#message-text {
+    font-family: 'Montserrat', sans-serif;
+}
