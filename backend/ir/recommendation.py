@@ -64,7 +64,6 @@ def get_k_recommendations(search_teas, search_description, k=10, caffeine_option
         ranked_ids = ranked_ids[~np.in1d(ranked_ids, search_tea_ids)] # remove the current searches
         
     data = []
-
     result_idx = 0
     results_added = 0
 
@@ -77,7 +76,8 @@ def get_k_recommendations(search_teas, search_description, k=10, caffeine_option
                 "about": tea_data[tea_id]["about"],
                 "brands": tea_data[tea_id]["top_rated_brands"],
                 "caffeine": tea_data[tea_id]["caffeine"],
-                "score": sims[tea_id] 
+                "score": sims[tea_id], 
+                "rating": tea_data[tea_id]["avg_rating"]
             })
             results_added += 1
         result_idx += 1

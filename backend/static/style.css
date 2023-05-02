@@ -93,6 +93,7 @@ body {
     list-style-type: none;
     display: flex;
     margin-bottom: 30px;
+    color: #344e41;
     width: 570px;
     justify-content: space-between;
     align-items: center;
@@ -293,6 +294,7 @@ body {
     border: 2px solid #52796F;
     background-color: white;
     border-radius: 10px;
+    margin-left: 20px;
     color: #52796F;
     font-weight: bold;
     font-family: 'Montserrat', sans-serif;
@@ -321,8 +323,20 @@ body {
 
 .tea-score {
     font-family: 'Montserrat', sans-serif;
-    color: rgb(58, 58, 58);
     padding-top: 0px;
+    font-weight: 600;
+}
+
+.green-score {
+    color: #90be6d
+}
+
+.yellow-score {
+    color: #ffbc42
+}
+
+.red-score {
+    color: #ff4d6d
 }
 
 .tea-desc {
@@ -336,10 +350,23 @@ body {
 
 .tea-brands {
     font-family: 'Montserrat', sans-serif;
+    color: #343a40;
+    font-size: 14px;
+    font-weight: 550;
 }
 
 .caffeine {
     font-family: 'Montserrat', sans-serif;
+    color: #343a40;
+    font-size: 14px;
+    font-weight: 550;
+}
+
+.rating {
+    font-family: 'Montserrat', sans-serif;
+    color: #343a40;
+    font-size: 14px;
+    font-weight: 550;
 }
 
 .no-teas {
@@ -378,6 +405,20 @@ body {
     filter: none;
 }
 
+.filter-container {
+    width: 700px;
+    margin-top: 30px;
+    display: none;
+    justify-content: flex-end;
+}
+
+.filter-container select {
+    width: 100px;
+    -webkit-appearance: menulist-button;
+    height: 30px;
+    font-family: 'Montserrat', sans-serif;
+}
+
 @keyframes clicked {
     0% {
         transform: scale(.8);
@@ -394,4 +435,7 @@ body {
 
 #message-text {
     font-family: 'Montserrat', sans-serif;
+    width: 570px;
+    font-size: 18px;
+    text-align: center;
 }

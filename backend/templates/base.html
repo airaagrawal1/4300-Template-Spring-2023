@@ -1,5 +1,8 @@
 <!doctype html>
 <title>Match-A Tea</title>
+<header>
+    <link rel="icon" type="image/x-icon" href="static/images/favicon.png" />
+</header>
 <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -46,8 +49,8 @@
             <button id="find-teas-button" onClick="searchTeas()">Find Teas!</button>
             <button id="regen-button" onClick="regenSearch()">Re-generate Search!</button>
         </div>
-        <div class="filter-container">
-            <select name="sort-by" id="sort-by">
+        <div class="filter-container" id="sort-box">
+            <select name="sort-by" id="sort-by" onchange="sortResults(this)">
                 <option value="relevance">Relevance</option>
                 <option value="rating">Rating</option>
             </select>
@@ -75,6 +78,18 @@
             return "Percent Confidence: " + Math.round(score * 100, 2) + "%"
         }
 
+        function formatScoreColor(score) {
+            console.log("here")
+            let numScore = Math.round(score * 100, 2)
+            if (numScore > 70) {
+                return "green-score"
+            } else if (numScore > 40) {
+                return "yellow-score"
+            } else { 
+                return "red-score"
+            }
+        }
+
         function formatDescription(description) {
             descriptionSentences = description.toString().split('. ');
             finalDescription = descriptionSentences[0];
@@ -93,11 +108,19 @@
             return "Caffeine Content: " + caffeine.toString();
         }
 
+        function formatRating(rating) {
+            if (rating == 0) {
+                return "There have been no reviews for this tea yet. Be the first to try!"
+            } else {
+                return "Average Review Rating: " + rating + " / 100";
+            }
+        }
+
         function myFunction(x) {
             x.classList.toggle("fa-thumbs-down");
         }
 
-        function answerBoxTemplate(name, description, brands, caffeine, score, num) {
+        function answerBoxTemplate(name, description, brands, caffeine, score, num, rating) {
             return `<div class='card' id='card${num}'>
                 <div class='container'>
                 <h3 class='tea-title'>${name}</h3>
@@ -110,11 +133,12 @@
                     </button>
                 </div>
                 <div class='fake-container' onClick='expandCard(${num})'>
-                    <p class='tea-score'>${formatScore(score)}</p>
+                    <p class='tea-score ${formatScoreColor(score)}'>${formatScore(score)}</p>
                     <p id='desc${num}' class='tea-desc'>${formatDescription(description)}</p>
                     <p id='fulldesc${num}' class='tea-desc-full'>${description.toString()}</p>
                     <p class='tea-brands'>${formatBrands(brands)}</p>
                     <p class='caffeine'>${formatCaffeine(caffeine)}</p>
+                    <p class='rating'>${formatRating(rating)}</p>
                 </div>
             </div>
             </div>`
@@ -136,6 +160,37 @@
             }
         }
 
+        function sortResults(opt) {
+            document.getElementById("answer-box").innerHTML = ""
+            if (opt.value == "relevance") {
+                currentResults.sort(function(a,b) { return parseFloat(b.score) - parseFloat(a.score) } )
+            } else if (opt.value == "rating") {
+                currentResults.sort(function(a,b) { return parseFloat(b.rating) - parseFloat(a.rating) } )
+            }
+            let numTeasDisplayed = 0;
+            currentResults.forEach(row => {
+                if (row.score > 0.05) { // TODO - choose an appropriate score cutoff
+                    numTeasDisplayed += 1
+                    let tempDiv = document.createElement("div")
+                    tempDiv.innerHTML = answerBoxTemplate(row.tea_category, row.about, row.brands, row.caffeine, row.score, numTeasDisplayed, row.rating)
+                    document.getElementById("answer-box").appendChild(tempDiv)
+                }
+                if (numTeasDisplayed > 0) {
+                    document.getElementById("regen-button").style.display = "inline-block"
+                    document.getElementById("sort-box").style.display = "flex"
+                }
+            });
+            if (numTeasDisplayed == 0) {
+                let tempDiv = document.createElement("div")
+                tempDiv.innerHTML = `<div class='no-teas'>
+                                    <h3>${'No teas match your search ;('}</h3>
+                                </div>`
+                document.getElementById("answer-box").appendChild(tempDiv)
+                document.getElementById("regen-button").style.display = "none"
+                document.getElementById("sort-box").style.display = "none"
+            }
+        }
+
         function searchTeas() {
             document.getElementById("answer-box").innerHTML = ""
             if (document.getElementById("tea-category-search-box").innerText.toString().length <= 1 &&
@@ -146,6 +201,7 @@
                                     </div>`
                 document.getElementById("answer-box").appendChild(tempDiv)
                 document.getElementById("regen-button").style.display = "none"
+                document.getElementById("sort-box").style.display = "none"
             } else if (caffeineOptions.length == 0) {
                 let tempDiv = document.createElement("div")
                 tempDiv.innerHTML = `<div class='no-teas'>
@@ -153,6 +209,7 @@
                                     </div>`
                 document.getElementById("answer-box").appendChild(tempDiv)
                 document.getElementById("regen-button").style.display = "none"
+                document.getElementById("sort-box").style.display = "none"
             } else {
                 // Get the teas to search for
                 let searchTeas = []
@@ -171,11 +228,13 @@
                             if (row.score > 0.05) { // TODO - choose an appropriate score cutoff
                                 numTeasDisplayed += 1
                                 let tempDiv = document.createElement("div")
-                                tempDiv.innerHTML = answerBoxTemplate(row.tea_category, row.about, row.brands, row.caffeine, row.score, numTeasDisplayed)
+                                console.log(row.rating)
+                                tempDiv.innerHTML = answerBoxTemplate(row.tea_category, row.about, row.brands, row.caffeine, row.score, numTeasDisplayed, row.rating)
                                 document.getElementById("answer-box").appendChild(tempDiv)
                             }
                             if (numTeasDisplayed > 0) {
                                 document.getElementById("regen-button").style.display = "inline-block"
+                                document.getElementById("sort-box").style.display = "flex"
                             }
                         });
                         if (numTeasDisplayed == 0) {
@@ -185,6 +244,7 @@
                                             </div>`
                             document.getElementById("answer-box").appendChild(tempDiv)
                             document.getElementById("regen-button").style.display = "none"
+                            document.getElementById("sort-box").style.display = "none"
                         }
                     });
             }
@@ -210,6 +270,7 @@
                                     </div>`
                 document.getElementById("answer-box").appendChild(tempDiv)
                 document.getElementById("regen-button").style.display = "none"
+                document.getElementById("sort-box").style.display = "none"
             } else {
                 let searchTeas = []
                 $('#search-tea').select2('val').forEach(tea => searchTeas.push(tea))
@@ -229,16 +290,18 @@
                             if (row.score > 0.05) { // TODO - choose an appropriate score cutoff
                                 numTeasDisplayed += 1
                                 let tempDiv = document.createElement("div")
-                                tempDiv.innerHTML = answerBoxTemplate(row.tea_category, row.about, row.brands, row.caffeine, row.score, numTeasDisplayed)
+                                tempDiv.innerHTML = answerBoxTemplate(row.tea_category, row.about, row.brands, row.caffeine, row.score, numTeasDisplayed, row.rating)
                                 document.getElementById("answer-box").appendChild(tempDiv)
                             }
                         });
+                        document.getElementById("sort-box").style.display = "flex"
                         if (numTeasDisplayed == 0) {
                             let tempDiv = document.createElement("div")
                             tempDiv.innerHTML = `<div class='no-teas'>
                                                     <h3>${'No teas match your search ;('}</h3>
                                                 </div>`
                             document.getElementById("answer-box").appendChild(tempDiv)
+                            document.getElementById("sort-box").style.display = "none"
                         }
                     });
                 relevantTeas = []
