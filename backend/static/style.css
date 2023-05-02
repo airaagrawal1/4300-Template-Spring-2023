@@ -64,7 +64,7 @@ body {
 
 .logo-container img {
     margin-top: 15px;
-    width: 300px;
+    width: 600px;
     display: flex;
     justify-content: center;
 }
@@ -144,11 +144,11 @@ body {
     background-color: #eee;
 }
 
-.check-container:hover input ~ .checkmark {
+.check-container:hover input~.checkmark {
     background-color: #ccc;
 }
 
-.check-container input:checked ~ .checkmark {
+.check-container input:checked~.checkmark {
     background-color: #6b9080;
 }
 
@@ -157,8 +157,8 @@ body {
     position: absolute;
     display: none;
 }
-  
-.check-container input:checked ~ .checkmark:after {
+
+.check-container input:checked~.checkmark:after {
     display: block;
 }
 
@@ -209,13 +209,13 @@ body {
 .select2-container .select2-dropdown .select2-results {
     font-family: 'Montserrat', sans-serif;
     border: 0 !important;
-}  
+}
 
 .select2-results__option--highlighted {
     color: white !important;
     background-color: #6b9080 !important;
 }
-  
+
 .select2-container--default .select2-results__option[aria-selected=true] {
     background-color: darkgray;
 }
@@ -353,7 +353,8 @@ body {
     padding-top: 20px;
 }
 
-.like-button, .dislike-button {
+.like-button,
+.dislike-button {
     display: inline-block;
     border: none;
     outline: none;
@@ -363,18 +364,21 @@ body {
     padding-right: 0px;
 }
 
-.like-button img, .dislike-button img {
+.like-button img,
+.dislike-button img {
     cursor: pointer;
     width: 25px;
     height: 25px;
     filter: grayscale(100%);
 }
 
-.like-button.clicked, .dislike-button.clicked {
+.like-button.clicked,
+.dislike-button.clicked {
     animation: clicked .4s ease;
 }
 
-.like-button.clicked img, .dislike-button.clicked img {
+.like-button.clicked img,
+.dislike-button.clicked img {
     filter: none;
 }
 
